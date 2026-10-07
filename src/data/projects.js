@@ -1,57 +1,61 @@
 export const projectsData = [
   {
-    id: "online-shop",
+    id: "tech-gear-store",
     title: {
-      en: "Online Shop",
-      uz: "Online Shop"
+      en: "TechGear — Responsive E-Commerce",
+      uz: "TechGear — Moslashuvchan Onlayn Do'kon"
     },
     category: {
-      en: "E-commerce Platform",
-      uz: "Elektron Tijorat Platformasi"
+      en: "Full Responsive Store",
+      uz: "To'liq Moslashuvchan Onlayn Do'kon"
     },
     summary: {
-      en: "A modern online shopping experience designed around clear product discovery, intuitive navigation, and responsive layouts.",
-      uz: "Aniq mahsulot qidiruvi, tushunarli navigatsiya va to'liq moslashuvchan tartib asosida yaratilgan zamonaviy internet-do'kon tajribasi."
+      en: "A fully responsive digital tech store built with dynamic REST API catalog integration, instant search, category filtering, cart management, and dark mode support.",
+      uz: "Dinamik API mahsulotlar katalogi, tezkor qidiruv, toifalar bo'yicha saralash, savatcha boshqaruvi va qorong'u rejimga ega to'liq moslashuvchan elektron tijorat do'koni."
     },
     description: {
-      en: "The Online Shop is a focused frontend e-commerce application demonstrating real-world responsive commerce UI patterns. It prioritizes clean visual hierarchy, quick catalog scanning, smooth cart interactions, and instant tactile feedback across mobile and desktop viewports.",
-      uz: "Online Shop — bu real savdo interfeyslari tajribasini namoyish etuvchi amaliy frontend ilovasi. U qulay vizual ierarxiya, tezkor mahsulotlar katalogi, silliq savatcha interaksiyalari va mobil hamda kompyuter ekranlarida birdek sezgir ishlashga qaratilgan."
+      en: "TechGear is Sunnatilla's flagship responsive online shopping application. Engineered with mobile-first Tailwind styling, live search filtering, persistent category navigation, an interactive slide-over cart drawer with real-time totals, and a seamless product details view with related item recommendations.",
+      uz: "TechGear — Sunnatillaning asosiy moslashuvchan internet-do'kon loyihasi. Smartfon va kompyuterlar uchun qulay Tailwind interfeysi, tezkor qidiruv, toifalar bo'yicha saralash, real vaqt rejimida hisoblovchi interaktiv xarid savatchasi va mahsulotlar tafsiloti oynasi bilan ishlab chiqilgan."
     },
     challenge: {
-      en: "Many e-commerce templates suffer from visual clutter, poor mobile touch targets, and slow, confusing cart drawers that increase checkout drop-off.",
-      uz: "Ko'plab internet do'konlari ortiqcha vizual yuklama, noqulay mobil tugmalar va sekin ishlaydigan savatcha oynalariga ega bo'lib, xarid jarayonini qiyinlashtiradi."
+      en: "Creating a seamless cross-device shopping flow that delivers instant catalog feedback, fast live search across items, and intuitive cart manipulation without page reloads.",
+      uz: "Turli o'lchamdagi ekranlarda birdek tez ishlaydigan, sahifani qayta yuklamasdan mahsulotlarni bir zumda qidiradigan va savatchani oson boshqaradigan qulay interfeys yaratish."
     },
     approach: {
-      en: "Engineered with modular React components and atomic Tailwind utility styling. Features dedicated touch-optimized card layouts, immediate cart state responsiveness, and high-contrast typography.",
-      uz: "Modulli React komponentlari va Tailwind CSS yordamida ishlab chiqilgan. Smartfonlar uchun maxsus moslangan mahsulot kartalari, bir lahzali savatcha yangilanishi va yuqori kontrastli zamonaviy tipografiyaga ega."
+      en: "Implemented with pure JavaScript logic, utility-first Tailwind CSS, sticky mobile-friendly navigation, REST API product fetching, local state cart persistence, and theme toggling.",
+      uz: "JavaScript funksiyalari, Tailwind CSS, doimiy qulay navigatsiya paneli, REST API orqali mahsulotlarni yuklash, qulay savatcha boshqaruvi va Dark/Light rejim almashinuvi asosida qurilgan."
     },
     verifiedFeatures: [
       {
-        en: "Dynamic product catalog with category filtering",
-        uz: "Kategoriyalar bo'yicha saralashga ega dinamik mahsulotlar katalogi"
+        en: "Live real-time product search with instant filtering",
+        uz: "Haqiqiy vaqt rejimida bir zumda ishlovchi mahsulotlar qidiruvi"
       },
       {
-        en: "Interactive client-side shopping cart with real-time totals",
-        uz: "Haqiqiy vaqt rejimida hisoblovchi interaktiv xarid savatchasi"
+        en: "Dynamic category tabs (Smartphones, Laptops, Groceries, etc.)",
+        uz: "Dinamik toifalar (Smartfonlar, Noutbuklar, Oziq-ovqat va barchasi)"
       },
       {
-        en: "Responsive product cards with instant hover and touch micro-interactions",
-        uz: "Tezkor hover va teginish mikro-interaksiyalariga ega moslashuvchan kartalar"
+        en: "Interactive shopping cart drawer with quantity controls and real-time checkout totals",
+        uz: "Mahsulotlar soni va umumiy summani hisoblovchi interaktiv savatcha"
       },
       {
-        en: "Accessible modal and drawer navigation for seamless mobile checkout flow",
-        uz: "Mobil xarid uchun qulay va qulay modal hamda suriluvchi menyular"
+        en: "Full Dark / Light mode theme toggling with smooth CSS transitions",
+        uz: "Silliq o'tishlarga ega to'liq Qorong'u / Yorug' rejim (Dark Mode)"
       },
       {
-        en: "Performant lightweight assets with zero layout shift during loading",
-        uz: "Yuklanish vaqtida siljishlarsiz ishlaydigan engil va tezkor resurslar"
+        en: "Dedicated product detail modal with specs and related product recommendations",
+        uz: "Tafsilotlar va o'xshash mahsulotlar tavsiyasiga ega mahsulot sahifasi"
+      },
+      {
+        en: "Mobile-first responsive architecture tested across all viewport breakpoints",
+        uz: "Barcha ekran o'lchamlariga to'liq moslashuvchan qulay mobil tartib"
       }
     ],
-    tags: ["React", "JavaScript", "Tailwind CSS", "Vite", "Responsive Design"],
+    tags: ["JavaScript", "Tailwind CSS", "REST API", "E-Commerce", "Responsive UI", "Dark Mode"],
     links: {
-      // Configurable URLs - Sunnatilla's GitHub profile and repository
-      liveDemo: "https://github.com/SUNNATILLACODER", // Ready to update to deployed URL
-      viewSource: "https://github.com/SUNNATILLACODER",
+      // Live project URLs directly from Sunnatilla's GitHub Pages & repository
+      liveDemo: "https://sunnatillacoder.github.io/Tech-gear/",
+      viewSource: "https://github.com/SUNNATILLACODER/Tech-gear",
       isLiveConfigured: true,
       isSourceConfigured: true
     },

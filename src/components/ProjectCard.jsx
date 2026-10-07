@@ -151,7 +151,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
         </div>
       </div>
 
-      {/* Flagship Interactive UI Simulation (Crafted with Pure CSS & React State) */}
+      {/* Flagship Interactive UI Simulation (Authentic TechGear Store Representation) */}
       <div className="w-full rounded-xl bg-[#080A0A] border border-white/[0.08] p-4 sm:p-6 my-6 shadow-inner">
         {/* Mockup Top Navigation Bar */}
         <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/[0.06] text-xs font-mono">
@@ -160,12 +160,14 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
               <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
               <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
             </div>
-            <span className="font-bold text-[#F3F4F0] tracking-tight">KINETIC.STORE</span>
+            <span className="font-extrabold text-amber-400 tracking-tight text-sm">
+              TECH<span className="text-white">GEAR</span>
+            </span>
           </div>
 
-          {/* Interactive Category Filter Pills */}
+          {/* Interactive Category Filter Tabs from TechGear */}
           <div className="hidden sm:flex items-center gap-1 bg-[#101413] p-1 rounded-md border border-white/[0.06]">
-            {['All', 'Hardware', 'Audio'].map((cat) => (
+            {['Barchasi', 'Smartfonlar', 'Noutbuklar'].map((cat) => (
               <button
                 key={cat}
                 type="button"
@@ -179,11 +181,12 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             ))}
           </div>
 
-          {/* Interactive Cart Button */}
+          {/* Interactive Cart & Theme Badge */}
           <div className="flex items-center gap-2">
+            <span className="text-[10px] text-amber-400 font-mono hidden md:inline">● REST API</span>
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#101413] border border-white/[0.08] text-[11px] text-[#F3F4F0]">
               <ShoppingBag size={13} className="text-[#00F5A0]" />
-              <span>Cart ({cartCount})</span>
+              <span>Savat ({cartCount})</span>
             </div>
           </div>
         </div>
@@ -194,35 +197,35 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           {/* Product 1 */}
           <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
-                Hardware
+              <span className="text-[10px] font-mono text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">
+                Smartfonlar
               </span>
-              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$189.00</span>
+              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$1,099.00</span>
             </div>
             
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-[#F3F4F0] mb-1">
-                Aura Pro Mechanical Keyboard
+                iPhone 15 Pro Max Titanium
               </h4>
               <p className="text-xs text-[#8E9691]">
-                CNC aluminum enclosure, custom tuned linear switches, hot-swappable PCB.
+                A17 Pro chip, Super Retina XDR display, 48MP camera system.
               </p>
             </div>
 
             <button
               type="button"
-              onClick={() => handleSimulateCart('keyboard')}
+              onClick={() => handleSimulateCart('phone')}
               className="w-full py-2 rounded bg-[#080A0A] border border-white/[0.08] text-xs font-mono text-[#F3F4F0] hover:border-[#00F5A0] hover:text-[#00F5A0] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
             >
-              {addedItem === 'keyboard' ? (
+              {addedItem === 'phone' ? (
                 <>
                   <Check size={13} className="text-[#00F5A0]" />
-                  <span className="text-[#00F5A0]">Added to Cart</span>
+                  <span className="text-[#00F5A0]">Savatga qo'shildi</span>
                 </>
               ) : (
                 <>
                   <Plus size={13} />
-                  <span>Add to Cart</span>
+                  <span>Savatga qo'shish</span>
                 </>
               )}
             </button>
@@ -231,35 +234,35 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           {/* Product 2 */}
           <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
             <div className="flex items-start justify-between mb-3">
-              <span className="text-[10px] font-mono text-[#82FCD0] bg-[#82FCD0]/10 px-2 py-0.5 rounded">
-                Audio
+              <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
+                Noutbuklar
               </span>
-              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$249.00</span>
+              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$1,999.00</span>
             </div>
             
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-[#F3F4F0] mb-1">
-                Studio Precision Monitor Headphones
+                MacBook Pro 16" M3 Max
               </h4>
               <p className="text-xs text-[#8E9691]">
-                Planar magnetic drivers, memory foam isolation, detachable balanced cable.
+                Liquid Retina XDR, 36GB Unified Memory, 512GB SSD storage.
               </p>
             </div>
 
             <button
               type="button"
-              onClick={() => handleSimulateCart('audio')}
+              onClick={() => handleSimulateCart('laptop')}
               className="w-full py-2 rounded bg-[#080A0A] border border-white/[0.08] text-xs font-mono text-[#F3F4F0] hover:border-[#00F5A0] hover:text-[#00F5A0] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
             >
-              {addedItem === 'audio' ? (
+              {addedItem === 'laptop' ? (
                 <>
                   <Check size={13} className="text-[#00F5A0]" />
-                  <span className="text-[#00F5A0]">Added to Cart</span>
+                  <span className="text-[#00F5A0]">Savatga qo'shildi</span>
                 </>
               ) : (
                 <>
                   <Plus size={13} />
-                  <span>Add to Cart</span>
+                  <span>Savatga qo'shish</span>
                 </>
               )}
             </button>
@@ -269,8 +272,8 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
 
         {/* Mockup Telemetry Strip */}
         <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#8E9691]">
-          <span>Verified features: Dynamic filtering, cart management, responsive cards</span>
-          <span className="text-[#00F5A0]">100% Client-Side Responsive</span>
+          <span>Jonli qidiruv, toifalar saralashi va Dark/Light rejim</span>
+          <span className="text-[#00F5A0]">sunnatillacoder.github.io/Tech-gear</span>
         </div>
       </div>
 
