@@ -48,7 +48,7 @@ export const About = () => {
                   {t.about.developerBadge}
                 </div>
 
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#080A0A] border border-white/[0.06] text-xs font-mono text-[#8E9691] mb-8">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#080A0A] border border-white/[0.06] text-xs font-mono text-[#A3AAA5] mb-8">
                   <MapPin size={13} className="text-[#00F5A0]" />
                   <span>{t.about.basedIn}</span>
                 </div>
@@ -56,16 +56,26 @@ export const About = () => {
                 {/* Focus Badges */}
                 <div className="w-full pt-6 border-t border-white/[0.06] space-y-2 text-xs font-mono">
                   <div className="flex justify-between py-1 border-b border-white/[0.04]">
-                    <span className="text-[#8E9691]">Focus</span>
-                    <span className="text-[#F3F4F0]">Interface Systems</span>
+                    <span className="text-[#A3AAA5]">
+                      {lang === 'uz' ? 'Yo‘nalish' : lang === 'ru' ? 'Специализация' : 'Focus'}
+                    </span>
+                    <span className="text-[#F3F4F0]">
+                      {lang === 'uz' ? 'Interfeys Tizimlari' : lang === 'ru' ? 'Интерфейсные системы' : 'Interface Systems'}
+                    </span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-white/[0.04]">
-                    <span className="text-[#8E9691]">Framework</span>
+                    <span className="text-[#A3AAA5]">
+                      {lang === 'uz' ? 'Texnologiyalar' : lang === 'ru' ? 'Стек' : 'Framework'}
+                    </span>
                     <span className="text-[#00F5A0]">React 19 & Tailwind</span>
                   </div>
                   <div className="flex justify-between py-1">
-                    <span className="text-[#8E9691]">Availability</span>
-                    <span className="text-[#82FCD0]">Freelance & Contract</span>
+                    <span className="text-[#A3AAA5]">
+                      {lang === 'uz' ? 'Bandlik' : lang === 'ru' ? 'Занятость' : 'Availability'}
+                    </span>
+                    <span className="text-[#82FCD0]">
+                      {lang === 'uz' ? 'Frilans va Loyihalar' : lang === 'ru' ? 'Фриланс и проекты' : 'Freelance & Contract'}
+                    </span>
                   </div>
                 </div>
 
@@ -74,7 +84,7 @@ export const About = () => {
           </div>
 
           {/* Right Column: Authentic Editorial Narrative */}
-          <div className="lg:col-span-7 space-y-6 text-[#8E9691] leading-relaxed text-base sm:text-lg font-sans">
+          <div className="lg:col-span-7 space-y-6 text-[#A3AAA5] leading-relaxed text-base sm:text-lg font-sans">
             <p className="text-xl sm:text-2xl text-[#F3F4F0] font-normal leading-relaxed font-sans">
               "{t.about.bio1}"
             </p>
@@ -84,12 +94,28 @@ export const About = () => {
 
             <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
               <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06]">
-                <div className="text-[#00F5A0] font-semibold mb-1">01 // TACTILE FEEDBACK</div>
-                <div className="text-[#8E9691]">Interactions should feel immediate, predictable, and responsive to every user gesture.</div>
+                <div className="text-[#00F5A0] font-semibold mb-1">
+                  {lang === 'uz' ? '01 // TEZKOR ALOQA' : lang === 'ru' ? '01 // БЫСТРЫЙ ОТКЛИК' : '01 // TACTILE FEEDBACK'}
+                </div>
+                <div className="text-[#A3AAA5]">
+                  {lang === 'uz'
+                    ? 'Foydalanuvchi har bir harakatiga tezkor, tushunarli va silliq javob beruvchi interfeys.'
+                    : lang === 'ru'
+                    ? 'Мгновенный и предсказуемый отклик на любое действие и жест пользователя.'
+                    : 'Interactions should feel immediate, predictable, and responsive to every user gesture.'}
+                </div>
               </div>
               <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06]">
-                <div className="text-[#82FCD0] font-semibold mb-1">02 // ZERO NOISE</div>
-                <div className="text-[#8E9691]">Every border, token, and spacing value exists to clarify information hierarchy.</div>
+                <div className="text-[#82FCD0] font-semibold mb-1">
+                  {lang === 'uz' ? '02 // ORTIQCHA SHOVQINSIZ' : lang === 'ru' ? '02 // БЕЗ ВИЗУАЛЬНОГО ШУМА' : '02 // ZERO NOISE'}
+                </div>
+                <div className="text-[#A3AAA5]">
+                  {lang === 'uz'
+                    ? 'Har bir chiziq, bo‘shliq va rang faqat maʼlumotni qulay yetkazish uchun xizmat qiladi.'
+                    : lang === 'ru'
+                    ? 'Каждый отступ, рамка и цвет служат четкой структуре информации.'
+                    : 'Every border, token, and spacing value exists to clarify information hierarchy.'}
+                </div>
               </div>
             </div>
           </div>

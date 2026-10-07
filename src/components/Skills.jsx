@@ -14,23 +14,55 @@ export const Skills = () => {
 
   const engineeringPriorities = [
     {
-      title: "Responsive Interface Architecture",
-      desc: "Engineering fluid layouts from 320px mobile viewports up to large displays using modern CSS Grid, Flexbox, and container strategies without layout shifts.",
+      title: {
+        uz: "Moslashuvchan interfeys arxitekturasi",
+        ru: "Адаптивная архитектура интерфейсов",
+        en: "Responsive Interface Architecture"
+      },
+      desc: {
+        uz: "320px mobil ekranlardan tortib keng monitorlargacha CSS Grid va Flexbox yordamida siljishlarsiz silliq tartib yaratish.",
+        ru: "Разработка гибких макетов от 320px до широких экранов с использованием современных CSS Grid и Flexbox без скачков верстки.",
+        en: "Engineering fluid layouts from 320px mobile viewports up to large displays using modern CSS Grid and Flexbox without layout shifts."
+      },
       icon: <Layout size={18} className="text-[#00F5A0]" />
     },
     {
-      title: "Reusable React Component Systems",
-      desc: "Decomposing complex UIs into clean, single-responsibility components with strict prop interfaces, local state hygiene, and maintainable folder structure.",
+      title: {
+        uz: "Qayta ishlatiluvchi React komponentlari",
+        ru: "Масштабируемые React-компоненты",
+        en: "Reusable React Component Systems"
+      },
+      desc: {
+        uz: "Murakkab interfeyslarni toza, yagona javobgarlikka ega, qulay boshqariladigan mustaqil komponentlarga ajratish.",
+        ru: "Разделение сложных интерфейсов на чистые модульные компоненты с предсказуемым состоянием и удобной структурой.",
+        en: "Decomposing complex UIs into clean, single-responsibility components with strict prop interfaces and local state hygiene."
+      },
       icon: <Atom size={18} className="text-[#82FCD0]" />
     },
     {
-      title: "Semantic HTML & Accessibility (A11y)",
-      desc: "Applying proper landmarks, keyboard focus management, ARIA roles, and high contrast ratios to ensure digital products are inclusive for all users.",
+      title: {
+        uz: "Semantik HTML va Foydalanish Qulayligi (A11y)",
+        ru: "Семантический HTML и доступность (A11y)",
+        en: "Semantic HTML & Accessibility (A11y)"
+      },
+      desc: {
+        uz: "To'g'ri teglardan foydalanish, klaviatura orqali qulay boshqaruv, ARIA rollari va barcha uchun qulay yuqori kontrast.",
+        ru: "Использование семантических тегов, управление фокусом с клавиатуры, роли ARIA и высокий контраст для доступности.",
+        en: "Applying proper landmarks, keyboard focus management, ARIA roles, and high contrast ratios for accessible digital products."
+      },
       icon: <ShieldCheck size={18} className="text-[#00F5A0]" />
     },
     {
-      title: "Performance & Bundle Discipline",
-      desc: "Prioritizing fast first-contentful paints, zero cumulative layout shifts (CLS), clean tree-shaking, and efficient client-side rendering lifecycles.",
+      title: {
+        uz: "Yuqori tezlik va optimallashtirish",
+        ru: "Производительность и оптимизация бандла",
+        en: "Performance & Bundle Discipline"
+      },
+      desc: {
+        uz: "Tezkor birinchi yuklanish (FCP), kodlarni bo'laklarga ajratish (code-splitting) va engil resurs sarfi.",
+        ru: "Быстрая отрисовка (FCP), разделение кода (code-splitting), оптимизация ресурсов и стабильные 60 FPS.",
+        en: "Prioritizing fast first-contentful paints, zero layout shifts (CLS), clean tree-shaking, and efficient client-side rendering."
+      },
       icon: <Zap size={18} className="text-[#82FCD0]" />
     }
   ];
@@ -54,7 +86,7 @@ export const Skills = () => {
             </h2>
           </div>
 
-          <p className="text-sm text-[#8E9691] max-w-md leading-relaxed font-sans">
+          <p className="text-sm text-[#A3AAA5] max-w-md leading-relaxed font-sans">
             {t.skills.subtitle}
           </p>
         </div>
@@ -82,11 +114,11 @@ export const Skills = () => {
                       {item.icon}
                     </div>
                     <h4 className="text-sm font-semibold text-[#F3F4F0]">
-                      {item.title}
+                      {item.title[lang] || item.title.en}
                     </h4>
                   </div>
-                  <p className="text-xs text-[#8E9691] leading-relaxed pl-11">
-                    {item.desc}
+                  <p className="text-xs text-[#A3AAA5] leading-relaxed pl-11">
+                    {item.desc[lang] || item.desc.en}
                   </p>
                 </div>
               ))}
@@ -117,7 +149,7 @@ export const Skills = () => {
                         {item.badge}
                       </span>
                     </div>
-                    <p className="text-[11px] text-[#8E9691] leading-relaxed">
+                    <p className="text-[11px] text-[#A3AAA5] leading-relaxed">
                       {item.description[lang] || item.description.en}
                     </p>
                   </div>
@@ -131,7 +163,7 @@ export const Skills = () => {
                 <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
                   // {t.skills.categories.tools}
                 </span>
-                <span className="text-[11px] font-mono text-[#8E9691]">Workflow</span>
+                <span className="text-[11px] font-mono text-[#A3AAA5]">Workflow</span>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -143,7 +175,7 @@ export const Skills = () => {
                     <span className="text-xs font-mono font-semibold text-[#F3F4F0] block mb-1">
                       {tool.name}
                     </span>
-                    <span className="text-[10px] font-mono text-[#8E9691] block truncate">
+                    <span className="text-[10px] font-mono text-[#A3AAA5] block truncate">
                       {tool.role}
                     </span>
                   </div>

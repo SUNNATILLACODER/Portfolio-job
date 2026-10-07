@@ -1,5 +1,6 @@
 import React from 'react';
 import { LanguageProvider } from './i18n/LanguageContext';
+import { useLanguage } from './i18n/useLanguage';
 import { useActiveSection } from './hooks/useActiveSection';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -11,6 +12,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function PortfolioApp() {
+  const { lang } = useLanguage();
   const activeSection = useActiveSection([
     'home',
     'projects',
@@ -27,7 +29,7 @@ function PortfolioApp() {
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#00F5A0] focus:text-[#080A0A] focus:font-mono focus:font-bold focus:rounded-md focus:shadow-xl"
       >
-        Skip to main content
+        {lang === 'uz' ? "Asosiy kontentga o'tish" : lang === 'ru' ? "Перейти к содержимому" : "Skip to main content"}
       </a>
 
       {/* Navigation */}

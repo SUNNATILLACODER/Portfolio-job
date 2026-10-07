@@ -46,22 +46,38 @@ export const Contact = () => {
     }
   };
 
+  const [submissionSuccess, setSubmissionSuccess] = useState(false);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
 
-    // Honest mailto delivery
+    // Direct mailto delivery
     const subject = encodeURIComponent(`Project Inquiry from ${formData.name}`);
     const body = encodeURIComponent(
       `Hello Sunnatilla,\n\nMy name is ${formData.name} (${formData.email}).\n\n${formData.message}\n\nSent via Portfolio Contact Form`
     );
+    
+    // Trigger mailto client
     window.location.href = `mailto:${contactConfig.email}?subject=${subject}&body=${body}`;
+    setSubmissionSuccess(true);
+    setTimeout(() => setSubmissionSuccess(false), 5000);
+  };
+
+  const handleSendViaTelegram = () => {
+    if (!validate()) return;
+    const textToSend = encodeURIComponent(
+      `Assalomu alaykum Sunnatilla!\n\nIsmim: ${formData.name}\nEmail: ${formData.email}\n\nXabar: ${formData.message}`
+    );
+    window.open(`https://t.me/war1pov_developer?text=${textToSend}`, '_blank');
+    setSubmissionSuccess(true);
+    setTimeout(() => setSubmissionSuccess(false), 5000);
   };
 
   const handleCopyForTelegram = () => {
     const textToCopy = formData.message.trim()
-      ? `Hello Sunnatilla, I'm ${formData.name || 'a visitor'} (${formData.email || 'no email'}).\n\n${formData.message}`
-      : `Hello Sunnatilla, I reviewed your portfolio and would like to discuss a frontend project with you.`;
+      ? `Assalomu alaykum Sunnatilla, men ${formData.name || 'mehmon'} (${formData.email || 'aloqa'}).\n\n${formData.message}`
+      : `Assalomu alaykum Sunnatilla, portfoliongizni ko'rib chiqdim va loyiha yuzasidan bog'lanmoqchiman.`;
 
     navigator.clipboard.writeText(textToCopy);
     setCopiedTelegram(true);
@@ -93,7 +109,7 @@ export const Contact = () => {
             </h2>
           </div>
 
-          <p className="text-sm text-[#8E9691] max-w-md leading-relaxed font-sans">
+          <p className="text-sm text-[#A3AAA5] max-w-md leading-relaxed font-sans">
             {t.contact.subtitle}
           </p>
         </div>
@@ -127,9 +143,9 @@ export const Contact = () => {
                     <span className="text-xs font-mono text-[#00F5A0]">{contactConfig.telegramHandle}</span>
                   </div>
                 </div>
-                <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
+                <ArrowUpRight size={15} className="text-[#A3AAA5] group-hover:text-white transition-colors" />
               </div>
-              <p className="text-xs text-[#8E9691] pl-11">
+              <p className="text-xs text-[#A3AAA5] pl-11">
                 {lang === 'uz'
                   ? "Xabarlar, frilans va tezkor savollar uchun eng qulay aloqa."
                   : lang === 'ru'
@@ -152,14 +168,14 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="text-sm font-semibold text-[#F3F4F0] block">LinkedIn</span>
-                    <span className="text-xs font-mono text-[#8E9691] group-hover:text-[#38bdf8] transition-colors">
+                    <span className="text-xs font-mono text-[#A3AAA5] group-hover:text-[#38bdf8] transition-colors">
                       {contactConfig.linkedinHandle}
                     </span>
                   </div>
                 </div>
-                <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
+                <ArrowUpRight size={15} className="text-[#A3AAA5] group-hover:text-white transition-colors" />
               </div>
-              <p className="text-xs text-[#8E9691] pl-11">
+              <p className="text-xs text-[#A3AAA5] pl-11">
                 {lang === 'uz'
                   ? "Kasbiy tarmoq, rezyume, tajriba va rasmiy hamkorlik aloqalari."
                   : lang === 'ru'
@@ -182,12 +198,12 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="text-sm font-semibold text-[#F3F4F0] block">GitHub</span>
-                    <span className="text-xs font-mono text-[#8E9691]">{contactConfig.githubHandle}</span>
+                    <span className="text-xs font-mono text-[#A3AAA5]">{contactConfig.githubHandle}</span>
                   </div>
                 </div>
-                <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
+                <ArrowUpRight size={15} className="text-[#A3AAA5] group-hover:text-white transition-colors" />
               </div>
-              <p className="text-xs text-[#8E9691] pl-11">
+              <p className="text-xs text-[#A3AAA5] pl-11">
                 {lang === 'uz'
                   ? "Ochiq manbali repozitoriylar, pull requestlar va kodlar tarixi."
                   : lang === 'ru'
@@ -205,20 +221,20 @@ export const Contact = () => {
                   </div>
                   <div>
                     <span className="text-sm font-semibold text-[#F3F4F0] block">Email</span>
-                    <span className="text-xs font-mono text-[#8E9691]">{contactConfig.email}</span>
+                    <span className="text-xs font-mono text-[#A3AAA5]">{contactConfig.email}</span>
                   </div>
                 </div>
                 <button
                   type="button"
                   onClick={handleCopyEmail}
-                  className="p-1.5 rounded bg-[#080A0A] border border-white/[0.06] text-[#8E9691] hover:text-[#00F5A0] transition-colors cursor-pointer"
+                  className="p-1.5 rounded bg-[#080A0A] border border-white/[0.06] text-[#A3AAA5] hover:text-[#00F5A0] transition-colors cursor-pointer"
                   title="Copy email"
                   aria-label="Copy email address"
                 >
                   {copiedEmail ? <Check size={14} className="text-[#00F5A0]" /> : <Copy size={14} />}
                 </button>
               </div>
-              <p className="text-xs text-[#8E9691] pl-11">
+              <p className="text-xs text-[#A3AAA5] pl-11">
                 {lang === 'uz'
                   ? "Hamkorlik takliflari, shartnoma va loyiha topshiriqlari."
                   : lang === 'ru'
@@ -240,9 +256,22 @@ export const Contact = () => {
               <h3 className="font-display text-xl font-bold text-[#F3F4F0] mb-1">
                 {t.contact.formTitle}
               </h3>
-              <p className="text-xs text-[#8E9691] mb-6 font-mono">
+              <p className="text-xs text-[#A3AAA5] mb-6 font-mono">
                 {t.contact.formSubtitle}
               </p>
+
+              {submissionSuccess && (
+                <div className="mb-4 p-3.5 rounded-lg bg-[#00F5A0]/10 border border-[#00F5A0]/30 text-xs font-mono text-[#00F5A0] flex items-center gap-2" role="status">
+                  <Check size={15} />
+                  <span>
+                    {lang === 'uz'
+                      ? "Xabaringiz jo‘natish uchun tayyorlandi! Rahmat."
+                      : lang === 'ru'
+                      ? "Сообщение готово к отправке! Спасибо."
+                      : "Message prepared for dispatch! Thank you."}
+                  </span>
+                </div>
+              )}
 
               <form onSubmit={handleFormSubmit} noValidate className="space-y-4">
                 {/* Name */}
@@ -257,12 +286,12 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder={t.contact.fields.namePlaceholder}
-                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#8E9691]/50 border transition-colors focus:outline-none ${
-                      errors.name ? 'border-red-500' : 'border-white/[0.08] focus:border-[#00F5A0]'
+                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#6E7772] border transition-colors focus:outline-none ${
+                      errors.name ? 'border-red-500' : 'border-white/[0.12] focus:border-[#00F5A0]'
                     }`}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono">
+                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono" role="alert">
                       <AlertCircle size={12} />
                       <span>{errors.name}</span>
                     </p>
@@ -281,12 +310,12 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder={t.contact.fields.emailPlaceholder}
-                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#8E9691]/50 border transition-colors focus:outline-none ${
-                      errors.email ? 'border-red-500' : 'border-white/[0.08] focus:border-[#00F5A0]'
+                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#6E7772] border transition-colors focus:outline-none ${
+                      errors.email ? 'border-red-500' : 'border-white/[0.12] focus:border-[#00F5A0]'
                     }`}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono">
+                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono" role="alert">
                       <AlertCircle size={12} />
                       <span>{errors.email}</span>
                     </p>
@@ -305,12 +334,12 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder={t.contact.fields.messagePlaceholder}
-                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#8E9691]/50 border transition-colors focus:outline-none ${
-                      errors.message ? 'border-red-500' : 'border-white/[0.08] focus:border-[#00F5A0]'
+                    className={`w-full px-3.5 py-2.5 rounded-lg bg-[#080A0A] text-sm text-[#F3F4F0] placeholder-[#6E7772] border transition-colors focus:outline-none ${
+                      errors.message ? 'border-red-500' : 'border-white/[0.12] focus:border-[#00F5A0]'
                     }`}
                   />
                   {errors.message && (
-                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono">
+                    <p className="mt-1 text-xs text-red-400 flex items-center gap-1 font-mono" role="alert">
                       <AlertCircle size={12} />
                       <span>{errors.message}</span>
                     </p>
@@ -318,16 +347,16 @@ export const Contact = () => {
                 </div>
 
                 {/* Direct Delivery Notice */}
-                <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[11px] font-mono text-[#8E9691] flex items-start gap-2">
+                <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[11px] font-mono text-[#A3AAA5] flex items-start gap-2">
                   <MessageSquare size={13} className="text-[#00F5A0] shrink-0 mt-0.5" />
                   <span>{t.contact.honestNotice}</span>
                 </div>
 
-                {/* Submit Actions */}
+                {/* Submit Actions: Email & Telegram Direct */}
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <button
                     type="submit"
-                    className="flex-1 min-w-[200px] py-3 px-5 rounded-lg bg-[#00F5A0] text-[#080A0A] font-mono font-semibold text-xs tracking-wider uppercase hover:bg-[#82FCD0] transition-colors cursor-pointer flex items-center justify-center gap-2"
+                    className="flex-1 min-w-[180px] py-3 px-5 rounded-lg bg-[#00F5A0] text-[#080A0A] font-mono font-semibold text-xs tracking-wider uppercase hover:bg-[#82FCD0] transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(0,245,160,0.2)]"
                   >
                     <Send size={14} />
                     <span>{t.contact.submitButton}</span>
@@ -335,8 +364,18 @@ export const Contact = () => {
 
                   <button
                     type="button"
+                    onClick={handleSendViaTelegram}
+                    className="py-3 px-4 rounded-lg bg-[#141A17] border border-[#00F5A0]/40 text-xs font-mono text-[#00F5A0] hover:bg-[#00F5A0] hover:text-[#080A0A] transition-all cursor-pointer flex items-center gap-2"
+                    title="Send via Telegram directly"
+                  >
+                    <Send size={14} />
+                    <span>Telegram</span>
+                  </button>
+
+                  <button
+                    type="button"
                     onClick={handleCopyForTelegram}
-                    className="py-3 px-4 rounded-lg bg-[#080A0A] border border-white/[0.08] text-xs font-mono text-[#F3F4F0] hover:text-[#00F5A0] hover:border-[#00F5A0]/40 transition-colors cursor-pointer flex items-center gap-2"
+                    className="py-3 px-4 rounded-lg bg-[#080A0A] border border-white/[0.1] text-xs font-mono text-[#F3F4F0] hover:text-[#00F5A0] hover:border-[#00F5A0]/40 transition-colors cursor-pointer flex items-center gap-2"
                   >
                     {copiedTelegram ? (
                       <>
