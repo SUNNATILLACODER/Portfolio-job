@@ -67,7 +67,7 @@ export const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-[#8E9691] leading-relaxed max-w-xl mb-10 font-sans">
+            <p className="text-base sm:text-lg text-[#A3AAA5] leading-relaxed max-w-xl mb-10 font-sans">
               {t.hero.supporting}
             </p>
 
@@ -88,13 +88,13 @@ export const Hero = () => {
                 className="px-6 py-3.5 rounded-lg bg-[#101413] border border-white/[0.08] text-[#F3F4F0] font-mono font-medium text-xs tracking-wider uppercase transition-colors hover:border-white/20 hover:text-white flex items-center gap-2 cursor-pointer"
               >
                 <span>{t.hero.secondaryCta}</span>
-                <ArrowUpRight size={13} className="text-[#8E9691]" />
+                <ArrowUpRight size={13} className="text-[#A3AAA5]" />
               </button>
             </div>
 
             {/* Horizontal Tech Signature */}
             <div className="pt-6 border-t border-white/[0.06] w-full">
-              <span className="text-[10px] font-mono tracking-widest text-[#8E9691] uppercase block mb-3">
+              <span className="text-[10px] font-mono tracking-widest text-[#A3AAA5] uppercase block mb-3">
                 {t.hero.techSignature}
               </span>
               <div className="flex flex-wrap gap-2">

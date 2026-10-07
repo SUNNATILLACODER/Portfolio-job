@@ -23,7 +23,7 @@ export const Process = () => {
             </h2>
           </div>
 
-          <p className="text-sm text-[#8E9691] max-w-md leading-relaxed font-sans">
+          <p className="text-sm text-[#A3AAA5] max-w-md leading-relaxed font-sans">
             {t.process.subtitle}
           </p>
         </div>
@@ -51,12 +51,12 @@ export const Process = () => {
                   {step.summary}
                 </p>
 
-                <p className="text-xs text-[#8E9691] leading-relaxed">
+                <p className="text-xs text-[#A3AAA5] leading-relaxed">
                   {step.description}
                 </p>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-white/[0.04] text-[10px] font-mono text-[#8E9691] flex items-center justify-between">
+              <div className="mt-8 pt-4 border-t border-white/[0.04] text-[10px] font-mono text-[#A3AAA5] flex items-center justify-between">
                 <span>Step {step.number} of 04</span>
                 <span className="text-[#00F5A0]">Verified</span>
               </div>

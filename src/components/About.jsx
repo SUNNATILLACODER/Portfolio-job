@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 import sunnatillaImg from '../assets/sunnatilla.jpg';
 
 export const About = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <section

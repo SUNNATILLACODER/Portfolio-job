@@ -35,7 +35,7 @@ export const Projects = () => {
             </h2>
           </div>
 
-          <p className="text-sm text-[#8E9691] max-w-md leading-relaxed font-sans">
+          <p className="text-sm text-[#A3AAA5] max-w-md leading-relaxed font-sans">
             {t.projects.subtitle}
           </p>
         </div>
