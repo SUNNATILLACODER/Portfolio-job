@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
-import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, Target } from 'lucide-react';
 import sunnatillaImg from '../assets/sunnatilla.jpg';
 
 export const Hero = () => {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const [activeTab, setActiveTab] = useState('profile');
 
   const techStack = [
-    { name: "React 19", role: "Component Architecture" },
-    { name: "JavaScript", role: "ES6+ / Logic" },
-    { name: "Tailwind CSS", role: "Design Systems" },
-    { name: "REST API", role: "Dynamic Integration" },
-    { name: "Vite 8", role: "Tooling & Bundling" },
+    { name: "HTML5 & CSS3", role: "Semantic & Responsive" },
+    { name: "JavaScript", role: "ES6+ Logic" },
+    { name: "React.js", role: "Component Architecture" },
+    { name: "Flexbox & Grid", role: "Modern Layouts" },
+    { name: "Git & GitHub", role: "Version Control" },
   ];
 
   const handleScrollTo = (id) => {
@@ -41,7 +41,7 @@ export const Hero = () => {
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
             <span className="text-xs font-mono tracking-wider text-[#F3F4F0] uppercase">
-              Sunnatilla <span className="text-[#8E9691]">// __war1pov__</span>
+              Sunnatilla Sharipov <span className="text-[#8E9691]">// __war1pov__</span>
             </span>
             <span className="text-xs font-mono text-[#8E9691] hidden sm:inline">
               — {t.hero.badge}
@@ -110,7 +110,7 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column: Developer Portrait Architecture Viewport */}
+          {/* Right Column: Developer Portrait & Resume Viewport */}
           <div className="lg:col-span-5">
             <div className="rounded-xl surface-card p-5 sm:p-6 border border-white/[0.08] shadow-2xl relative overflow-hidden">
               
@@ -121,7 +121,7 @@ export const Hero = () => {
                   <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
                   <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
                   <span className="text-[11px] font-mono text-[#8E9691] ml-2">
-                    architecture.config.js
+                    resume.sunnatilla.dev
                   </span>
                 </div>
 
@@ -133,16 +133,16 @@ export const Hero = () => {
                       activeTab === 'profile' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
-                    PROFILE
+                    {lang === 'uz' ? 'PROFIL' : 'PROFILE'}
                   </button>
                   <button
                     type="button"
-                    onClick={() => setActiveTab('specs')}
+                    onClick={() => setActiveTab('resume')}
                     className={`px-3 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
-                      activeTab === 'specs' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
+                      activeTab === 'resume' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
-                    TOKENS
+                    {lang === 'uz' ? 'REZUME' : 'RESUME'}
                   </button>
                 </div>
               </div>
@@ -153,37 +153,96 @@ export const Hero = () => {
                   <div className="relative aspect-square w-full rounded-lg bg-[#080A0A] border border-white/[0.08] overflow-hidden flex items-center justify-center p-1">
                     <img
                       src={sunnatillaImg}
-                      alt="Sunnatilla - Frontend Developer"
+                      alt="Sunnatilla Sharipov - Frontend Developer"
                       className="w-full h-full object-contain rounded-md"
                     />
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">Developer</span>
-                      <span className="text-[#F3F4F0] font-medium">Sunnatilla (__war1pov__)</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">Dasturchi</span>
+                      <span className="text-[#F3F4F0] font-medium">Sunnatilla Sharipov</span>
                     </div>
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">Role</span>
-                      <span className="text-[#00F5A0] font-medium">Frontend Engineer</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">Tajriba // Exp</span>
+                      <span className="text-[#00F5A0] font-medium">1.5 - 2 yil tajriba</span>
                     </div>
                   </div>
                 </div>
               )}
 
-              {/* Tab 2: Design Tokens Code Inspector */}
-              {activeTab === 'specs' && (
-                <div className="p-4 rounded-lg bg-[#080A0A] border border-white/[0.06] font-mono text-[11px] space-y-2 text-[#8E9691]">
-                  <div className="text-[#00F5A0]">// Architecture & Profile Tokens</div>
-                  <div><span className="text-white">const</span> developer = &#123;</div>
-                  <div className="pl-4">handle: <span className="text-[#82FCD0]">"__war1pov__"</span>,</div>
-                  <div className="pl-4">coreFramework: <span className="text-[#82FCD0]">"React 19"</span>,</div>
-                  <div className="pl-4">stylingSystem: <span className="text-[#82FCD0]">"Tailwind CSS"</span>,</div>
-                  <div className="pl-4">accentPalette: <span className="text-[#82FCD0]">"Emerald #00F5A0"</span>,</div>
-                  <div className="pl-4">availableForWork: <span className="text-emerald-400">true</span>,</div>
-                  <div className="pl-4">timezone: <span className="text-[#82FCD0]">"UTC+5"</span></div>
-                  <div>&#125;;</div>
-                  <div className="pt-2 text-[10px] text-white/40">Verified Developer Profile Environment</div>
+              {/* Tab 2: Professional Resume Dossier */}
+              {activeTab === 'resume' && (
+                <div className="space-y-3.5 text-xs font-mono">
+                  
+                  {/* Top Candidate Summary */}
+                  <div className="p-3.5 rounded-lg bg-[#080A0A] border border-white/[0.06] flex items-start justify-between gap-3">
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="font-display font-bold text-base text-[#F3F4F0]">Sunnatilla Sharipov</span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
+                      </div>
+                      <div className="text-[#00F5A0] font-semibold text-xs">
+                        Frontend Developer
+                      </div>
+                    </div>
+                    <div className="shrink-0 px-2.5 py-1 rounded bg-[#00F5A0]/10 border border-[#00F5A0]/20 text-[#00F5A0] text-[11px] font-bold">
+                      {lang === 'uz' ? "1.5 - 2 yil tajriba" : "1.5 - 2 Yrs Exp"}
+                    </div>
+                  </div>
+
+                  {/* Summary / Haqida */}
+                  <div className="p-3.5 rounded-lg bg-[#080A0A] border border-white/[0.06] space-y-1.5">
+                    <span className="text-[10px] text-[#8E9691] uppercase tracking-wider block">
+                      {lang === 'uz' ? "// Haqida & Yondashuv" : "// Profile Summary"}
+                    </span>
+                    <p className="text-[#F3F4F0] leading-relaxed text-[11px]">
+                      {lang === 'uz'
+                        ? "HTML, CSS, JavaScript va React bilan zamonaviy, responsive va foydalanuvchiga qulay web-saytlar yarataman. Yangi texnologiyalarni o‘rganishga va real loyihalarda tajriba oshirishga intilaman."
+                        : "I build modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React. Committed to exploring modern technologies and leveling up practical engineering skills on real projects."}
+                    </p>
+                  </div>
+
+                  {/* Maqsad / Goal */}
+                  <div className="p-3.5 rounded-lg bg-[#00F5A0]/[0.03] border border-[#00F5A0]/20 flex items-start gap-2.5">
+                    <Target size={16} className="text-[#00F5A0] shrink-0 mt-0.5" />
+                    <div className="space-y-0.5">
+                      <span className="text-[10px] text-[#00F5A0] font-bold uppercase tracking-wider block">
+                        {lang === 'uz' ? "Maqsad" : "Primary Objective"}
+                      </span>
+                      <p className="text-[#F3F4F0] text-[11px] leading-relaxed">
+                        {lang === 'uz'
+                          ? "Zamonaviy, tezkor va foydalanuvchilar uchun qulay web-ilovalar yaratish."
+                          : "Building modern, high-speed, and accessible user-friendly web applications."}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Ko'nikmalar / Core Skills Grid */}
+                  <div className="p-3.5 rounded-lg bg-[#080A0A] border border-white/[0.06] space-y-2">
+                    <span className="text-[10px] text-[#8E9691] uppercase tracking-wider block">
+                      {lang === 'uz' ? "// Ko'nikmalar & Texnologiyalar" : "// Core Technical Skills"}
+                    </span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {[
+                        "HTML5, CSS3, JavaScript",
+                        "React.js",
+                        "Responsive Web Design",
+                        "Flexbox, CSS Grid",
+                        "Git va GitHub",
+                        "UI/UX va zamonaviy web dizayn",
+                      ].map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-2.5 py-1 rounded bg-[#101413] border border-white/[0.08] text-[10px] text-[#F3F4F0] flex items-center gap-1.5"
+                        >
+                          <span className="w-1 h-1 rounded-full bg-[#00F5A0]" />
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
                 </div>
               )}
 
@@ -191,9 +250,9 @@ export const Hero = () => {
               <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[10px] font-mono text-[#8E9691]">
                 <span className="flex items-center gap-1.5 text-[#F3F4F0]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-                  <span>Developer Profile Active</span>
+                  <span>Sunnatilla Sharipov // Frontend Developer</span>
                 </span>
-                <span>__war1pov__ · React 19</span>
+                <span>1.5 - 2 Yil Tajriba</span>
               </div>
 
             </div>
@@ -205,4 +264,3 @@ export const Hero = () => {
     </section>
   );
 };
-
