@@ -8,6 +8,7 @@ export const Hero = () => {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('city');
 
+
   const techStack = [
     { name: "React 19", role: "Component Architecture" },
     { name: "Three.js", role: "3D Digital World" },

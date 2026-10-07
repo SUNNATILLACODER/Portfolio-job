@@ -6,6 +6,7 @@ A production-ready personal portfolio built for **Sunnatilla**, an independent f
 
 ## 🚀 Key Highlights & Features
 
+
 - **Distinctive Creative-Futuristic Identity**: Curated dark palette (`#050807` / `#0B1110`), subtle cyber gridlines, ambient glows, and clean typography.
 - **Genuine Bilingual System (EN / UZ)**: Real-time translation of all interface copy, navigation, project case data, and forms with `localStorage` persistence and dynamic `html lang` synchronization.
 - **Project Case Studies**:

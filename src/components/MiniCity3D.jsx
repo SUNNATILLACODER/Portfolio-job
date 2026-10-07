@@ -45,6 +45,8 @@ export const MiniCity3D = ({ className = "" }) => {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.15;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     container.appendChild(renderer.domElement);
 
     // LIGHTING
@@ -52,8 +54,14 @@ export const MiniCity3D = ({ className = "" }) => {
     scene.add(ambientLight);
 
     // Main Emerald Key Light
-    const keyLight = new THREE.DirectionalLight('#00F5A0', 2.2);
-    keyLight.position.set(10, 15, 8);
+    const keyLight = new THREE.DirectionalLight('#00F5A0', 2.4);
+    keyLight.position.set(10, 16, 9);
+    keyLight.castShadow = true;
+    keyLight.shadow.mapSize.width = 1024;
+    keyLight.shadow.mapSize.height = 1024;
+    keyLight.shadow.camera.near = 0.5;
+    keyLight.shadow.camera.far = 40;
+    keyLight.shadow.bias = -0.0005;
     scene.add(keyLight);
 
     // Violet Accent Rim Light
@@ -96,6 +104,7 @@ export const MiniCity3D = ({ className = "" }) => {
     });
     const baseMesh = new THREE.Mesh(baseGeo, baseMat);
     baseMesh.position.y = -0.3;
+    baseMesh.receiveShadow = true;
     cityGroup.add(baseMesh);
 
     // Hexagonal Edge Glow Ring
@@ -131,6 +140,8 @@ export const MiniCity3D = ({ className = "" }) => {
 
         const bGeo = new THREE.BoxGeometry(bWidth, baseHeight, bDepth);
         const bMesh = new THREE.Mesh(bGeo, buildingMaterial);
+        bMesh.castShadow = true;
+        bMesh.receiveShadow = true;
 
         const posX = x * spacing + (Math.random() - 0.5) * 0.3;
         const posZ = z * spacing + (Math.random() - 0.5) * 0.3;
@@ -269,8 +280,24 @@ export const MiniCity3D = ({ className = "" }) => {
       mouseY = 0;
     };
 
-    container.addEventListener('mousemove', handleMouseMove);
-    container.addEventListener('mouseleave', handleMouseLeave);
+    const handleTouchMove = (event) => {
+      if (event.touches.length > 0) {
+        const touch = event.touches[0];
+        const rect = container.getBoundingClientRect();
+        mouseX = (touch.clientX - rect.left) / rect.width - 0.5;
+        mouseY = (touch.clientY - rect.top) / rect.height - 0.5;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      mouseX = 0;
+      mouseY = 0;
+    };
+
+    container.addEventListener('mousemove', handleMouseMove, { passive: true });
+    container.addEventListener('mouseleave', handleMouseLeave, { passive: true });
+    container.addEventListener('touchmove', handleTouchMove, { passive: true });
+    container.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     // RESIZE OBSERVER
     const handleResize = () => {
@@ -338,6 +365,8 @@ export const MiniCity3D = ({ className = "" }) => {
       window.removeEventListener('resize', handleResize);
       container.removeEventListener('mousemove', handleMouseMove);
       container.removeEventListener('mouseleave', handleMouseLeave);
+      container.removeEventListener('touchmove', handleTouchMove);
+      container.removeEventListener('touchend', handleTouchEnd);
 
       scene.traverse((obj) => {
         if (obj.geometry) obj.geometry.dispose();
@@ -358,8 +387,12 @@ export const MiniCity3D = ({ className = "" }) => {
 
   if (!webGLSupported) {
     return (
-      <div className={`w-full aspect-square rounded-lg bg-[#080A0A] border border-white/[0.08] flex items-center justify-center p-6 text-center text-xs font-mono text-[#8E9691] ${className}`}>
-        <span>WebGL disabled. Architectural wireframe fallback active.</span>
+      <div className={`w-full aspect-square rounded-lg bg-[#080A0A] border border-white/[0.08] flex flex-col items-center justify-center p-6 text-center text-xs font-mono text-[#8E9691] relative overflow-hidden ${className}`}>
+        <div className="w-12 h-12 rounded-xl bg-[#00F5A0]/10 border border-[#00F5A0]/30 flex items-center justify-center text-[#00F5A0] mb-3">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#00F5A0] animate-pulse" />
+        </div>
+        <span className="text-[#F3F4F0] font-semibold mb-1">Architectural Wireframe Mode</span>
+        <span className="text-[11px] text-[#8E9691]">WebGL disabled or unavailable. Static perspective fallback active.</span>
       </div>
     );
   }
