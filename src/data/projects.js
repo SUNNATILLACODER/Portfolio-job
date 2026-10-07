@@ -65,48 +65,56 @@ export const projectsData = [
   {
     id: "coming-soon-slot",
     title: {
-      en: "More Coming Soon",
-      uz: "Tez Kunda Yangi Loyiha"
+      en: "More Coming Soon — 3D Cyber City",
+      uz: "Tez Kunda Yangi Loyiha — 3D Kiber Shahar"
     },
     category: {
-      en: "Interactive Web Application",
-      uz: "Interaktiv Veb Dastur"
+      en: "Creative Development & 3D WebGL",
+      uz: "Ijodiy Dasturlash va 3D WebGL"
     },
     summary: {
-      en: "A next-generation digital web experience is in active development. Stay tuned for advanced frontend engineering and creative interactions.",
-      uz: "Yangi avlod raqamli veb-tajribasi ishlab chiqilmoqda. Murakkab frontend muhandisligi va interaktiv animatsiyalarga ega navbatdagi loyihani kuting."
+      en: "A futuristic 3D digital mini-city floating in a dark cyberspace with glowing emerald light strips, traveling neon data streams, atmospheric fog, and real-time mouse parallax.",
+      uz: "Qorong'u fazoda suzib yuruvchi 3D mini-shahar: zumrad rangli nur chiziqlari, binolararo ma'lumotlar oqimi, kinematik tuman va sichqonchaga moslashuvchi 3D kamera."
     },
     description: {
-      en: "This reserved project showcase slot represents Sunnatilla's upcoming frontend production. Engineered with state-of-the-art web capabilities, motion physics, and clean system design.",
-      uz: "Ushbu zaxiralangan slot hozirda ishlab chiqilayotgan navbatdagi frontend loyihani ifodalaydi. Ilg'or veb-imkoniyatlar, harakat dinamikasi va toza tizim arxitekturasi bilan yaratilmoqda."
+      en: "This reserved project showcase slot features a live interactive 3D digital mini-city floating in cyberspace. Built with Three.js WebGL, procedural skyscrapers, glowing emerald window strips, animated Quadratic Bezier data highways, soft shadows, and smooth lerped camera damping that responds to mouse motion.",
+      uz: "Ushbu zaxiralangan slot Three.js va WebGL asosidagi jonli interaktiv 3D kiber-shaharni namoyish etadi. Suzib turuvchi kiber-platforma, zumrad nur chiziqlari, egri chiziqlar bo'ylab harakatlanuvchi ma'lumot paketlari va sichqonchaga silliq moslashuvchi 3D kamera bilan jihozlangan."
     },
     challenge: {
-      en: "Creating high-performance fluid state animations, low-latency interactions, and responsive layouts across all device screen viewports.",
-      uz: "Barcha qurilmalarda birdek silliq ishlovchi murakkab holatlar boshqaruvi, past kechikishli animatsiyalar va zamonaviy moslashuvchan dizaynni yaratish."
+      en: "Rendering a complex multi-light 3D architectural metropolis with dynamic particles and animated light pulses while maintaining a locked 60 FPS across both desktop and mobile viewports.",
+      uz: "Ko'p sonli yorug'lik manbalari, zarrachalar va egri chiziqli ma'lumotlar oqimiga ega murakkab 3D sahnani veb-brauzerda barqaror 60 FPS tezlikda silliq ishlashini ta'minlash."
     },
     approach: {
-      en: "Combining modern component architecture, performance-optimized animations, accessible HTML5 semantics, and custom CSS styling.",
-      uz: "Zamonaviy komponentlar arxitekturasi, tezkor animatsiyalar, qulay HTML5 semantikasi va maxsus CSS uslublarini birlashtirish orqali qurilmoqda."
+      en: "Leveraged procedural Three.js geometry generation, custom ACES Filmic tone mapping, Exponential Fog blending, optimized buffer attributes, and passive mouse and touch parallax listeners.",
+      uz: "Three.js protsedurali geometriyasi, ACES Filmic ton xaritasi, eksponensial tuman, optimallashtirilgan bufer atributlari va sichqoncha/sensorli ekran koordinatalari amortizatsiyasi orqali ishlab chiqildi."
     },
     verifiedFeatures: [
       {
-        en: "Active development in progress",
-        uz: "Faol ishlab chiqish jarayonida"
+        en: "Procedural 3D skyscraper generation on a floating hexagonal cyber platform",
+        uz: "Suzib yuruvchi geksagonal kiber-platforma ustidagi protsedurali 3D binolar"
       },
       {
-        en: "Targeting ultra-smooth 60 FPS interactions",
-        uz: "60 FPS silliq interaktiv animatsiyalar mo'ljallangan"
+        en: "Glowing emerald (#00F5A0) window bands and neon data highways",
+        uz: "Zumrad-yashil (#00F5A0) deraza chiziqlari va neon aloqa yo'llari"
       },
       {
-        en: "Fully responsive cross-platform architecture",
-        uz: "Barcha qurilmalarga to'liq moslashuvchan tartib"
+        en: "Dynamic Quadratic Bezier curves with real-time travelling data packets",
+        uz: "Haqiqiy vaqt rejimida harakatlanuvchi ma'lumot paketlariga ega Bezier egri chiziqlari"
       },
       {
-        en: "Open-source development workflow on GitHub",
-        uz: "GitHub-da ochiq kodli ishlab chiqish jarayoni"
+        en: "Interactive mouse and touch parallax perspective shifting with smooth lerp damping",
+        uz: "Sichqoncha va sensorli ekranga mos silliq perspektiva o'zgarishi va kamera boshqaruvi"
+      },
+      {
+        en: "Atmospheric exponential fog with cinematic emerald and violet dual-tone lighting",
+        uz: "Kinematik zumrad va binafsharang yoritishga ega atmosferik tuman"
+      },
+      {
+        en: "140+ ambient floating data particles with real-time vertical drift",
+        uz: "3D fazoda suzib yuruvchi 140 dan ortiq kiber-chang zarrachalari"
       }
     ],
-    tags: ["React 19", "Creative Web", "Tailwind CSS", "Architecture", "In Progress"],
+    tags: ["Three.js", "WebGL", "React 19", "Creative Development", "3D Animation", "In Progress"],
     links: {
       liveDemo: null,
       viewSource: "https://github.com/SUNNATILLACODER",
@@ -114,6 +122,6 @@ export const projectsData = [
       isSourceConfigured: true
     },
     isUpcoming: true,
-    previewType: "blueprint-mockup"
+    previewType: "threejs-city"
   }
 ];

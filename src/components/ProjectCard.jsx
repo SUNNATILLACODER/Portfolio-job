@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { GithubIcon } from './icons/GithubIcon';
-import { ArrowUpRight, ShoppingBag, Eye, Plus, Check, Sparkles } from 'lucide-react';
+import { ArrowUpRight, ShoppingBag, Eye, Plus, Check } from 'lucide-react';
+import { MiniCity3D } from './MiniCity3D';
 
 export const ProjectCard = ({ project, onOpenDetails }) => {
   const { lang, t } = useLanguage();
@@ -28,7 +29,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#00F5A0]" />
             <span className="text-xs font-mono tracking-wider text-[#00F5A0] uppercase font-semibold">
-              {project.id === 'tech-gear-store' ? t.projects.featuredTag : '02 // UPCOMING'}
+              {project.id === 'tech-gear-store' ? t.projects.featuredTag : (lang === 'uz' ? '02 // TEZ KUNDA' : '02 // UPCOMING')}
             </span>
             <span className="text-xs font-mono text-[#8E9691] ml-2">
               // {category}
@@ -93,45 +94,21 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
         </div>
       </div>
 
-      {/* Flagship Visual Previews: Either Blueprint Mockup or TechGear Store */}
-      {project.previewType === 'blueprint-mockup' ? (
-        <div className="w-full my-6 rounded-xl overflow-hidden border border-white/[0.08] bg-[#080A0A] p-6 sm:p-8 relative shadow-inner">
-          <div className="absolute inset-0 bg-editorial-grid opacity-25" />
-          
-          <div className="relative z-10 flex flex-col items-center justify-center text-center py-8">
-            <div className="w-16 h-16 rounded-2xl bg-[#00F5A0]/10 border border-[#00F5A0]/30 flex items-center justify-center text-[#00F5A0] mb-4 shadow-[0_0_25px_rgba(0,245,160,0.18)]">
-              <Sparkles size={28} />
+      {/* Flagship Visual Previews: Either 3D Mini-City or TechGear Store */}
+      {project.previewType === 'threejs-city' ? (
+        <div className="w-full my-6 rounded-xl overflow-hidden border border-white/[0.08] shadow-inner bg-[#080A0A] relative">
+          <MiniCity3D />
+
+          <div className="p-3.5 sm:p-4 bg-[#0d1210] border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
+              <span className="text-[#F3F4F0] font-semibold">
+                {lang === 'uz' ? "Tez Kunda: 3D Kiber-Shahar Loyihasi" : "Coming Soon: 3D Cyber City Experience"}
+              </span>
             </div>
-
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#101413] border border-white/[0.08] text-[11px] font-mono text-[#00F5A0] mb-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-pulse" />
-              <span>{lang === 'uz' ? "YANGI LOYIHA KODLASH JARAYONIDA" : "ACTIVE ARCHITECTURE IN PROGRESS"}</span>
-            </div>
-
-            <h4 className="font-display text-lg sm:text-xl font-bold text-[#F3F4F0] max-w-md mb-2">
-              {lang === 'uz' ? "Tez Kunda Navbatdagi Interaktiv Loyiha" : "Next Interactive Showcase Coming Soon"}
-            </h4>
-
-            <p className="text-xs sm:text-sm text-[#8E9691] max-w-lg mb-6 font-mono leading-relaxed">
-              {lang === 'uz'
-                ? "Sunnatilla tomonidan yangi qiziqarli frontend dastur ishlab chiqilmoqda. Yangilanishlarni GitHub profilda kuzatib boring."
-                : "A new high-performance creative web application is being engineered by Sunnatilla. Follow the development progress on GitHub."}
-            </p>
-
-            <a
-              href="https://github.com/SUNNATILLACODER"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/[0.06] border border-white/[0.12] text-xs font-mono font-medium text-[#F3F4F0] hover:bg-[#00F5A0] hover:text-[#080A0A] hover:border-[#00F5A0] transition-all cursor-pointer"
-            >
-              <GithubIcon size={14} />
-              <span>github.com/SUNNATILLACODER</span>
-            </a>
-          </div>
-
-          <div className="relative z-10 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#8E9691]">
-            <span>Status: Active Development</span>
-            <span className="text-[#00F5A0]">Target: React 19 + Motion</span>
+            <span className="text-[#8E9691] text-[11px]">
+              {lang === 'uz' ? "Sichqonchani harakatlantirib 3D shaharni kuzating" : "Move mouse to shift perspective"}
+            </span>
           </div>
         </div>
       ) : (

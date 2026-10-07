@@ -6,7 +6,7 @@ import { MiniCity3D } from './MiniCity3D';
 
 export const Hero = () => {
   const { t } = useLanguage();
-  const [activeTab, setActiveTab] = useState('city');
+  const [activeTab, setActiveTab] = useState('profile');
 
 
   const techStack = [
