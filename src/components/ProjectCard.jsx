@@ -1,200 +1,296 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { GithubIcon } from './icons/GithubIcon';
-import { ExternalLink, ArrowUpRight, ShoppingBag, Sparkles, Clock, Check, Eye } from 'lucide-react';
-import { motion } from 'framer-motion';
-
+import { ExternalLink, ArrowUpRight, ShoppingBag, Eye, Search, SlidersHorizontal, Plus, Check } from 'lucide-react';
 
 export const ProjectCard = ({ project, onOpenDetails }) => {
   const { lang, t } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [cartCount, setCartCount] = useState(2);
+  const [addedItem, setAddedItem] = useState(null);
 
   const title = project.title[lang] || project.title.en;
   const category = project.category[lang] || project.category.en;
   const summary = project.summary[lang] || project.summary.en;
 
+  const handleSimulateCart = (itemTitle) => {
+    setAddedItem(itemTitle);
+    setCartCount((c) => c + 1);
+    setTimeout(() => setAddedItem(null), 1800);
+  };
+
   if (project.isUpcoming) {
     return (
-      <div className="group relative rounded-2xl bg-[#0B1110] border border-dashed border-white/15 p-6 sm:p-8 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:border-[#35D9FF]/40">
-        {/* Subtle background blueprint grid */}
-        <div className="absolute inset-0 bg-tech-grid opacity-15 pointer-events-none" />
+      <div className="rounded-xl surface-card p-6 sm:p-8 border border-white/[0.08] flex flex-col justify-between relative overflow-hidden group">
+        <div className="absolute inset-0 bg-editorial-grid opacity-20 pointer-events-none" />
 
-        {/* Top Meta */}
         <div className="relative z-10">
-          <div className="flex items-center justify-between mb-4">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#35D9FF] bg-[#35D9FF]/10 border border-[#35D9FF]/20">
-              <Clock size={12} />
-              <span>{t.projects.comingSoonTag}</span>
+          <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/[0.06]">
+            <span className="text-[11px] font-mono tracking-wider text-[#82FCD0] uppercase flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#82FCD0]" />
+              {t.projects.comingSoonTag}
             </span>
-            <span className="text-xs font-mono text-[#9AA6A0]">Slot 02</span>
+            <span className="text-xs font-mono text-[#8E9691]">{t.projects.slotLabel}</span>
           </div>
 
-          <h3 className="text-2xl font-bold text-[#F4F7F5] mb-2 group-hover:text-[#35D9FF] transition-colors">
+          <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#F3F4F0] mb-3">
             {title}
           </h3>
 
-          <p className="text-sm text-[#9AA6A0] leading-relaxed mb-6">
+          <p className="text-sm text-[#8E9691] leading-relaxed mb-8 max-w-lg">
             {summary}
           </p>
-        </div>
 
-        {/* Visual Blueprint Mockup */}
-        <div className="relative z-10 w-full aspect-[16/10] rounded-xl bg-[#050807] border border-white/10 flex flex-col items-center justify-center p-6 my-4 overflow-hidden">
-          <div className="absolute -inset-10 bg-radial-glow-cyan opacity-40 animate-pulse-glow" />
-          <div className="relative flex flex-col items-center text-center">
-            <div className="w-14 h-14 rounded-2xl bg-[#35D9FF]/10 border border-[#35D9FF]/30 flex items-center justify-center text-[#35D9FF] mb-3 shadow-[0_0_20px_rgba(53,217,255,0.2)]">
-              <Sparkles size={24} />
+          {/* Reserved Architectural Wireframe Visualization */}
+          <div className="aspect-[16/9] w-full rounded-lg bg-[#080A0A] border border-white/[0.06] p-6 flex flex-col items-center justify-center text-center relative overflow-hidden my-4">
+            <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#8E9691] mb-3">
+              <SlidersHorizontal size={20} className="text-[#00F5A0]" />
             </div>
-            <span className="text-xs font-mono font-semibold text-[#F4F7F5] tracking-wider uppercase">
-              NEXT RELEASE IN FLIGHT
-            </span>
-            <span className="text-[11px] font-mono text-[#9AA6A0] mt-1">
-              New responsive architecture under active development
-            </span>
+            <div className="font-mono text-xs font-semibold text-[#F3F4F0] uppercase tracking-wider mb-1">
+              ARCHITECTURAL WIREFRAME // PHASE 02
+            </div>
+            <div className="text-[11px] font-mono text-[#8E9691] max-w-xs">
+              Next responsive frontend system currently in design and component staging.
+            </div>
           </div>
         </div>
 
-        {/* Bottom tags */}
-        <div className="relative z-10 pt-4 border-t border-white/5 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-[11px] font-mono text-[#9AA6A0] px-2.5 py-0.5 rounded bg-white/5 border border-white/5"
-            >
-              {tag}
-            </span>
-          ))}
+        {/* Bottom Tags & Source */}
+        <div className="relative z-10 pt-6 mt-4 border-t border-white/[0.06] flex items-center justify-between">
+          <div className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="px-2.5 py-1 rounded bg-[#080A0A] border border-white/[0.06] text-[11px] font-mono text-[#8E9691]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <a
+            href={project.links.viewSource}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs font-mono text-[#8E9691] hover:text-[#00F5A0] transition-colors"
+          >
+            <span>GitHub</span>
+            <ArrowUpRight size={13} />
+          </a>
         </div>
       </div>
     );
   }
 
-  // Active Project 1: Online Shop
+  // Flagship Project 1: Online Shop
   return (
-    <div className="group relative rounded-2xl glass-panel border border-white/10 p-6 sm:p-8 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:border-[#00F5A0]/40 hover:shadow-[0_0_30px_rgba(0,245,160,0.1)]">
+    <div className="rounded-xl surface-card p-6 sm:p-10 border border-white/[0.08] relative overflow-hidden flex flex-col justify-between">
       
-      {/* Top Meta Info */}
+      {/* Top Metadata Header */}
       <div>
-        <div className="flex items-center justify-between mb-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-[#00F5A0] bg-[#00F5A0]/10 border border-[#00F5A0]/20">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-pulse" />
-            <span>{category}</span>
-          </span>
-          <span className="text-xs font-mono text-[#00F5A0]">01 // FEATURED</span>
-        </div>
-
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-[#F4F7F5] mb-2 group-hover:text-[#00F5A0] transition-colors">
-          {title}
-        </h3>
-
-        <p className="text-sm sm:text-base text-[#9AA6A0] leading-relaxed mb-6">
-          {summary}
-        </p>
-      </div>
-
-      {/* Visual CSS-Crafted UI Preview of Online Shop */}
-      <div className="relative w-full aspect-[16/10] rounded-xl bg-[#050807] border border-white/10 p-4 my-2 overflow-hidden shadow-inner flex flex-col justify-between group-hover:border-[#00F5A0]/30 transition-all">
-        {/* Mockup browser bar */}
-        <div className="flex items-center justify-between pb-3 border-b border-white/5 text-[10px] font-mono text-[#9AA6A0]">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-red-500/70" />
-            <span className="w-2 h-2 rounded-full bg-amber-500/70" />
-            <span className="w-2 h-2 rounded-full bg-emerald-500/70" />
-            <span className="ml-2 text-white/50 hidden sm:inline">shop.preview.dev</span>
-          </div>
+        <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/[0.06]">
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded bg-[#00F5A0]/10 text-[#00F5A0] text-[9px] font-bold">
-              CART (3)
+            <span className="w-2 h-2 rounded-full bg-[#00F5A0]" />
+            <span className="text-xs font-mono tracking-wider text-[#00F5A0] uppercase font-semibold">
+              {t.projects.featuredTag}
+            </span>
+            <span className="text-xs font-mono text-[#8E9691] ml-2">
+              // {category}
             </span>
           </div>
+
+          <span className="text-xs font-mono text-[#8E9691]">01 // SELECTED</span>
         </div>
 
-        {/* Mockup Product Grid Display */}
-        <div className="grid grid-cols-2 gap-3 py-2 my-auto">
-          {/* Card Item 1 */}
-          <div className="p-3 rounded-lg bg-[#0B1110] border border-white/5 flex flex-col justify-between">
-            <div className="w-full h-12 rounded bg-gradient-to-r from-emerald-950/40 to-slate-900 flex items-center justify-center">
-              <ShoppingBag size={18} className="text-[#00F5A0]" />
-            </div>
-            <div className="mt-2">
-              <div className="text-[11px] font-semibold text-[#F4F7F5] truncate">Cyber Minimal Watch</div>
-              <div className="flex items-center justify-between mt-1">
-                <span className="text-[10px] font-mono text-[#00F5A0] font-bold">$189</span>
-                <span className="text-[9px] px-1.5 py-0.5 rounded bg-white/10 text-white">Added</span>
-              </div>
-            </div>
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+          <div>
+            <h3 className="font-display text-3xl sm:text-4xl font-bold text-[#F3F4F0] mb-2">
+              {title}
+            </h3>
+            <p className="text-sm sm:text-base text-[#8E9691] max-w-2xl leading-relaxed">
+              {summary}
+            </p>
           </div>
 
-          {/* Card Item 2 */}
-          <div className="p-3 rounded-lg bg-[#0B1110] border border-white/5 flex flex-col justify-between">
-            <div className="w-full h-12 rounded bg-gradient-to-r from-cyan-950/40 to-slate-900 flex items-center justify-center">
-              <Sparkles size={18} className="text-[#35D9FF]" />
+          <div className="flex items-center gap-3 shrink-0">
+            <button
+              type="button"
+              onClick={() => onOpenDetails(project)}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/[0.04] border border-white/[0.08] text-xs font-mono font-medium text-[#F3F4F0] hover:border-[#00F5A0]/40 hover:text-[#00F5A0] transition-colors cursor-pointer"
+            >
+              <Eye size={13} />
+              <span>{t.projects.viewDetails}</span>
+            </button>
+
+            {project.links.viewSource && (
+              <a
+                href={project.links.viewSource}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-white/[0.04] border border-white/[0.08] text-[#8E9691] hover:text-white transition-colors cursor-pointer"
+                title="View Source on GitHub"
+                aria-label="View Source on GitHub"
+              >
+                <GithubIcon size={16} />
+              </a>
+            )}
+
+            {project.links.liveDemo && (
+              <a
+                href={project.links.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#00F5A0] text-[#080A0A] font-mono font-semibold text-xs tracking-wide hover:bg-[#82FCD0] transition-colors cursor-pointer"
+              >
+                <span>{t.projects.liveDemo}</span>
+                <ArrowUpRight size={14} />
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Flagship Interactive UI Simulation (Crafted with Pure CSS & React State) */}
+      <div className="w-full rounded-xl bg-[#080A0A] border border-white/[0.08] p-4 sm:p-6 my-6 shadow-inner">
+        {/* Mockup Top Navigation Bar */}
+        <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/[0.06] text-xs font-mono">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
+              <span className="w-2.5 h-2.5 rounded-full bg-white/10" />
             </div>
-            <div className="mt-2">
-              <div className="text-[11px] font-semibold text-[#F4F7F5] truncate">Aura Wireless Headset</div>
-              <div className="flex items-center justify-between mt-1">
-                <span className="text-[10px] font-mono text-[#35D9FF] font-bold">$249</span>
-                <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-[#00F5A0]">In Stock</span>
-              </div>
+            <span className="font-bold text-[#F3F4F0] tracking-tight">KINETIC.STORE</span>
+          </div>
+
+          {/* Interactive Category Filter Pills */}
+          <div className="hidden sm:flex items-center gap-1 bg-[#101413] p-1 rounded-md border border-white/[0.06]">
+            {['All', 'Hardware', 'Audio'].map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setActiveCategory(cat)}
+                className={`px-2.5 py-1 rounded text-[11px] cursor-pointer transition-colors ${
+                  activeCategory === cat ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Interactive Cart Button */}
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#101413] border border-white/[0.08] text-[11px] text-[#F3F4F0]">
+              <ShoppingBag size={13} className="text-[#00F5A0]" />
+              <span>Cart ({cartCount})</span>
             </div>
           </div>
         </div>
 
-        {/* Mockup footer status */}
-        <div className="pt-2 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-[#9AA6A0]">
-          <span className="text-[#00F5A0]">● Responsive Grid Verified</span>
-          <span>Fast Cart Checkout Flow</span>
+        {/* Mockup Catalog Grid: 2 High-Precision Product Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-2">
+          
+          {/* Product 1 */}
+          <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
+                Hardware
+              </span>
+              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$189.00</span>
+            </div>
+            
+            <div className="mb-4">
+              <h4 className="text-sm font-semibold text-[#F3F4F0] mb-1">
+                Aura Pro Mechanical Keyboard
+              </h4>
+              <p className="text-xs text-[#8E9691]">
+                CNC aluminum enclosure, custom tuned linear switches, hot-swappable PCB.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => handleSimulateCart('keyboard')}
+              className="w-full py-2 rounded bg-[#080A0A] border border-white/[0.08] text-xs font-mono text-[#F3F4F0] hover:border-[#00F5A0] hover:text-[#00F5A0] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+            >
+              {addedItem === 'keyboard' ? (
+                <>
+                  <Check size={13} className="text-[#00F5A0]" />
+                  <span className="text-[#00F5A0]">Added to Cart</span>
+                </>
+              ) : (
+                <>
+                  <Plus size={13} />
+                  <span>Add to Cart</span>
+                </>
+              )}
+            </button>
+          </div>
+
+          {/* Product 2 */}
+          <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
+            <div className="flex items-start justify-between mb-3">
+              <span className="text-[10px] font-mono text-[#82FCD0] bg-[#82FCD0]/10 px-2 py-0.5 rounded">
+                Audio
+              </span>
+              <span className="text-xs font-mono font-bold text-[#F3F4F0]">$249.00</span>
+            </div>
+            
+            <div className="mb-4">
+              <h4 className="text-sm font-semibold text-[#F3F4F0] mb-1">
+                Studio Precision Monitor Headphones
+              </h4>
+              <p className="text-xs text-[#8E9691]">
+                Planar magnetic drivers, memory foam isolation, detachable balanced cable.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => handleSimulateCart('audio')}
+              className="w-full py-2 rounded bg-[#080A0A] border border-white/[0.08] text-xs font-mono text-[#F3F4F0] hover:border-[#00F5A0] hover:text-[#00F5A0] transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+            >
+              {addedItem === 'audio' ? (
+                <>
+                  <Check size={13} className="text-[#00F5A0]" />
+                  <span className="text-[#00F5A0]">Added to Cart</span>
+                </>
+              ) : (
+                <>
+                  <Plus size={13} />
+                  <span>Add to Cart</span>
+                </>
+              )}
+            </button>
+          </div>
+
+        </div>
+
+        {/* Mockup Telemetry Strip */}
+        <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#8E9691]">
+          <span>Verified features: Dynamic filtering, cart management, responsive cards</span>
+          <span className="text-[#00F5A0]">100% Client-Side Responsive</span>
         </div>
       </div>
 
-      {/* Tags */}
-      <div className="pt-4 flex flex-wrap gap-2 mb-6">
-        {project.tags.map((tag) => (
-          <span
-            key={tag}
-            className="text-xs font-mono text-[#9AA6A0] px-2.5 py-1 rounded-lg bg-[#050807] border border-white/8"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
-      {/* Card Action Buttons */}
-      <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
-        <button
-          type="button"
-          onClick={() => onOpenDetails(project)}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-[#F4F7F5] hover:border-[#00F5A0]/40 hover:text-[#00F5A0] transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00F5A0]"
-        >
-          <Eye size={14} className="text-[#00F5A0]" />
-          <span>{t.projects.viewDetails}</span>
-        </button>
-
-        <div className="flex items-center gap-2">
-          {project.links.viewSource && (
-            <a
-              href={project.links.viewSource}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-xl bg-white/5 border border-white/10 text-[#9AA6A0] hover:text-white hover:border-white/20 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00F5A0]"
-              aria-label={t.projects.viewSource}
+      {/* Tags and Technical Specifications */}
+      <div className="pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-4">
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="px-2.5 py-1 rounded bg-[#080A0A] border border-white/[0.06] text-xs font-mono text-[#8E9691]"
             >
-              <GithubIcon size={16} />
-            </a>
-          )}
-
-          {project.links.liveDemo && (
-            <a
-              href={project.links.liveDemo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#00F5A0] text-[#050807] font-semibold text-xs hover:shadow-[0_0_15px_rgba(0,245,160,0.35)] transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00F5A0]"
-            >
-              <span>{t.projects.liveDemo}</span>
-              <ArrowUpRight size={13} />
-            </a>
-          )}
+              {tag}
+            </span>
+          ))}
         </div>
+
+        <span className="text-xs font-mono text-[#8E9691]">
+          Configured in <code className="text-[#F3F4F0]">src/data/projects.js</code>
+        </span>
       </div>
+
     </div>
   );
 };

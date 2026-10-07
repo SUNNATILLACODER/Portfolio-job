@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { contactConfig } from '../data/contact';
-import { ArrowUp, Send, Mail, Heart } from 'lucide-react';
-
+import { GithubIcon } from './icons/GithubIcon';
+import { ArrowUp, Send, Heart } from 'lucide-react';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -15,10 +15,9 @@ export const Footer = () => {
   };
 
   const navLinks = [
-    { id: 'home', label: t.nav.home },
-    { id: 'about', label: t.nav.about },
     { id: 'projects', label: t.nav.projects },
     { id: 'skills', label: t.nav.skills },
+    { id: 'about', label: t.nav.about },
     { id: 'process', label: t.nav.process },
     { id: 'contact', label: t.nav.contact },
   ];
@@ -38,27 +37,28 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-[#050807] border-t border-white/8 py-12 sm:py-16">
+    <footer className="relative bg-[#080A0A] py-14 sm:py-20 border-t border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/5">
-          {/* Brand */}
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#0B1110] border border-[#00F5A0]/30 flex items-center justify-center">
-              <span className="font-mono font-bold text-base text-[#00F5A0]">S</span>
-            </div>
-            <div>
-              <span className="font-bold text-base text-[#F4F7F5] block">
-                Sunnatilla
-              </span>
-              <span className="text-xs text-[#9AA6A0]">
-                {t.footer.tagline}
+        {/* Top Row: Brand + Navigation + Social Links */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-white/[0.06]">
+          
+          {/* Brand with __war1pov__ */}
+          <div>
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="font-mono text-base font-bold text-[#F3F4F0]">
+                <span className="text-[#00F5A0] font-bold">__</span>
+                <span>war1pov</span>
+                <span className="text-[#00F5A0] font-bold">__</span>
               </span>
             </div>
+            <p className="text-xs font-mono text-[#8E9691]">
+              Sunnatilla // Frontend Engineering & Creative Development
+            </p>
           </div>
 
-          {/* Quick Nav Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6 text-xs text-[#9AA6A0]" aria-label="Footer Navigation">
+          {/* Navigation Links */}
+          <nav className="flex flex-wrap items-center gap-5 text-xs font-mono text-[#8E9691]" aria-label="Footer Navigation">
             {navLinks.map((link) => (
               <a
                 key={link.id}
@@ -71,25 +71,50 @@ export const Footer = () => {
             ))}
           </nav>
 
-          {/* Back to top */}
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="group flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B1110] border border-white/10 text-xs font-mono text-[#9AA6A0] hover:text-[#00F5A0] hover:border-[#00F5A0]/40 transition-colors cursor-pointer"
-            aria-label={t.footer.backToTop}
-          >
-            <span>{t.footer.backToTop}</span>
-            <ArrowUp size={14} className="group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          {/* Direct Social & Back-to-top */}
+          <div className="flex items-center gap-4">
+            <a
+              href={contactConfig.telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-[#00F5A0] transition-colors cursor-pointer"
+              title="Telegram"
+              aria-label="Telegram Profile"
+            >
+              <Send size={15} />
+            </a>
+
+            <a
+              href={contactConfig.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-white transition-colors cursor-pointer"
+              title="GitHub"
+              aria-label="GitHub Profile"
+            >
+              <GithubIcon size={15} />
+            </a>
+
+            <button
+              type="button"
+              onClick={scrollToTop}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#101413] border border-white/[0.06] text-xs font-mono text-[#8E9691] hover:text-[#F3F4F0] hover:border-white/20 transition-colors cursor-pointer"
+              aria-label={t.footer.backToTop}
+            >
+              <span>{t.footer.backToTop}</span>
+              <ArrowUp size={12} />
+            </button>
+          </div>
+
         </div>
 
-        {/* Bottom copyright & attribution */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#9AA6A0]/80">
+        {/* Bottom Attribution Bar */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#8E9691]">
           <div>
-            © {new Date().getFullYear()} Sunnatilla. {t.footer.allRights}
+            © {new Date().getFullYear()} Sunnatilla (__war1pov__). {t.footer.allRights}
           </div>
-          <div className="flex items-center gap-4">
-            <span>{t.footer.designedAndBuilt}</span>
+          <div>
+            {t.footer.designedAndBuilt}
           </div>
         </div>
 

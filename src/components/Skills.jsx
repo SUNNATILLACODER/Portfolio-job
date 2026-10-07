@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { skillsData } from '../data/skills';
-import { GithubIcon } from './icons/GithubIcon';
 import { 
   Atom, 
   Code2, 
@@ -11,180 +10,156 @@ import {
   GitBranch, 
   Zap, 
   Terminal, 
-  Smartphone, 
-  ShieldCheck, 
-  Boxes, 
-  Gauge,
-  CheckCircle2
+  CheckCircle2,
+  Sliders,
+  Sparkles,
+  ShieldCheck,
+  Cpu
 } from 'lucide-react';
-
-import { motion } from 'framer-motion';
+import { GithubIcon } from './icons/GithubIcon';
 
 export const Skills = () => {
   const { lang, t } = useLanguage();
 
-  const getFrontendIcon = (name) => {
-    switch (name) {
-      case 'React': return <Atom size={22} className="text-[#00F5A0]" />;
-      case 'JavaScript (ES6+)': return <Code2 size={22} className="text-[#35D9FF]" />;
-      case 'Tailwind CSS': return <Palette size={22} className="text-[#00F5A0]" />;
-      case 'HTML5': return <FileCode size={22} className="text-[#35D9FF]" />;
-      case 'CSS3': return <Layout size={22} className="text-[#00F5A0]" />;
-      default: return <Code2 size={22} className="text-[#00F5A0]" />;
+  const engineeringPriorities = [
+    {
+      title: "Responsive Interface Architecture",
+      desc: "Engineering fluid layouts from 320px mobile viewports up to large displays using modern CSS Grid, Flexbox, and container strategies without layout shifts.",
+      icon: <Layout size={18} className="text-[#00F5A0]" />
+    },
+    {
+      title: "Reusable React Component Systems",
+      desc: "Decomposing complex UIs into clean, single-responsibility components with strict prop interfaces, local state hygiene, and maintainable folder structure.",
+      icon: <Atom size={18} className="text-[#82FCD0]" />
+    },
+    {
+      title: "Semantic HTML & Accessibility (A11y)",
+      desc: "Applying proper landmarks, keyboard focus management, ARIA roles, and high contrast ratios to ensure digital products are inclusive for all users.",
+      icon: <ShieldCheck size={18} className="text-[#00F5A0]" />
+    },
+    {
+      title: "Performance & Bundle Discipline",
+      desc: "Prioritizing fast first-contentful paints, zero cumulative layout shifts (CLS), clean tree-shaking, and efficient client-side rendering lifecycles.",
+      icon: <Zap size={18} className="text-[#82FCD0]" />
     }
-  };
-
-  const getToolIcon = (name) => {
-    switch (name) {
-      case 'Git': return <GitBranch size={20} className="text-[#00F5A0]" />;
-      case 'GitHub': return <GithubIcon size={20} className="text-white" />;
-      case 'Vite': return <Zap size={20} className="text-[#35D9FF]" />;
-      case 'Browser DevTools': return <Terminal size={20} className="text-[#00F5A0]" />;
-      default: return <Terminal size={20} className="text-[#00F5A0]" />;
-    }
-  };
-
-  const getPracticeIcon = (index) => {
-    switch (index) {
-      case 0: return <Smartphone size={20} className="text-[#00F5A0]" />;
-      case 1: return <ShieldCheck size={20} className="text-[#35D9FF]" />;
-      case 2: return <Boxes size={20} className="text-[#00F5A0]" />;
-      case 3: return <Gauge size={20} className="text-[#35D9FF]" />;
-      default: return <CheckCircle2 size={20} className="text-[#00F5A0]" />;
-    }
-  };
+  ];
 
   return (
     <section
       id="skills"
-      className="relative py-24 sm:py-32 border-t border-white/5 bg-[#080D0B]"
-      aria-label="Skills & Capabilities"
+      className="relative py-24 sm:py-32 border-b border-white/[0.06] bg-[#080A0A]"
+      aria-label="Capabilities"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header */}
-        <div className="max-w-3xl mb-16 sm:mb-20">
-          <span className="text-xs font-mono font-medium tracking-widest uppercase text-[#00F5A0] mb-3 block">
-            {t.skills.eyebrow}
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#F4F7F5] tracking-tight leading-tight mb-4">
-            {t.skills.heading}
-          </h2>
-          <p className="text-base sm:text-lg text-[#9AA6A0] leading-relaxed">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-6 border-b border-white/[0.06]">
+          <div className="max-w-2xl">
+            <span className="text-xs font-mono font-medium tracking-widest uppercase text-[#00F5A0] mb-3 block">
+              {t.skills.eyebrow}
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F3F4F0] tracking-tight">
+              {t.skills.heading}
+            </h2>
+          </div>
+
+          <p className="text-sm text-[#8E9691] max-w-md leading-relaxed font-sans">
             {t.skills.subtitle}
           </p>
         </div>
 
-        {/* Group 1: Core Frontend (5 refined cards) */}
-        <div className="mb-14">
-          <h3 className="text-xs font-mono uppercase tracking-wider text-[#9AA6A0] mb-6 flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-            <span>// {t.skills.categories.frontend}</span>
-          </h3>
+        {/* 2-Column Editorial Grid: Engineering Focus vs Tool Matrix */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          
+          {/* Left Column: Engineering Philosophy & Focus Areas */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
+              <h3 className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
+                // {t.skills.philosophyTitle}
+              </h3>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {skillsData.coreFrontend.map((skill) => {
-              const description = skill.description[lang] || skill.description.en;
-              return (
+            <div className="space-y-4">
+              {engineeringPriorities.map((item, index) => (
                 <div
-                  key={skill.name}
-                  className="group p-5 rounded-2xl bg-[#0B1110] border border-white/8 hover:border-[#00F5A0]/40 transition-all duration-300 hover:-translate-y-1"
+                  key={index}
+                  className="p-5 rounded-xl surface-card surface-card-hover border border-white/[0.06]"
                 >
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="p-2.5 rounded-xl bg-[#050807] border border-white/10 group-hover:border-[#00F5A0]/30 transition-colors">
-                      {getFrontendIcon(skill.name)}
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06]">
+                      {item.icon}
                     </div>
-                    <span className="text-[10px] font-mono text-[#00F5A0] px-2 py-0.5 rounded bg-[#00F5A0]/10 border border-[#00F5A0]/20">
-                      {skill.badge}
-                    </span>
+                    <h4 className="text-sm font-semibold text-[#F3F4F0]">
+                      {item.title}
+                    </h4>
                   </div>
-
-                  <h4 className="text-base font-bold text-[#F4F7F5] mb-1 group-hover:text-[#00F5A0] transition-colors">
-                    {skill.name}
-                  </h4>
-                  <div className="text-[11px] font-mono text-[#9AA6A0]/80 mb-2.5">
-                    {skill.category}
-                  </div>
-                  <p className="text-xs text-[#9AA6A0] leading-relaxed">
-                    {description}
+                  <p className="text-xs text-[#8E9691] leading-relaxed pl-11">
+                    {item.desc}
                   </p>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Group 2 & 3: Dev Tools & Architecture Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
-          {/* Dev Tools (4 items) */}
-          <div className="lg:col-span-6">
-            <h3 className="text-xs font-mono uppercase tracking-wider text-[#9AA6A0] mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#35D9FF]" />
-              <span>// {t.skills.categories.tools}</span>
-            </h3>
+          {/* Right Column: Practical Technology Stack Index */}
+          <div className="lg:col-span-6 space-y-8">
+            
+            {/* Core Frontend */}
+            <div>
+              <div className="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-4">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
+                  // {t.skills.categories.frontend}
+                </span>
+                <span className="text-[11px] font-mono text-[#00F5A0]">Daily Driver</span>
+              </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {skillsData.devTools.map((tool) => {
-                const desc = tool.description[lang] || tool.description.en;
-                return (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {skillsData.coreFrontend.map((item) => (
+                  <div
+                    key={item.name}
+                    className="p-4 rounded-xl bg-[#101413] border border-white/[0.06] flex flex-col justify-between"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-semibold text-[#F3F4F0]">{item.name}</span>
+                      <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
+                        {item.badge}
+                      </span>
+                    </div>
+                    <p className="text-[11px] text-[#8E9691] leading-relaxed">
+                      {item.description[lang] || item.description.en}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Development Tools */}
+            <div>
+              <div className="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-4">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
+                  // {t.skills.categories.tools}
+                </span>
+                <span className="text-[11px] font-mono text-[#8E9691]">Workflow</span>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {skillsData.devTools.map((tool) => (
                   <div
                     key={tool.name}
-                    className="p-4 rounded-xl bg-[#0B1110] border border-white/5 hover:border-[#35D9FF]/40 transition-all group"
+                    className="p-3.5 rounded-xl bg-[#101413] border border-white/[0.06] text-center"
                   >
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="p-2 rounded-lg bg-[#050807] border border-white/5">
-                        {getToolIcon(tool.name)}
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-bold text-[#F4F7F5] group-hover:text-[#35D9FF] transition-colors">
-                          {tool.name}
-                        </h4>
-                        <span className="text-[10px] font-mono text-[#9AA6A0]">
-                          {tool.role}
-                        </span>
-                      </div>
-                    </div>
-                    <p className="text-xs text-[#9AA6A0] leading-relaxed mt-2">
-                      {desc}
-                    </p>
+                    <span className="text-xs font-mono font-semibold text-[#F3F4F0] block mb-1">
+                      {tool.name}
+                    </span>
+                    <span className="text-[10px] font-mono text-[#8E9691] block truncate">
+                      {tool.role}
+                    </span>
                   </div>
-                );
-              })}
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Architecture & Engineering Standards (4 items) */}
-          <div className="lg:col-span-6">
-            <h3 className="text-xs font-mono uppercase tracking-wider text-[#9AA6A0] mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-              <span>// {t.skills.categories.architecture}</span>
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {skillsData.practices.map((practice, index) => {
-                const title = practice.title[lang] || practice.title.en;
-                const desc = practice.description[lang] || practice.description.en;
-                return (
-                  <div
-                    key={index}
-                    className="p-4 rounded-xl bg-[#0B1110] border border-white/5 hover:border-[#00F5A0]/30 transition-all group"
-                  >
-                    <div className="flex items-center gap-2.5 mb-2">
-                      <div className="p-1.5 rounded-lg bg-[#050807] border border-white/5">
-                        {getPracticeIcon(index)}
-                      </div>
-                      <h4 className="text-xs font-bold text-[#F4F7F5] group-hover:text-[#00F5A0] transition-colors">
-                        {title}
-                      </h4>
-                    </div>
-                    <p className="text-xs text-[#9AA6A0] leading-relaxed">
-                      {desc}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
           </div>
 
         </div>

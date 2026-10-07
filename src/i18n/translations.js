@@ -2,265 +2,224 @@ export const translations = {
   en: {
     // Navigation
     nav: {
-      home: "Home",
+      brand: "__war1pov__",
+      home: "Index",
+      projects: "Work",
+      skills: "Capabilities",
       about: "About",
-      projects: "Projects",
-      skills: "Skills",
       process: "Process",
       contact: "Contact",
-      availableStatus: "Available for freelance & frontend roles",
-      menuOpen: "Open navigation menu",
-      menuClose: "Close navigation menu",
+      availableStatus: "Available for contract & full-time roles",
+      menuOpen: "Open menu",
+      menuClose: "Close menu",
     },
 
     // Hero Section
     hero: {
-      eyebrow: "INDEPENDENT FRONTEND DEVELOPER",
-      headingLine1: "Building digital experiences",
-      headingHighlight: "that feel different.",
-      headingLine2: "",
-      supporting: "I'm Sunnatilla, a frontend developer focused on creating modern, responsive, and user-friendly web experiences with React and modern CSS.",
-      primaryCta: "Explore My Work",
+      badge: "FRONTEND DEVELOPER & CREATIVE CODER",
+      location: "Tashkent, UZ // Remote",
+      headlineLine1: "Thoughtful interfaces.",
+      headlineLine2: "Exceptional execution.",
+      supporting: "I'm Sunnatilla — a frontend engineer focused on building fast, responsive, and tactile web applications where robust engineering meets considered visual design.",
+      primaryCta: "Explore Selected Work",
       secondaryCta: "Let's Talk",
-      techStripLabel: "CORE STACK",
-      scrollHint: "Scroll to discover",
-      statusBadge: "Open to opportunities",
-    },
-
-    // About Section
-    about: {
-      eyebrow: "01 // ABOUT ME",
-      heading: "Designing with purpose, engineering with precision.",
-      bio1: "I enjoy turning ideas into polished digital products. My focus is on clean interfaces, responsive layouts, thoughtful interactions, and maintainable frontend code.",
-      bio2: "Every interface I craft is built from the ground up to be responsive, performant, and intuitive. Rather than relying on heavy templates or bloated libraries, I prioritize semantic structure, clean component architecture, and fluid user interactions.",
-      principlesTitle: "Engineering Principles",
-      principles: [
-        {
-          number: "01",
-          title: "Responsive by Design",
-          desc: "Every viewport from 320px mobile screens to 4K displays receives meticulous care with flexible grid and flexbox layouts."
-        },
-        {
-          number: "02",
-          title: "Clean & Maintainable Code",
-          desc: "Component-driven React architecture with clean state management, modular CSS, and zero unnecessary dependencies."
-        },
-        {
-          number: "03",
-          title: "Accessible & Semantic",
-          desc: "Built with proper HTML5 landmarks, keyboard navigation, clear focus states, and high-contrast readability."
-        },
-        {
-          number: "04",
-          title: "Performance Minded",
-          desc: "Fast load times, minimal bundle bloat, zero layout shifts, and purposeful, lightweight animations."
-        }
-      ],
-      developerBadge: "Creative Frontend Developer",
-      basedIn: "Tashkent, Uzbekistan (Remote Ready)"
+      techSignature: "CORE STACK",
+      statusIndicator: "Available for new projects",
+      scrollHint: "Scroll down",
     },
 
     // Featured Projects
     projects: {
-      eyebrow: "02 // SELECTED WORK",
-      heading: "Featured Projects",
-      subtitle: "Curated work demonstrating responsive frontend engineering, state management, and refined user experience.",
-      viewDetails: "View Case Details",
-      liveDemo: "Live Demo",
-      viewSource: "View Source",
-      comingSoonTag: "In Progress",
-      featuredTag: "Featured Project",
-      statusUpcoming: "Coming Soon",
-      sourceConfigNotice: "Source repository link is configured in project settings.",
-      demoConfigNotice: "Interactive preview active. Deployment URL ready to link.",
+      eyebrow: "01 // SELECTED WORK",
+      heading: "Featured Work",
+      subtitle: "Production-focused frontend engineering with verified component architecture, real-time responsive states, and refined interaction design.",
+      viewDetails: "View Case Study",
+      liveDemo: "Live Application",
+      viewSource: "Inspect Source",
+      comingSoonTag: "In Active Development",
+      featuredTag: "Flagship Project",
+      statusUpcoming: "Q2 Release",
+      slotLabel: "SLOT 02",
       modal: {
-        title: "Project Specification",
+        title: "Technical Specification",
         overview: "Overview",
         problemSolved: "The Challenge & Solution",
-        approach: "Design & Implementation Approach",
+        approach: "Architecture & Design Approach",
         verifiedFeatures: "Verified Features in Source",
         techStack: "Technologies Used",
-        closeModal: "Close window",
+        closeModal: "Close",
         visitLive: "Launch Demo",
         browseSource: "GitHub Repository",
       }
     },
 
-    // Skills Section
+    // Skills & Engineering Section
     skills: {
-      eyebrow: "03 // TECHNICAL MASTERY",
-      heading: "Skills & Capabilities",
-      subtitle: "Hands-on expertise in modern frontend technologies, tooling, and web standards. Honest, proven practical familiarity without arbitrary percentage bars.",
+      eyebrow: "02 // TECHNICAL DEPTH",
+      heading: "Capabilities & Standards",
+      subtitle: "Hands-on proficiency in modern frontend architecture and developer tooling. Built around practical implementation rather than superficial metrics.",
+      philosophyTitle: "Engineering Philosophy",
       categories: {
         frontend: "Core Frontend",
-        tools: "Development Tools",
+        tools: "Tooling & Workflow",
         architecture: "Architecture & Standards"
       }
+    },
+
+    // About Section
+    about: {
+      eyebrow: "03 // ABOUT",
+      heading: "Where clean engineering meets visual restraint.",
+      bio1: "I'm a frontend developer interested in the details that make digital products feel effortless: thoughtful layouts, responsive behavior, accessible interactions, and clean implementation.",
+      bio2: "Rather than reaching for heavy frameworks or excessive animations, I believe in building durable, modular component systems with semantic HTML, modern CSS, and performant React lifecycles.",
+      principlesTitle: "Development Principles",
+      principles: [
+        {
+          number: "01",
+          title: "Responsive by Architecture",
+          desc: "Every viewport from 320px mobile screens to large desktop displays is designed intentionally with fluid spacing and zero horizontal overflow."
+        },
+        {
+          number: "02",
+          title: "Maintainable Components",
+          desc: "Modular React architecture with clean separation of concerns, explicit prop contracts, and zero unnecessary dependencies."
+        },
+        {
+          number: "03",
+          title: "Accessibility as a Foundation",
+          desc: "Proper semantic landmarks, keyboard focus rings, high contrast ratios, and screen-reader compliant structures."
+        },
+        {
+          number: "04",
+          title: "Performance Conscious",
+          desc: "Lightweight bundles, zero layout shift (CLS), fast paint times, and respectful animation design."
+        }
+      ],
+      developerBadge: "Frontend Engineer",
+      basedIn: "Tashkent, Uzbekistan"
     },
 
     // Process Section
     process: {
       eyebrow: "04 // WORKFLOW",
       heading: "How I Build Products",
-      subtitle: "A structured, transparent workflow ensuring clean code, resilient design, and timely delivery.",
+      subtitle: "A systematic 4-phase development cadence prioritizing clarity, modular code, and verifiable polish.",
       steps: [
         {
           number: "01",
-          step: "01",
           title: "Discover",
-          summary: "Understand the goals, audience, and requirements.",
-          description: "Analyzing user needs, content architecture, and technical constraints before writing a single line of code."
+          summary: "Deconstruct requirements, information hierarchy, and user intent before writing code.",
+          description: "Understanding technical constraints, state requirements, and layout objectives."
         },
         {
           number: "02",
-          step: "02",
-          title: "Design",
-          summary: "Establish the layout, visual direction, and responsive behavior.",
-          description: "Creating a harmonious design system, fluid spacing scales, responsive breakpoints, and tactile interactive states."
+          title: "Design & Systems",
+          summary: "Establish spacing scales, typography hierarchy, and responsive behavior.",
+          description: "Aligning color tokens, micro-interactions, and component contracts."
         },
         {
           number: "03",
-          step: "03",
           title: "Develop",
-          summary: "Build reusable components and implement the functionality.",
-          description: "Crafting modular React components, integrating accessible controls, and keeping code maintainable and lean."
+          summary: "Craft reusable components, manage state, and implement features.",
+          description: "Writing clean React code, strict responsive styling with Tailwind, and accessible interactions."
         },
         {
           number: "04",
-          step: "04",
           title: "Refine",
-          summary: "Test the experience, fix issues, and optimize performance.",
-          description: "Cross-device testing, accessibility validation, performance tuning, and cross-browser quality assurance."
+          summary: "Audit performance, cross-browser behavior, and edge cases.",
+          description: "Validating touch targets, keyboard navigation, Lighthouse metrics, and bundle size."
         }
       ]
     },
 
     // Contact Section
     contact: {
-      eyebrow: "05 // GET IN TOUCH",
-      heading: "Have an idea? Let's build something great.",
-      subtitle: "I'm open to discussing interesting projects, freelance opportunities, and collaborations. Send a message or connect directly on social channels.",
+      eyebrow: "05 // INQUIRIES",
+      heading: "Let's make something meaningful.",
+      subtitle: "I'm open to discussing frontend engineering roles, freelance projects, and technical collaborations. Reach out directly or send a message below.",
       directChannels: "Direct Channels",
-      formTitle: "Send a Message",
-      formSubtitle: "This form triggers your default email client with your message prepared, or allows you to copy it directly.",
+      formTitle: "Start a Conversation",
+      formSubtitle: "Pre-fills your message in your default email client or allows you to copy it directly for Telegram.",
       fields: {
-        name: "Your Name",
-        namePlaceholder: "e.g. Alex Morgan",
+        name: "Name",
+        namePlaceholder: "Alex Morgan",
         email: "Email Address",
-        emailPlaceholder: "e.g. alex@company.com",
-        message: "Project Details / Message",
-        messagePlaceholder: "Tell me about your project, timeline, or idea...",
+        emailPlaceholder: "alex@company.com",
+        message: "Message / Project Scope",
+        messagePlaceholder: "Tell me about the project, timeline, or idea...",
       },
       validation: {
         nameRequired: "Please enter your name.",
         emailRequired: "Please enter your email address.",
         emailInvalid: "Please enter a valid email address.",
-        messageRequired: "Please enter a brief message.",
+        messageRequired: "Please enter a message.",
       },
-      submitButton: "Send via Email",
-      copyToTelegram: "Copy Message to Telegram",
-      copiedNotice: "Message copied to clipboard! Paste directly in Telegram.",
-      honestNotice: "Transparency: Submitting opens your email client directly (mailto) so your message is delivered straight to my inbox with zero intermediaries.",
-      statusOpen: "Currently accepting freelance projects & contract work",
-      socialLabels: {
-        telegram: "Telegram Channel / Chat",
-        github: "GitHub Repositories",
-        email: "Direct Email Address"
-      }
+      submitButton: "Send via Email (mailto)",
+      copyToTelegram: "Copy for Telegram",
+      copiedNotice: "Message copied! Paste in Telegram.",
+      honestNotice: "Direct delivery: Submitting triggers your system's email application with your message prepared, delivering straight to my inbox with zero server middlemen.",
+      statusOpen: "Accepting select freelance & frontend opportunities",
     },
 
     // Footer
     footer: {
-      tagline: "Building digital experiences that feel different.",
+      tagline: "Thoughtful interfaces. Exceptional execution.",
       allRights: "All rights reserved.",
-      designedAndBuilt: "Crafted with React, Tailwind CSS, & Framer Motion.",
+      designedAndBuilt: "Crafted with React, Tailwind CSS & Framer Motion.",
       backToTop: "Back to top",
-      quickLinks: "Quick Navigation"
+      quickLinks: "Index"
     }
   },
 
   uz: {
     // Navigatsiya
     nav: {
+      brand: "__war1pov__",
       home: "Bosh sahifa",
-      about: "Men haqimda",
-      projects: "Loyihalar",
+      projects: "Ishlar",
       skills: "Ko'nikmalar",
-      process: "Ish jarayoni",
+      about: "Haqimda",
+      process: "Jarayon",
       contact: "Aloqa",
-      availableStatus: "Frilans va frontend loyihalar uchun ochiq",
+      availableStatus: "Shartnoma va to'liq bandlik uchun ochiq",
       menuOpen: "Menyuni ochish",
       menuClose: "Menyuni yopish",
     },
 
     // Hero bo'limi
     hero: {
-      eyebrow: "MUSTAQIL FRONTEND DASTURCHI",
-      headingLine1: "O'zgacha taassurot beruvchi",
-      headingHighlight: "raqamli tajribalar yaratish.",
-      headingLine2: "",
-      supporting: "Men Sunnatillaman — React va zamonaviy CSS yordamida zamonaviy, moslashuvchan va foydalanuvchilar uchun qulay veb-ilovalarni yaratishga ixtisoslashgan frontend dasturchiman.",
-      primaryCta: "Ishlarimni ko'rish",
+      badge: "FRONTEND DASTURCHI & IJODKOR MUHANDIS",
+      location: "Toshkent, O'zbekiston // Masofaviy",
+      headlineLine1: "Mulohaza bilan loyihalangan.",
+      headlineLine2: "Mukammal ijro etilgan.",
+      supporting: "Men Sunnatillaman — toza muhandislik va puxta vizual dizayn uyg'unlashgan tezkor, moslashuvchan hamda qulay veb ilovalarni yaratuvchi frontend dasturchi.",
+      primaryCta: "Saralangan ishlarni ko'rish",
       secondaryCta: "Bog'lanish",
-      techStripLabel: "ASOSIY TEXNOLOGIYALAR",
-      scrollHint: "Davomini ko'rish uchun pastga aylantiring",
-      statusBadge: "Hamkorlik uchun ochiq",
-    },
-
-    // Men haqimda bo'limi
-    about: {
-      eyebrow: "01 // MEN HAQIMDA",
-      heading: "Maqsad bilan loyihalash, aniqlik bilan dasturlash.",
-      bio1: "G'oyalarni mukammal tayyor raqamli mahsulotlarga aylantirishdan zavqlanaman. Mening asosiy e'tiborim toza interfeyslar, moslashuvchan tartiblar, puxta o'ylangan animatsiyalar va qo'llab-quvvatlash oson bo'lgan frontend kodiga qaratilgan.",
-      bio2: "Men yaratgan har bir interfeys noldan boshlab moslashuvchan, tezkor va qulay bo'lishi uchun ishlab chiqiladi. Og'ir shablonlar o'rniga semantik HTML, toza React komponent arxitekturasi va silliq interaksiyalarni afzal ko'raman.",
-      principlesTitle: "Ishlash tamoyillarim",
-      principles: [
-        {
-          number: "01",
-          title: "Barcha ekranlarga mos (Responsive)",
-          desc: "320px o'lchamli ixcham smartfonlardan tortib 4K monitorlargacha bo'lgan barcha qurilmalarda ideal ko'rinish va qulaylik."
-        },
-        {
-          number: "02",
-          title: "Toza va tushunarli kod",
-          desc: "Modulli React arxitekturasi, toza state boshqaruvi va ortiqcha kutubxonalarsiz engil arxitektura."
-        },
-        {
-          number: "03",
-          title: "Inklyuzivlik va semantika",
-          desc: "To'g'ri HTML5 teglari, klaviatura orqali boshqaruv, aniq fokus holatlari va yuqori kontrastli qulay o'qiluvchanlik."
-        },
-        {
-          number: "04",
-          title: "Yuqori tezlik va unumdorlik",
-          desc: "Tezkor yuklanish, optimal hajm, ekranning siljishlarisiz barqarorlik va engil, ma'noli animatsiyalar."
-        }
-      ],
-      developerBadge: "Ijodkor Frontend Dasturchi",
-      basedIn: "Toshkent, O'zbekiston (Masofaviy ishga tayyor)"
+      techSignature: "ASOSIY TEXNOLOGIYALAR",
+      statusIndicator: "Yangi loyihalar uchun ochiq",
+      scrollHint: "Pastga aylantiring",
     },
 
     // Loyihalar bo'limi
     projects: {
-      eyebrow: "02 // SARALANGAN ISHLAR",
+      eyebrow: "01 // SARALANGAN ISHLAR",
       heading: "Asosiy Loyihalar",
-      subtitle: "Moslashuvchan frontend muhandisligi, holat boshqaruvi va qulay foydalanuvchi tajribasini namoyon etuvchi ishlar.",
-      viewDetails: "Batafsil ma'lumot",
-      liveDemo: "Jonli ko'rish",
+      subtitle: "Toza komponent arxitekturasi, real vaqtdagi moslashuvchan holatlar va sifatli interfeys bilan qurilgan amaliy ishlar.",
+      viewDetails: "Loyiha tafsilotlari",
+      liveDemo: "Jonli ilovani ochish",
       viewSource: "Kodni ko'rish",
-      comingSoonTag: "Jarayonda",
+      comingSoonTag: "Faol ishlab chiqilmoqda",
       featuredTag: "Asosiy loyiha",
-      statusUpcoming: "Tez kunda",
-      sourceConfigNotice: "Repozitoriy manzili loyiha sozlamalarida kiritilgan.",
-      demoConfigNotice: "Interaktiv namoyish faol. Dastur havolasi ulanishga tayyor.",
+      statusUpcoming: "Q2 nashri",
+      slotLabel: "02-SLOT",
       modal: {
-        title: "Loyiha tafsilotlari",
+        title: "Texnik Spetsifikatsiya",
         overview: "Umumiy ko'rinish",
-        problemSolved: "Vazifa va yechim",
-        approach: "Dizayn va ishlab chiqish yondashuvi",
-        verifiedFeatures: "Manbada mavjud bo'lgan funksiyalar",
+        problemSolved: "Muammo va yechim",
+        approach: "Arxitektura va dizayn yondashuvi",
+        verifiedFeatures: "Kodda tasdiqlangan imkoniyatlar",
         techStack: "Qo'llanilgan texnologiyalar",
-        closeModal: "Oynani yopish",
+        closeModal: "Yopish",
         visitLive: "Dasturni ochish",
         browseSource: "GitHub repozitoriysi",
       }
@@ -268,94 +227,119 @@ export const translations = {
 
     // Ko'nikmalar bo'limi
     skills: {
-      eyebrow: "03 // TEXNOLOGIK KO'NIKMALAR",
-      heading: "Ko'nikmalar va Vositalar",
-      subtitle: "Zamonaviy frontend texnologiyalari, veb-standartlari va vositalari bilan amaliy tajriba. Sun'iy foizlarsiz, real amaliy ko'nikmalar.",
+      eyebrow: "02 // TEXNIK MAHORAT",
+      heading: "Ko'nikmalar va Standartlar",
+      subtitle: "Zamonaviy frontend arxitekturasi va vositalar bilan amaliy tajriba. Yuzaki foizlarsiz, real amaliyotga asoslangan.",
+      philosophyTitle: "Muhandislik tamoyili",
       categories: {
         frontend: "Asosiy Frontend",
-        tools: "Dasturlash vositalari",
+        tools: "Vositalar va Jarayon",
         architecture: "Arxitektura va Standartlar"
       }
     },
 
-    // Ish jarayoni bo'limi
-    process: {
-      eyebrow: "04 // ISH KETMA-KETLIGI",
-      heading: "Loyiha qanday yaratiladi?",
-      subtitle: "Toza kod, ishonchli dizayn va o'z vaqtida natijaga erishishni ta'minlaydigan 4 bosqichli tartibli jarayon.",
-      steps: [
+    // Men haqimda bo'limi
+    about: {
+      eyebrow: "03 // MEN HAQIMDA",
+      heading: "Toza muhandislik va vazmin dizayn uyg'unligi.",
+      bio1: "Raqamli mahsulotlarni qulay va zavqli qiladigan detallarga qiziqaman: puxta o'ylangan tuzilmalar, moslashuvchanlik, inklyuzivlik va toza kod.",
+      bio2: "Ortiqcha og'ir kutubxonalar yoki behuda animatsiyalar o'rniga semantik HTML, zamonaviy CSS va samarali React hayot sikllariga ega chidamli komponent tizimlarini qurishga ishonaman.",
+      principlesTitle: "Ishlash tamoyillarim",
+      principles: [
         {
           number: "01",
-          step: "01",
-          title: "O'rganish (Discover)",
-          summary: "Loyiha maqsadlari, auditoriya va talablarni tushunish.",
-          description: "Birinchi qator kod yozishdan oldin foydalanuvchi ehtiyojlari va texnik chegaralarni aniqlash."
+          title: "Tizimli moslashuvchanlik",
+          desc: "320px mobil ekranlardan tortib keng monitorlargacha bo'lgan barcha qurilmalarda gorizontal siljishlarsiz toza tartib."
         },
         {
           number: "02",
-          step: "02",
-          title: "Dizayn (Design)",
-          summary: "Tartib, vizual uslub va moslashuvchanlikni belgilash.",
-          description: "Ranglar tizimi, shriftlar, moslashuvchan oraliqlar va chiroyli interaktiv holatlarni shakllantirish."
+          title: "Qo'llab-quvvatlash oson komponentlar",
+          desc: "Aniq prop kontraktlariga ega modulli React arxitekturasi va ortiqcha bog'liqliklarsiz yengil hajm."
         },
         {
           number: "03",
-          step: "03",
-          title: "Dasturlash (Develop)",
-          summary: "Qayta ishlatiluvchi komponentlar va funksionallikni yaratish.",
-          description: "Modulli React komponentlarini qurish, qulay boshqaruv elementlarini joriy qilish va kodni toza saqlash."
+          title: "Inklyuzivlik (Accessibility)",
+          desc: "To'g'ri semantik HTML5 teglari, klaviatura boshqaruvi, yuqori kontrast va ekranni o'qish dasturlariga qulaylik."
         },
         {
           number: "04",
-          step: "04",
-          title: "Sayqallash (Refine)",
-          summary: "Sinovdan o'tkazish, kamchiliklarni bartaraf etish va tezlikni oshirish.",
-          description: "Turli qurilmalarda tekshirish, tezlikni optimallashtirish va xatolarni to'liq bartaraf etish."
+          title: "Yuqori tezlik va unumdorlik",
+          desc: "Yengil resurslar, tartibning siljishisiz (CLS) barqaror yuklanish va tezkor vizual javob."
+        }
+      ],
+      developerBadge: "Frontend Dasturchi",
+      basedIn: "Toshkent, O'zbekiston"
+    },
+
+    // Ish jarayoni bo'limi
+    process: {
+      eyebrow: "04 // ISH JARAYONI",
+      heading: "Loyiha Qanday Yaratiladi",
+      subtitle: "Aniqlik, modullilik va yuqori sifatni ta'minlaydigan 4 bosqichli tizimli rivojlanish jarayoni.",
+      steps: [
+        {
+          number: "01",
+          title: "O'rganish",
+          summary: "Kod yozishdan oldin talablar, axborot ierarxiyasi va maqsadlarni aniqlash.",
+          description: "Texnik chegaralar, holat talablari va tartib vazifalarini chuqur tahlil qilish."
+        },
+        {
+          number: "02",
+          title: "Dizayn va Tizim",
+          summary: "Oraliqlar, tipografiya ierarxiyasi va moslashuvchanlikni shakllantirish.",
+          description: "Ranglar tizimi, mikro-interaksiyalar va komponent kontraktlarini uyg'unlashtirish."
+        },
+        {
+          number: "03",
+          title: "Dasturlash",
+          summary: "Qayta ishlatiluvchi komponentlar qurish, holatni boshqarish va funksiyalarni joriy etish.",
+          description: "Toza React kodi, Tailwind yordamida qat'iy moslashuvchan tartib va inklyuziv boshqaruv."
+        },
+        {
+          number: "04",
+          title: "Sayqallash",
+          summary: "Tezlikni sinash, qurilmalarda tekshirish va yakuniy sifat nazorati.",
+          description: "Tugmalar hajmi, klaviatura boshqaruvi va bundle hajmini optimallashtirish."
         }
       ]
     },
 
     // Aloqa bo'limi
     contact: {
-      eyebrow: "05 // BOG'LANISH",
-      heading: "G'oyangiz bormi? Birgalikda yaratamiz.",
-      subtitle: "Qiziqarli loyihalar, frilans buyurtmalari va hamkorlik takliflarini muhokama qilishga tayyorman. Xabar qoldiring yoki to'g'ridan-to'g'ri yozing.",
+      eyebrow: "05 // ALOQA",
+      heading: "Keling, mazmunli loyiha yaratamiz.",
+      subtitle: "Frontend muhandisligi, frilans buyurtmalar va texnik hamkorlik takliflarini kutib qolaman. To'g'ridan-to'g'ri bog'laning yoki xabar yozing.",
       directChannels: "To'g'ridan-to'g'ri aloqa",
-      formTitle: "Xabar yuborish",
-      formSubtitle: "Ushbu forma tayyorlangan xabarni to'g'ridan-to'g'ri pochtangiz dasturida ochadi yoki Telegram uchun nusxalash imkonini beradi.",
+      formTitle: "Xabar Yuborish",
+      formSubtitle: "Xabarni pochtangizda ochadi yoki Telegram orqali yuborish uchun nusxalaydi.",
       fields: {
         name: "Ismingiz",
-        namePlaceholder: "Masalan: Azamat Karimov",
+        namePlaceholder: "Azamat Karimov",
         email: "Email manzilingiz",
-        emailPlaceholder: "Masalan: azamat@example.com",
-        message: "Loyiha haqida yoki xabaringiz",
-        messagePlaceholder: "Loyihangiz, muddat yoki g'oyangiz haqida qisqacha...",
+        emailPlaceholder: "azamat@company.com",
+        message: "Xabar / Loyiha tavsifi",
+        messagePlaceholder: "Loyiha, muddat yoki g'oyangiz haqida yozing...",
       },
       validation: {
         nameRequired: "Iltimos, ismingizni kiriting.",
         emailRequired: "Iltimos, email manzilingizni kiriting.",
-        emailInvalid: "To'g'ri formatdagi email manzilini kiriting.",
+        emailInvalid: "To'g'ri formatdagi email kiriting.",
         messageRequired: "Iltimos, xabaringizni yozing.",
       },
-      submitButton: "Email orqali yuborish",
-      copyToTelegram: "Xabarni Telegram uchun nusxalash",
-      copiedNotice: "Xabar nusxalandi! Telegram bot yoki chatda yuborishingiz mumkin.",
-      honestNotice: "Haqqoniy ishlash: Yuborish tugmasi sizning pochta ilovangizni (mailto) ochadi va xabar to'g'ridan-to'g'ri mening pochtamga yo'naltiriladi.",
-      statusOpen: "Hozirda yangi frilans va shartnoma loyihalari qabul qilinmoqda",
-      socialLabels: {
-        telegram: "Telegram kanali / Profil",
-        github: "GitHub profili va kodlar",
-        email: "To'g'ridan-to'g'ri elektron pochta"
-      }
+      submitButton: "Email orqali yuborish (mailto)",
+      copyToTelegram: "Telegram uchun nusxalash",
+      copiedNotice: "Xabar nusxalandi! Telegramga joylang.",
+      honestNotice: "To'g'ridan-to'g'ri jo'natish: Tugma pochtangiz ilovasini ochadi va xabar to'g'ridan-to'g'ri mening pochtamga yo'naltiriladi.",
+      statusOpen: "Yangi frontend loyihalari qabul qilinmoqda",
     },
 
     // Footer
     footer: {
-      tagline: "O'zgacha taassurot beruvchi raqamli tajribalar yaratish.",
+      tagline: "Mulohaza bilan loyihalangan. Mukammal ijro etilgan.",
       allRights: "Barcha huquqlar himoyalangan.",
       designedAndBuilt: "React, Tailwind CSS va Framer Motion yordamida yaratilgan.",
-      backToTop: "Yuqoriga qaytish",
-      quickLinks: "Tezkor o'tish"
+      backToTop: "Yuqoriga",
+      quickLinks: "Bo'limlar"
     }
   }
 };
