@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
-import heroImg from '../assets/hero.png';
+import sunnatillaImg from '../assets/sunnatilla.jpg';
+
 
 
 export const Hero = () => {
@@ -151,15 +152,20 @@ export const Hero = () => {
               {/* Tab 1: Isometric Platform Visual & Live Metrics */}
               {activeTab === 'ui' ? (
                 <div className="space-y-4">
-                  <div className="relative aspect-[16/10] rounded-lg bg-[#080A0A] border border-white/[0.06] flex items-center justify-center p-4 overflow-hidden">
-                    <div className="absolute inset-0 bg-dot-pattern opacity-30" />
+                  <div className="relative aspect-[16/11] rounded-lg bg-[#080A0A] border border-white/[0.06] overflow-hidden group">
                     <img
-                      src={heroImg}
-                      alt="Layered Interface Architecture"
-                      className="relative z-10 w-40 h-40 object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.8)] select-none pointer-events-none"
+                      src={sunnatillaImg}
+                      alt="Sunnatilla - Frontend Developer"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute bottom-2 left-3 text-[10px] font-mono text-[#8E9691]">
-                      fig.01 — Layered Component Hierarchy
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080A0A] via-transparent to-transparent opacity-80" />
+                    <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
+                      <span className="text-[#F3F4F0] font-semibold bg-[#080A0A]/85 backdrop-blur-sm px-2.5 py-1 rounded border border-white/[0.08]">
+                        Sunnatilla <span className="text-[#00F5A0]">// __war1pov__</span>
+                      </span>
+                      <span className="text-[#00F5A0] bg-[#080A0A]/85 backdrop-blur-sm px-2.5 py-1 rounded border border-white/[0.08] hidden sm:inline">
+                        Frontend Engineer
+                      </span>
                     </div>
                   </div>
 

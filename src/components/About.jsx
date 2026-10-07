@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { MapPin } from 'lucide-react';
-
+import sunnatillaImg from '../assets/sunnatilla.jpg';
 
 export const About = () => {
   const { t } = useLanguage();
@@ -32,9 +32,13 @@ export const About = () => {
             <div className="rounded-xl surface-card p-8 border border-white/[0.08] relative overflow-hidden">
               <div className="flex flex-col items-start">
                 
-                {/* Monogram Badge */}
-                <div className="w-16 h-16 rounded-xl bg-[#080A0A] border border-white/[0.12] flex items-center justify-center font-mono text-2xl font-bold text-[#00F5A0] mb-6 shadow-inner">
-                  &lt;W&gt;
+                {/* Real Developer Portrait */}
+                <div className="w-20 h-20 rounded-xl overflow-hidden border border-white/[0.12] mb-6 shadow-inner bg-[#080A0A]">
+                  <img
+                    src={sunnatillaImg}
+                    alt="Sunnatilla"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
 
                 <div className="font-mono text-xl font-bold text-[#F3F4F0] mb-1">
