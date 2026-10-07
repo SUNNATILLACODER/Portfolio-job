@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
-import { ArrowDownRight, ArrowUpRight, Code, Layers, Sparkles, Terminal, Check } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useLanguage } from '../i18n/useLanguage';
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import heroImg from '../assets/hero.png';
+
 
 export const Hero = () => {
   const { t } = useLanguage();

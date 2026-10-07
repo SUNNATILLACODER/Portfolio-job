@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { projectsData } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';

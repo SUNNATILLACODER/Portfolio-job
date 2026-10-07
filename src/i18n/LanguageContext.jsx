@@ -1,7 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { LanguageContext } from './context';
 import { translations } from './translations';
-
-const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [lang, setLang] = useState(() => {
@@ -10,12 +9,11 @@ export const LanguageProvider = ({ children }) => {
       if (saved === 'en' || saved === 'uz') {
         return saved;
       }
-      // Check browser language
       if (typeof navigator !== 'undefined' && navigator.language && navigator.language.startsWith('uz')) {
         return 'uz';
       }
     } catch {
-      // LocalStorage access might fail in restricted environments
+      // ignore
     }
     return 'en';
   });
@@ -24,7 +22,7 @@ export const LanguageProvider = ({ children }) => {
     try {
       localStorage.setItem('portfolio_language', lang);
     } catch {
-      // ignore storage error
+      // ignore
     }
     if (typeof document !== 'undefined') {
       document.documentElement.lang = lang;
@@ -48,12 +46,4 @@ export const LanguageProvider = ({ children }) => {
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
 };

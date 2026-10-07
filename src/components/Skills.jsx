@@ -1,22 +1,13 @@
 import React from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { skillsData } from '../data/skills';
 import { 
   Atom, 
-  Code2, 
-  Palette, 
-  FileCode, 
   Layout, 
-  GitBranch, 
   Zap, 
-  Terminal, 
-  CheckCircle2,
-  Sliders,
-  Sparkles,
-  ShieldCheck,
-  Cpu
+  ShieldCheck 
 } from 'lucide-react';
-import { GithubIcon } from './icons/GithubIcon';
+
 
 export const Skills = () => {
   const { lang, t } = useLanguage();

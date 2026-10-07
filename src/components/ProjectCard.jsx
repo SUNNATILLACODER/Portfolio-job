@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { GithubIcon } from './icons/GithubIcon';
-import { ExternalLink, ArrowUpRight, ShoppingBag, Eye, Search, SlidersHorizontal, Plus, Check } from 'lucide-react';
+import { ArrowUpRight, ShoppingBag, Eye, SlidersHorizontal, Plus, Check } from 'lucide-react';
+
 
 export const ProjectCard = ({ project, onOpenDetails }) => {
   const { lang, t } = useLanguage();

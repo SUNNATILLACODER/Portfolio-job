@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';

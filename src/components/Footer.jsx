@@ -1,8 +1,11 @@
 import React from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { contactConfig } from '../data/contact';
 import { GithubIcon } from './icons/GithubIcon';
-import { ArrowUp, Send, Heart } from 'lucide-react';
+import { ArrowUp, Send } from 'lucide-react';
+
+const CURRENT_YEAR = new Date().getFullYear();
+
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -111,7 +114,7 @@ export const Footer = () => {
         {/* Bottom Attribution Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#8E9691]">
           <div>
-            © {new Date().getFullYear()} Sunnatilla (__war1pov__). {t.footer.allRights}
+            © {CURRENT_YEAR} Sunnatilla (__war1pov__). {t.footer.allRights}
           </div>
           <div>
             {t.footer.designedAndBuilt}

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
+import { useLanguage } from '../i18n/useLanguage';
 import { contactConfig } from '../data/contact';
 import { GithubIcon } from './icons/GithubIcon';
 import { Send, Mail, Copy, Check, ArrowUpRight, AlertCircle, MessageSquare } from 'lucide-react';
 
 export const Contact = () => {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
+
 
   const [formData, setFormData] = useState({
     name: '',

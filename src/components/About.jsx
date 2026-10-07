@@ -1,6 +1,7 @@
 import React from 'react';
-import { useLanguage } from '../i18n/LanguageContext';
-import { MapPin, Check, Terminal, Compass, Shield, Zap } from 'lucide-react';
+import { useLanguage } from '../i18n/useLanguage';
+import { MapPin } from 'lucide-react';
+
 
 export const About = () => {
   const { t } = useLanguage();
