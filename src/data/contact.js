@@ -14,6 +14,9 @@ export const contactConfig = {
   
   telegramUrl: "https://t.me/war1pov_developer",
   telegramHandle: "@war1pov_developer",
+
+  linkedinUrl: "https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9",
+  linkedinHandle: "Sunnatilla Sharipov",
   
   // Configurable email address placeholder with honest indicator
   email: "sunnatilla.dev@gmail.com", // Developer can edit this to their preferred address
@@ -30,7 +33,21 @@ export const contactConfig = {
       accent: "#35D9FF",
       description: {
         en: "Fastest response time for chats and quick inquiries",
-        uz: "Xabarlar va tezkor savollar uchun eng qulay aloqa"
+        uz: "Xabarlar va tezkor savollar uchun eng qulay aloqa",
+        ru: "Быстрый ответ для чата и оперативных вопросов"
+      }
+    },
+    {
+      id: "linkedin",
+      name: "LinkedIn",
+      handle: "Sunnatilla Sharipov",
+      url: "https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9",
+      icon: "Linkedin",
+      accent: "#0A66C2",
+      description: {
+        en: "Professional network, career background & recommendations",
+        uz: "Kasbiy tarmoq, faoliyat va rasmiy hamkorlik",
+        ru: "Профессиональная сеть, опыт и деловые контакты"
       }
     },
     {
@@ -42,7 +59,8 @@ export const contactConfig = {
       accent: "#00F5A0",
       description: {
         en: "Open-source repositories, source code & commits",
-        uz: "Ochiq manbali repozitoriylar, kodlar va loyihalar"
+        uz: "Ochiq manbali repozitoriylar, kodlar va loyihalar",
+        ru: "Открытые репозитории, исходный код и коммиты"
       }
     },
     {
@@ -54,7 +72,8 @@ export const contactConfig = {
       accent: "#00F5A0",
       description: {
         en: "Direct business inquiries and project briefs",
-        uz: "Hamkorlik takliflari va loyiha topshiriqlari"
+        uz: "Hamkorlik takliflari va loyiha topshiriqlari",
+        ru: "Деловые предложения и проектные брифы"
       }
     }
   ]

@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { contactConfig } from '../data/contact';
 import { GithubIcon } from './icons/GithubIcon';
+import { LinkedinIcon } from './icons/LinkedinIcon';
 import { ArrowUp, Send } from 'lucide-react';
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -75,12 +76,12 @@ export const Footer = () => {
           </nav>
 
           {/* Direct Social & Back-to-top */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href={contactConfig.telegramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-[#00F5A0] transition-colors cursor-pointer"
+              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-[#00F5A0] hover:border-[#00F5A0]/40 transition-colors cursor-pointer"
               title="Telegram"
               aria-label="Telegram Profile"
             >
@@ -88,10 +89,21 @@ export const Footer = () => {
             </a>
 
             <a
+              href={contactConfig.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-[#38bdf8] hover:border-[#38bdf8]/40 transition-colors cursor-pointer"
+              title="LinkedIn"
+              aria-label="LinkedIn Profile"
+            >
+              <LinkedinIcon size={15} />
+            </a>
+
+            <a
               href={contactConfig.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-white transition-colors cursor-pointer"
+              className="p-2 rounded-lg bg-[#101413] border border-white/[0.06] text-[#8E9691] hover:text-white hover:border-white/20 transition-colors cursor-pointer"
               title="GitHub"
               aria-label="GitHub Profile"
             >

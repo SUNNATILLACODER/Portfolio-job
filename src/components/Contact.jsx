@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { contactConfig } from '../data/contact';
 import { GithubIcon } from './icons/GithubIcon';
+import { LinkedinIcon } from './icons/LinkedinIcon';
 import { Send, Mail, Copy, Check, ArrowUpRight, AlertCircle, MessageSquare } from 'lucide-react';
 
 export const Contact = () => {
-  const { t } = useLanguage();
-
+  const { t, lang } = useLanguage();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -130,7 +130,41 @@ export const Contact = () => {
                 <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
               </div>
               <p className="text-xs text-[#8E9691] pl-11">
-                Fastest response for technical inquiries, freelancing, and immediate chat.
+                {lang === 'uz'
+                  ? "Xabarlar, frilans va tezkor savollar uchun eng qulay aloqa."
+                  : lang === 'ru'
+                  ? "Быстрый ответ для чата, фриланса и оперативных вопросов."
+                  : "Fastest response for technical inquiries, freelancing, and immediate chat."}
+              </p>
+            </a>
+
+            {/* LinkedIn Profile */}
+            <a
+              href={contactConfig.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-5 rounded-xl surface-card surface-card-hover border border-white/[0.08]"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[#0A66C2] group-hover:text-[#38bdf8] transition-colors">
+                    <LinkedinIcon size={18} />
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-[#F3F4F0] block">LinkedIn</span>
+                    <span className="text-xs font-mono text-[#8E9691] group-hover:text-[#38bdf8] transition-colors">
+                      {contactConfig.linkedinHandle}
+                    </span>
+                  </div>
+                </div>
+                <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
+              </div>
+              <p className="text-xs text-[#8E9691] pl-11">
+                {lang === 'uz'
+                  ? "Kasbiy tarmoq, rezyume, tajriba va rasmiy hamkorlik aloqalari."
+                  : lang === 'ru'
+                  ? "Профессиональная сеть, резюме, опыт и деловые предложения."
+                  : "Professional network, career background, and official collaborations."}
               </p>
             </a>
 
@@ -154,7 +188,11 @@ export const Contact = () => {
                 <ArrowUpRight size={15} className="text-[#8E9691] group-hover:text-white transition-colors" />
               </div>
               <p className="text-xs text-[#8E9691] pl-11">
-                Open source repositories, pull requests, and verified commit history.
+                {lang === 'uz'
+                  ? "Ochiq manbali repozitoriylar, pull requestlar va kodlar tarixi."
+                  : lang === 'ru'
+                  ? "Открытые репозитории, pull request и проверенная история коммитов."
+                  : "Open source repositories, pull requests, and verified commit history."}
               </p>
             </a>
 
@@ -181,7 +219,11 @@ export const Contact = () => {
                 </button>
               </div>
               <p className="text-xs text-[#8E9691] pl-11">
-                Direct business inquiries, contract briefs, and project proposals.
+                {lang === 'uz'
+                  ? "Hamkorlik takliflari, shartnoma va loyiha topshiriqlari."
+                  : lang === 'ru'
+                  ? "Прямые деловые запросы, контракты и проектные предложения."
+                  : "Direct business inquiries, contract briefs, and project proposals."}
               </p>
             </div>
 
