@@ -152,21 +152,12 @@ export const Hero = () => {
               {/* Tab 1: Isometric Platform Visual & Live Metrics */}
               {activeTab === 'ui' ? (
                 <div className="space-y-4">
-                  <div className="relative aspect-[16/11] rounded-lg bg-[#080A0A] border border-white/[0.06] overflow-hidden group">
+                  <div className="relative aspect-square w-full rounded-lg bg-[#080A0A] border border-white/[0.08] overflow-hidden flex items-center justify-center p-1">
                     <img
                       src={sunnatillaImg}
                       alt="Sunnatilla - Frontend Developer"
-                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-contain rounded-md"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080A0A] via-transparent to-transparent opacity-80" />
-                    <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                      <span className="text-[#F3F4F0] font-semibold bg-[#080A0A]/85 backdrop-blur-sm px-2.5 py-1 rounded border border-white/[0.08]">
-                        Sunnatilla <span className="text-[#00F5A0]">// __war1pov__</span>
-                      </span>
-                      <span className="text-[#00F5A0] bg-[#080A0A]/85 backdrop-blur-sm px-2.5 py-1 rounded border border-white/[0.08] hidden sm:inline">
-                        Frontend Engineer
-                      </span>
-                    </div>
                   </div>
 
                   {/* Component Spec Rows */}
