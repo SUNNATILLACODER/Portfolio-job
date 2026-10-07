@@ -29,7 +29,9 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#00F5A0]" />
             <span className="text-xs font-mono tracking-wider text-[#00F5A0] uppercase font-semibold">
-              {project.id === 'tech-gear-store' ? t.projects.featuredTag : (lang === 'uz' ? '02 // TEZ KUNDA' : '02 // UPCOMING')}
+              {project.id === 'tech-gear-store'
+                ? t.projects.featuredTag
+                : (lang === 'uz' ? '02 // TEZ KUNDA' : lang === 'ru' ? '02 // СКОРО' : '02 // UPCOMING')}
             </span>
             <span className="text-xs font-mono text-[#8E9691] ml-2">
               // {category}
@@ -37,7 +39,9 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           </div>
 
           <span className="text-xs font-mono text-[#8E9691]">
-            {project.id === 'tech-gear-store' ? '01 // SELECTED' : '02 // IN PROGRESS'}
+            {project.id === 'tech-gear-store'
+              ? '01 // SELECTED'
+              : (lang === 'uz' ? '02 // JARAYONDA' : lang === 'ru' ? '02 // В РАЗРАБОТКЕ' : '02 // IN PROGRESS')}
           </span>
         </div>
 
@@ -87,7 +91,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             ) : (
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#101413] border border-white/[0.08] text-[#00F5A0] font-mono text-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-ping" />
-                <span>{lang === 'uz' ? "Tez Kunda" : "In Flight"}</span>
+                <span>{lang === 'uz' ? "Tez Kunda" : lang === 'ru' ? "Скоро" : "In Flight"}</span>
               </div>
             )}
           </div>
@@ -103,11 +107,11 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
               <span className="text-[#F3F4F0] font-semibold">
-                {lang === 'uz' ? "Tez Kunda: 3D Kiber-Shahar Loyihasi" : "Coming Soon: 3D Cyber City Experience"}
+                {lang === 'uz' ? "Tez Kunda: 3D Kiber-Shahar Loyihasi" : lang === 'ru' ? "Скоро: 3D Кибер-Город" : "Coming Soon: 3D Cyber City Experience"}
               </span>
             </div>
             <span className="text-[#8E9691] text-[11px]">
-              {lang === 'uz' ? "Sichqonchani harakatlantirib 3D shaharni kuzating" : "Move mouse to shift perspective"}
+              {lang === 'uz' ? "Sichqonchani harakatlantirib 3D shaharni kuzating" : lang === 'ru' ? "Перемещайте курсор для вращения 3D сцены" : "Move mouse to shift perspective"}
             </span>
           </div>
         </div>
@@ -126,7 +130,12 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             </div>
 
             <div className="hidden sm:flex items-center gap-1 bg-[#101413] p-1 rounded-md border border-white/[0.06]">
-              {['Barchasi', 'Smartfonlar', 'Noutbuklar'].map((cat) => (
+              {(lang === 'uz'
+                ? ['Barchasi', 'Smartfonlar', 'Noutbuklar']
+                : lang === 'ru'
+                ? ['Все', 'Смартфоны', 'Ноутбуки']
+                : ['All', 'Smartphones', 'Laptops']
+              ).map((cat) => (
                 <button
                   key={cat}
                   type="button"
@@ -144,7 +153,9 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
               <span className="text-[10px] text-amber-400 font-mono hidden md:inline">● REST API</span>
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#101413] border border-white/[0.08] text-[11px] text-[#F3F4F0]">
                 <ShoppingBag size={13} className="text-[#00F5A0]" />
-                <span>Savat ({cartCount})</span>
+                <span>
+                  {lang === 'uz' ? `Savat (${cartCount})` : lang === 'ru' ? `Корзина (${cartCount})` : `Cart (${cartCount})`}
+                </span>
               </div>
             </div>
           </div>
@@ -153,7 +164,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
               <div className="flex items-start justify-between mb-3">
                 <span className="text-[10px] font-mono text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">
-                  Smartfonlar
+                  {lang === 'uz' ? 'Smartfonlar' : lang === 'ru' ? 'Смартфоны' : 'Smartphones'}
                 </span>
                 <span className="text-xs font-mono font-bold text-[#F3F4F0]">$1,099.00</span>
               </div>
@@ -173,12 +184,16 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
                 {addedItem === 'phone' ? (
                   <>
                     <Check size={13} className="text-[#00F5A0]" />
-                    <span className="text-[#00F5A0]">Savatga qo'shildi</span>
+                    <span className="text-[#00F5A0]">
+                      {lang === 'uz' ? "Savatga qo'shildi" : lang === 'ru' ? "Добавлено" : "Added to Cart"}
+                    </span>
                   </>
                 ) : (
                   <>
                     <Plus size={13} />
-                    <span>Savatga qo'shish</span>
+                    <span>
+                      {lang === 'uz' ? "Savatga qo'shish" : lang === 'ru' ? "В корзину" : "Add to Cart"}
+                    </span>
                   </>
                 )}
               </button>
@@ -187,7 +202,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             <div className="p-4 rounded-lg bg-[#101413] border border-white/[0.06] flex flex-col justify-between group/item hover:border-white/20 transition-all">
               <div className="flex items-start justify-between mb-3">
                 <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
-                  Noutbuklar
+                  {lang === 'uz' ? 'Noutbuklar' : lang === 'ru' ? 'Ноутбуки' : 'Laptops'}
                 </span>
                 <span className="text-xs font-mono font-bold text-[#F3F4F0]">$1,999.00</span>
               </div>
@@ -207,12 +222,16 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
                 {addedItem === 'laptop' ? (
                   <>
                     <Check size={13} className="text-[#00F5A0]" />
-                    <span className="text-[#00F5A0]">Savatga qo'shildi</span>
+                    <span className="text-[#00F5A0]">
+                      {lang === 'uz' ? "Savatga qo'shildi" : lang === 'ru' ? "Добавлено" : "Added to Cart"}
+                    </span>
                   </>
                 ) : (
                   <>
                     <Plus size={13} />
-                    <span>Savatga qo'shish</span>
+                    <span>
+                      {lang === 'uz' ? "Savatga qo'shish" : lang === 'ru' ? "В корзину" : "Add to Cart"}
+                    </span>
                   </>
                 )}
               </button>
@@ -220,7 +239,13 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           </div>
 
           <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#8E9691]">
-            <span>Jonli qidiruv, toifalar saralashi va Dark/Light rejim</span>
+            <span>
+              {lang === 'uz'
+                ? "Jonli qidiruv, toifalar saralashi va Dark/Light rejim"
+                : lang === 'ru'
+                ? "Живой поиск, фильтрация по категориям и темный/светлый режим"
+                : "Live search, category filter, and dark/light mode"}
+            </span>
             <span className="text-[#00F5A0]">sunnatillacoder.github.io/Tech-gear</span>
           </div>
         </div>

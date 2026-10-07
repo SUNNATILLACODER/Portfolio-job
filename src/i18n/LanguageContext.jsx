@@ -6,16 +6,17 @@ export const LanguageProvider = ({ children }) => {
   const [lang, setLang] = useState(() => {
     try {
       const saved = localStorage.getItem('portfolio_language');
-      if (saved === 'en' || saved === 'uz') {
+      if (saved === 'en' || saved === 'uz' || saved === 'ru') {
         return saved;
       }
-      if (typeof navigator !== 'undefined' && navigator.language && navigator.language.startsWith('uz')) {
-        return 'uz';
+      if (typeof navigator !== 'undefined' && navigator.language) {
+        if (navigator.language.startsWith('ru')) return 'ru';
+        if (navigator.language.startsWith('uz')) return 'uz';
       }
     } catch {
       // ignore
     }
-    return 'en';
+    return 'uz';
   });
 
   useEffect(() => {
@@ -30,16 +31,20 @@ export const LanguageProvider = ({ children }) => {
   }, [lang]);
 
   const toggleLanguage = () => {
-    setLang((prev) => (prev === 'en' ? 'uz' : 'en'));
+    setLang((prev) => {
+      if (prev === 'uz') return 'ru';
+      if (prev === 'ru') return 'en';
+      return 'uz';
+    });
   };
 
   const setLanguage = (newLang) => {
-    if (newLang === 'en' || newLang === 'uz') {
+    if (newLang === 'en' || newLang === 'uz' || newLang === 'ru') {
       setLang(newLang);
     }
   };
 
-  const t = translations[lang] || translations.en;
+  const t = translations[lang] || translations.uz || translations.en;
 
   return (
     <LanguageContext.Provider value={{ lang, setLanguage, toggleLanguage, t }}>

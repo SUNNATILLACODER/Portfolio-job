@@ -133,7 +133,7 @@ export const Hero = () => {
                       activeTab === 'profile' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
-                    {lang === 'uz' ? 'PROFIL' : 'PROFILE'}
+                    {lang === 'uz' ? 'PROFIL' : lang === 'ru' ? 'ПРОФИЛЬ' : 'PROFILE'}
                   </button>
                   <button
                     type="button"
@@ -142,7 +142,7 @@ export const Hero = () => {
                       activeTab === 'resume' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
-                    {lang === 'uz' ? 'REZUME' : 'RESUME'}
+                    {lang === 'uz' ? 'REZUME' : lang === 'ru' ? 'РЕЗЮМЕ' : 'RESUME'}
                   </button>
                 </div>
               </div>
@@ -160,12 +160,18 @@ export const Hero = () => {
 
                   <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">Dasturchi</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">
+                        {lang === 'uz' ? 'Dasturchi' : lang === 'ru' ? 'Разработчик' : 'Developer'}
+                      </span>
                       <span className="text-[#F3F4F0] font-medium">Sunnatilla Sharipov</span>
                     </div>
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">Tajriba // Exp</span>
-                      <span className="text-[#00F5A0] font-medium">1.5 - 2 yil tajriba</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">
+                        {lang === 'uz' ? 'Tajriba' : lang === 'ru' ? 'Опыт' : 'Experience'}
+                      </span>
+                      <span className="text-[#00F5A0] font-medium">
+                        {lang === 'uz' ? '1.5 - 2 yil tajriba' : lang === 'ru' ? '1.5 - 2 года опыта' : '1.5 - 2 Years Exp'}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -187,18 +193,20 @@ export const Hero = () => {
                       </div>
                     </div>
                     <div className="shrink-0 px-2.5 py-1 rounded bg-[#00F5A0]/10 border border-[#00F5A0]/20 text-[#00F5A0] text-[11px] font-bold">
-                      {lang === 'uz' ? "1.5 - 2 yil tajriba" : "1.5 - 2 Yrs Exp"}
+                      {lang === 'uz' ? "1.5 - 2 yil tajriba" : lang === 'ru' ? "1.5 - 2 года опыта" : "1.5 - 2 Yrs Exp"}
                     </div>
                   </div>
 
                   {/* Summary / Haqida */}
                   <div className="p-3.5 rounded-lg bg-[#080A0A] border border-white/[0.06] space-y-1.5">
                     <span className="text-[10px] text-[#8E9691] uppercase tracking-wider block">
-                      {lang === 'uz' ? "// Haqida & Yondashuv" : "// Profile Summary"}
+                      {lang === 'uz' ? "// Haqida & Yondashuv" : lang === 'ru' ? "// О себе & Подход" : "// Profile Summary"}
                     </span>
                     <p className="text-[#F3F4F0] leading-relaxed text-[11px]">
                       {lang === 'uz'
                         ? "HTML, CSS, JavaScript va React bilan zamonaviy, responsive va foydalanuvchiga qulay web-saytlar yarataman. Yangi texnologiyalarni o‘rganishga va real loyihalarda tajriba oshirishga intilaman."
+                        : lang === 'ru'
+                        ? "Создаю современные, адаптивные и удобные веб-сайты с использованием HTML, CSS, JavaScript и React. Стремлюсь изучать новые технологии и развивать практический опыт на реальных проектах."
                         : "I build modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React. Committed to exploring modern technologies and leveling up practical engineering skills on real projects."}
                     </p>
                   </div>
@@ -208,11 +216,13 @@ export const Hero = () => {
                     <Target size={16} className="text-[#00F5A0] shrink-0 mt-0.5" />
                     <div className="space-y-0.5">
                       <span className="text-[10px] text-[#00F5A0] font-bold uppercase tracking-wider block">
-                        {lang === 'uz' ? "Maqsad" : "Primary Objective"}
+                        {lang === 'uz' ? "Maqsad" : lang === 'ru' ? "Цель" : "Primary Objective"}
                       </span>
                       <p className="text-[#F3F4F0] text-[11px] leading-relaxed">
                         {lang === 'uz'
                           ? "Zamonaviy, tezkor va foydalanuvchilar uchun qulay web-ilovalar yaratish."
+                          : lang === 'ru'
+                          ? "Создание современных, быстрых и удобных для пользователей веб-приложений."
                           : "Building modern, high-speed, and accessible user-friendly web applications."}
                       </p>
                     </div>
@@ -221,17 +231,36 @@ export const Hero = () => {
                   {/* Ko'nikmalar / Core Skills Grid */}
                   <div className="p-3.5 rounded-lg bg-[#080A0A] border border-white/[0.06] space-y-2">
                     <span className="text-[10px] text-[#8E9691] uppercase tracking-wider block">
-                      {lang === 'uz' ? "// Ko'nikmalar & Texnologiyalar" : "// Core Technical Skills"}
+                      {lang === 'uz' ? "// Ko'nikmalar & Texnologiyalar" : lang === 'ru' ? "// Навыки & Технологии" : "// Core Technical Skills"}
                     </span>
                     <div className="flex flex-wrap gap-1.5">
-                      {[
-                        "HTML5, CSS3, JavaScript",
-                        "React.js",
-                        "Responsive Web Design",
-                        "Flexbox, CSS Grid",
-                        "Git va GitHub",
-                        "UI/UX va zamonaviy web dizayn",
-                      ].map((skill) => (
+                      {(lang === 'uz'
+                        ? [
+                            "HTML5, CSS3, JavaScript",
+                            "React.js",
+                            "Responsive Web Design",
+                            "Flexbox, CSS Grid",
+                            "Git va GitHub",
+                            "UI/UX va zamonaviy web dizayn",
+                          ]
+                        : lang === 'ru'
+                        ? [
+                            "HTML5, CSS3, JavaScript",
+                            "React.js",
+                            "Адаптивный веб-дизайн",
+                            "Flexbox, CSS Grid",
+                            "Git и GitHub",
+                            "UI/UX и современный веб-дизайн",
+                          ]
+                        : [
+                            "HTML5, CSS3, JavaScript",
+                            "React.js",
+                            "Responsive Web Design",
+                            "Flexbox, CSS Grid",
+                            "Git & GitHub",
+                            "UI/UX & Modern Web Design",
+                          ]
+                      ).map((skill) => (
                         <span
                           key={skill}
                           className="px-2.5 py-1 rounded bg-[#101413] border border-white/[0.08] text-[10px] text-[#F3F4F0] flex items-center gap-1.5"
@@ -252,7 +281,9 @@ export const Hero = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
                   <span>Sunnatilla Sharipov // Frontend Developer</span>
                 </span>
-                <span>1.5 - 2 Yil Tajriba</span>
+                <span>
+                  {lang === 'uz' ? '1.5 - 2 Yil Tajriba' : lang === 'ru' ? '1.5 - 2 Года Опыта' : '1.5 - 2 Years Exp'}
+                </span>
               </div>
 
             </div>
