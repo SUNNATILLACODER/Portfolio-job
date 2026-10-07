@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import sunnatillaImg from '../assets/sunnatilla.jpg';
-import { MiniCity3D } from './MiniCity3D';
 
 export const Hero = () => {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('profile');
 
-
   const techStack = [
     { name: "React 19", role: "Component Architecture" },
-    { name: "Three.js", role: "3D Digital World" },
     { name: "JavaScript", role: "ES6+ / Logic" },
     { name: "Tailwind CSS", role: "Design Systems" },
+    { name: "REST API", role: "Dynamic Integration" },
     { name: "Vite 8", role: "Tooling & Bundling" },
   ];
 
@@ -57,7 +55,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Hero Asymmetric Grid: Headline + 3D Mini-City Architecture Panel */}
+        {/* Hero Asymmetric Grid: Headline + Developer Architecture Panel */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Bold Editorial Headline */}
@@ -112,7 +110,7 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column: 3D Mini-City & Architecture Viewport */}
+          {/* Right Column: Developer Portrait Architecture Viewport */}
           <div className="lg:col-span-5">
             <div className="rounded-xl surface-card p-5 sm:p-6 border border-white/[0.08] shadow-2xl relative overflow-hidden">
               
@@ -130,17 +128,8 @@ export const Hero = () => {
                 <div className="flex items-center gap-1 bg-[#080A0A] p-0.5 rounded border border-white/[0.06]">
                   <button
                     type="button"
-                    onClick={() => setActiveTab('city')}
-                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
-                      activeTab === 'city' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
-                    }`}
-                  >
-                    3D CITY
-                  </button>
-                  <button
-                    type="button"
                     onClick={() => setActiveTab('profile')}
-                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
+                    className={`px-3 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
                       activeTab === 'profile' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
@@ -149,7 +138,7 @@ export const Hero = () => {
                   <button
                     type="button"
                     onClick={() => setActiveTab('specs')}
-                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
+                    className={`px-3 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
                       activeTab === 'specs' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
@@ -158,26 +147,7 @@ export const Hero = () => {
                 </div>
               </div>
 
-              {/* Tab 1: 3D Futuristic Digital Mini-City */}
-              {activeTab === 'city' && (
-                <div className="space-y-4">
-                  <MiniCity3D />
-
-                  {/* Component Spec Rows */}
-                  <div className="grid grid-cols-2 gap-2 text-xs font-mono">
-                    <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">3D Engine</span>
-                      <span className="text-[#F3F4F0] font-medium">Three.js WebGL</span>
-                    </div>
-                    <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">Atmosphere</span>
-                      <span className="text-[#00F5A0] font-medium">Neon Fog & Streams</span>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Tab 2: Developer Portrait (Full Uncropped) */}
+              {/* Tab 1: Developer Portrait (Full Uncropped - Visible immediately upon entering) */}
               {activeTab === 'profile' && (
                 <div className="space-y-4">
                   <div className="relative aspect-square w-full rounded-lg bg-[#080A0A] border border-white/[0.08] overflow-hidden flex items-center justify-center p-1">
@@ -201,19 +171,19 @@ export const Hero = () => {
                 </div>
               )}
 
-              {/* Tab 3: Design Tokens Code Inspector */}
+              {/* Tab 2: Design Tokens Code Inspector */}
               {activeTab === 'specs' && (
                 <div className="p-4 rounded-lg bg-[#080A0A] border border-white/[0.06] font-mono text-[11px] space-y-2 text-[#8E9691]">
-                  <div className="text-[#00F5A0]">// 3D Mini-City & System Tokens</div>
-                  <div><span className="text-white">const</span> world = &#123;</div>
-                  <div className="pl-4">engine: <span className="text-[#82FCD0]">"Three.js r174"</span>,</div>
-                  <div className="pl-4">ambientLighting: <span className="text-[#82FCD0]">"Emerald #00F5A0"</span>,</div>
-                  <div className="pl-4">dataHighways: <span className="text-[#a78bfa]">"Violet + Cyan"</span>,</div>
-                  <div className="pl-4">fogDensity: <span className="text-emerald-400">0.038</span>,</div>
-                  <div className="pl-4">fpsTarget: <span className="text-emerald-400">60</span>,</div>
-                  <div className="pl-4">parallaxControl: <span className="text-emerald-400">true</span></div>
+                  <div className="text-[#00F5A0]">// Architecture & Profile Tokens</div>
+                  <div><span className="text-white">const</span> developer = &#123;</div>
+                  <div className="pl-4">handle: <span className="text-[#82FCD0]">"__war1pov__"</span>,</div>
+                  <div className="pl-4">coreFramework: <span className="text-[#82FCD0]">"React 19"</span>,</div>
+                  <div className="pl-4">stylingSystem: <span className="text-[#82FCD0]">"Tailwind CSS"</span>,</div>
+                  <div className="pl-4">accentPalette: <span className="text-[#82FCD0]">"Emerald #00F5A0"</span>,</div>
+                  <div className="pl-4">availableForWork: <span className="text-emerald-400">true</span>,</div>
+                  <div className="pl-4">timezone: <span className="text-[#82FCD0]">"UTC+5"</span></div>
                   <div>&#125;;</div>
-                  <div className="pt-2 text-[10px] text-white/40">Hardware-accelerated WebGL rendering</div>
+                  <div className="pt-2 text-[10px] text-white/40">Verified Developer Profile Environment</div>
                 </div>
               )}
 
@@ -221,9 +191,9 @@ export const Hero = () => {
               <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[10px] font-mono text-[#8E9691]">
                 <span className="flex items-center gap-1.5 text-[#F3F4F0]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-                  <span>3D Digital World Active</span>
+                  <span>Developer Profile Active</span>
                 </span>
-                <span>Three.js · React 19</span>
+                <span>__war1pov__ · React 19</span>
               </div>
 
             </div>
@@ -235,3 +205,4 @@ export const Hero = () => {
     </section>
   );
 };
+
