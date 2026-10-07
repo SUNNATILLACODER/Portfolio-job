@@ -46,7 +46,7 @@ export const MiniCity3D = ({ className = "" }) => {
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.15;
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
     container.appendChild(renderer.domElement);
 
     // LIGHTING
@@ -313,12 +313,12 @@ export const MiniCity3D = ({ className = "" }) => {
 
     // ANIMATION LOOP
     let animationFrameId;
-    const clock = new THREE.Clock();
+    const startTime = performance.now();
 
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
 
-      const elapsedTime = clock.getElapsedTime();
+      const elapsedTime = (performance.now() - startTime) * 0.001;
 
       if (!prefersReducedMotion) {
         // Slow continuous architectural orbit
