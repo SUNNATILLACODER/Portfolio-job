@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import sunnatillaImg from '../assets/sunnatilla.jpg';
-
-
+import { MiniCity3D } from './MiniCity3D';
 
 export const Hero = () => {
   const { t } = useLanguage();
-  const [activeTab, setActiveTab] = useState('ui');
+  const [activeTab, setActiveTab] = useState('city');
 
   const techStack = [
     { name: "React 19", role: "Component Architecture" },
-    { name: "JavaScript", role: "ES6+ / Async Logic" },
+    { name: "Three.js", role: "3D Digital World" },
+    { name: "JavaScript", role: "ES6+ / Logic" },
     { name: "Tailwind CSS", role: "Design Systems" },
-    { name: "HTML5 / CSS3", role: "Semantic & Fluid" },
-    { name: "Vite", role: "Tooling & Bundling" },
+    { name: "Vite 8", role: "Tooling & Bundling" },
   ];
 
   const handleScrollTo = (id) => {
@@ -57,7 +56,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Hero Asymmetric Grid: Headline + Architectural Inspector */}
+        {/* Hero Asymmetric Grid: Headline + 3D Mini-City Architecture Panel */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Bold Editorial Headline */}
@@ -112,11 +111,11 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column: Architectural UI & Component Architecture Preview */}
+          {/* Right Column: 3D Mini-City & Architecture Viewport */}
           <div className="lg:col-span-5">
             <div className="rounded-xl surface-card p-5 sm:p-6 border border-white/[0.08] shadow-2xl relative overflow-hidden">
               
-              {/* Terminal / Component Bar */}
+              {/* Terminal Header Bar with Tabs */}
               <div className="flex items-center justify-between pb-4 border-b border-white/[0.06] mb-5">
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
@@ -130,18 +129,27 @@ export const Hero = () => {
                 <div className="flex items-center gap-1 bg-[#080A0A] p-0.5 rounded border border-white/[0.06]">
                   <button
                     type="button"
-                    onClick={() => setActiveTab('ui')}
-                    className={`px-2 py-0.5 rounded text-[10px] font-mono cursor-pointer transition-colors ${
-                      activeTab === 'ui' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691]'
+                    onClick={() => setActiveTab('city')}
+                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
+                      activeTab === 'city' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
-                    PREVIEW
+                    3D CITY
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab('profile')}
+                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
+                      activeTab === 'profile' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
+                    }`}
+                  >
+                    PROFILE
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveTab('specs')}
-                    className={`px-2 py-0.5 rounded text-[10px] font-mono cursor-pointer transition-colors ${
-                      activeTab === 'specs' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691]'
+                    className={`px-2.5 py-1 rounded text-[10px] font-mono cursor-pointer transition-colors ${
+                      activeTab === 'specs' ? 'bg-[#00F5A0] text-[#080A0A] font-bold' : 'text-[#8E9691] hover:text-white'
                     }`}
                   >
                     TOKENS
@@ -149,8 +157,27 @@ export const Hero = () => {
                 </div>
               </div>
 
-              {/* Tab 1: Isometric Platform Visual & Live Metrics */}
-              {activeTab === 'ui' ? (
+              {/* Tab 1: 3D Futuristic Digital Mini-City */}
+              {activeTab === 'city' && (
+                <div className="space-y-4">
+                  <MiniCity3D />
+
+                  {/* Component Spec Rows */}
+                  <div className="grid grid-cols-2 gap-2 text-xs font-mono">
+                    <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
+                      <span className="text-[10px] text-[#8E9691] block uppercase">3D Engine</span>
+                      <span className="text-[#F3F4F0] font-medium">Three.js WebGL</span>
+                    </div>
+                    <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
+                      <span className="text-[10px] text-[#8E9691] block uppercase">Atmosphere</span>
+                      <span className="text-[#00F5A0] font-medium">Neon Fog & Streams</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Tab 2: Developer Portrait (Full Uncropped) */}
+              {activeTab === 'profile' && (
                 <div className="space-y-4">
                   <div className="relative aspect-square w-full rounded-lg bg-[#080A0A] border border-white/[0.08] overflow-hidden flex items-center justify-center p-1">
                     <img
@@ -160,30 +187,32 @@ export const Hero = () => {
                     />
                   </div>
 
-                  {/* Component Spec Rows */}
                   <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">CSS Architecture</span>
-                      <span className="text-[#F3F4F0] font-medium">Atomic & Tokenized</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">Developer</span>
+                      <span className="text-[#F3F4F0] font-medium">Sunnatilla (__war1pov__)</span>
                     </div>
                     <div className="p-2.5 rounded bg-[#080A0A] border border-white/[0.04]">
-                      <span className="text-[10px] text-[#8E9691] block uppercase">State Sync</span>
-                      <span className="text-[#00F5A0] font-medium">Deterministic React</span>
+                      <span className="text-[10px] text-[#8E9691] block uppercase">Role</span>
+                      <span className="text-[#00F5A0] font-medium">Frontend Engineer</span>
                     </div>
                   </div>
                 </div>
-              ) : (
-                /* Tab 2: Code / Token Inspector */
+              )}
+
+              {/* Tab 3: Design Tokens Code Inspector */}
+              {activeTab === 'specs' && (
                 <div className="p-4 rounded-lg bg-[#080A0A] border border-white/[0.06] font-mono text-[11px] space-y-2 text-[#8E9691]">
-                  <div className="text-[#00F5A0]">// Design System Tokens</div>
-                  <div><span className="text-white">const</span> theme = &#123;</div>
-                  <div className="pl-4">surface: <span className="text-[#82FCD0]">"#101413"</span>,</div>
-                  <div className="pl-4">accent: <span className="text-[#00F5A0]">"#00F5A0"</span>,</div>
-                  <div className="pl-4">typography: <span className="text-[#82FCD0]">"Syne + Jakarta"</span>,</div>
-                  <div className="pl-4">reducedMotion: <span className="text-emerald-400">true</span>,</div>
-                  <div className="pl-4">accessibility: <span className="text-emerald-400">"WCAG AA"</span></div>
+                  <div className="text-[#00F5A0]">// 3D Mini-City & System Tokens</div>
+                  <div><span className="text-white">const</span> world = &#123;</div>
+                  <div className="pl-4">engine: <span className="text-[#82FCD0]">"Three.js r174"</span>,</div>
+                  <div className="pl-4">ambientLighting: <span className="text-[#82FCD0]">"Emerald #00F5A0"</span>,</div>
+                  <div className="pl-4">dataHighways: <span className="text-[#a78bfa]">"Violet + Cyan"</span>,</div>
+                  <div className="pl-4">fogDensity: <span className="text-emerald-400">0.038</span>,</div>
+                  <div className="pl-4">fpsTarget: <span className="text-emerald-400">60</span>,</div>
+                  <div className="pl-4">parallaxControl: <span className="text-emerald-400">true</span></div>
                   <div>&#125;;</div>
-                  <div className="pt-2 text-[10px] text-white/40">Verified with zero runtime overhead</div>
+                  <div className="pt-2 text-[10px] text-white/40">Hardware-accelerated WebGL rendering</div>
                 </div>
               )}
 
@@ -191,9 +220,9 @@ export const Hero = () => {
               <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[10px] font-mono text-[#8E9691]">
                 <span className="flex items-center gap-1.5 text-[#F3F4F0]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-                  <span>Production Ready</span>
+                  <span>3D Digital World Active</span>
                 </span>
-                <span>Vite 8 · React 19</span>
+                <span>Three.js · React 19</span>
               </div>
 
             </div>
