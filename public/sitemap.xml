@@ -34,4 +34,20 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- RSS 2.0 Feed for Crawlers & Aggregators -->
+  <url>
+    <loc>https://sunnatillasharipov.uz/feed.xml</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Web Application Manifest -->
+  <url>
+    <loc>https://sunnatillasharipov.uz/site.webmanifest</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

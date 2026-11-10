@@ -1,0 +1,24 @@
+{
+  "name": "Sunnatilla Sharipov — Frontend Developer Portfolio",
+  "short_name": "war1pov",
+  "description": "Official portfolio of Sunnatilla Sharipov (__war1pov__) — Frontend Developer & React Engineer based in Tashkent, Uzbekistan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080A0A",
+  "theme_color": "#080A0A",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "portfolio",
+    "developer",
+    "technology"
+  ]
+}

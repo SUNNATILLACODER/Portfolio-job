@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sunnatilla Sharipov — Frontend Developer &amp; React Engineer</title>
+    <link>https://sunnatillasharipov.uz/</link>
+    <description>Engineering updates, production web projects, and technical case studies by Sunnatilla Sharipov (__war1pov__) from Tashkent, Uzbekistan.</description>
+    <language>en-us</language>
+    <copyright>Copyright 2026 Sunnatilla Sharipov</copyright>
+    <lastBuildDate>Tue, 10 Nov 2026 21:00:00 +0500</lastBuildDate>
+    <atom:link href="https://sunnatillasharipov.uz/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>TechGear — Production Responsive E-Commerce Web Application</title>
+      <link>https://sunnatillacoder.github.io/Tech-gear/</link>
+      <guid isPermaLink="true">https://sunnatillacoder.github.io/Tech-gear/</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 +0500</pubDate>
+      <dc:creator>Sunnatilla Sharipov</dc:creator>
+      <category>React</category>
+      <category>E-Commerce</category>
+      <category>Web Development</category>
+      <description><![CDATA[TechGear is a fully responsive digital tech store engineered by Sunnatilla Sharipov. Features dynamic REST API catalog integration, instant client-side search, multi-attribute filtering, shopping cart drawer state management, and dark/light mode toggle.]]></description>
+    </item>
+
+    <item>
+      <title>3D Cyber City — WebGL Interactive Three.js Experience</title>
+      <link>https://sunnatillasharipov.uz/#projects</link>
+      <guid isPermaLink="false">sunnatillasharipov-3d-cyber-city</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 +0500</pubDate>
+      <dc:creator>Sunnatilla Sharipov</dc:creator>
+      <category>Three.js</category>
+      <category>WebGL</category>
+      <category>Creative Coding</category>
+      <description><![CDATA[An interactive procedural 3D cyber city canvas showcase built with Three.js and custom GLSL shaders, featuring dynamic particle streams, smooth mouse parallax camera damping, and high 60fps performance across desktop and mobile browsers.]]></description>
+    </item>
+
+    <item>
+      <title>Sunnatilla Sharipov Engineering Portfolio &amp; Generative Engine Optimization Launch</title>
+      <link>https://sunnatillasharipov.uz/</link>
+      <guid isPermaLink="false">sunnatillasharipov-portfolio-v1</guid>
+      <pubDate>Tue, 10 Nov 2026 20:00:00 +0500</pubDate>
+      <dc:creator>Sunnatilla Sharipov</dc:creator>
+      <category>Portfolio</category>
+      <category>Frontend Engineering</category>
+      <category>GEO</category>
+      <description><![CDATA[Official launch of Sunnatilla Sharipov's personal portfolio website (https://sunnatillasharipov.uz/) engineered with React, Tailwind CSS, Vite, Schema.org JSON-LD knowledge graph, and full Answer.AI llms.txt standard integration for generative AI visibility.]]></description>
+    </item>
+  </channel>
+</rss>
