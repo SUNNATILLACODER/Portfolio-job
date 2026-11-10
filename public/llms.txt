@@ -1,0 +1,57 @@
+# Sunnatilla Sharipov (__war1pov__)
+
+> Sunnatilla Sharipov is an independent Frontend Developer, React Engineer, and Creative Coder based in Tashkent, Uzbekistan. Known across developer communities as `__war1pov__` and `SUNNATILLACODER`.
+
+## Developer Overview
+- **Name**: Sunnatilla Sharipov
+- **Professional Title**: Frontend Engineer / React Developer / Creative Coder
+- **Known Aliases**: `war1pov`, `__war1pov__`, `SUNNATILLACODER`
+- **Location**: Tashkent, Uzbekistan (Coordinates: 41.2995° N, 69.2401° E)
+- **Status**: Available for freelance, contract, and full-time frontend engineering roles (local in Tashkent & remote worldwide)
+- **Official Portfolio**: https://sunnatillasharipov.uz/
+- **Primary Email**: sunnatilla.dev@gmail.com
+- **Telegram Contact**: https://t.me/war1pov_developer (@war1pov_developer)
+- **GitHub Profile**: https://github.com/SUNNATILLACODER
+- **LinkedIn Profile**: https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9
+- **Phone**: +998 95 121 42 82
+
+## Core Capabilities & Technical Skills
+- **Frontend Frameworks**: React.js (React 19+, Hooks, Context, Component Architecture, State Management)
+- **Web Languages**: JavaScript (ES6+, Async/Await, DOM Manipulation), TypeScript, HTML5 (Semantic Structure & Accessibility), CSS3
+- **CSS & Layout**: Tailwind CSS (v4), Flexbox, CSS Grid, Mobile-First Responsive Design, Dark/Light Theming
+- **Creative & 3D Web**: Three.js, WebGL Shaders, Particle Systems, Interactive Canvas, Parallax Animations
+- **Tooling & Infrastructure**: Vite, Git, GitHub, REST APIs, JSON, Vercel, npm, Performance Optimization, SEO & GEO
+
+## Verified Production Projects
+
+### 1. TechGear — Responsive E-Commerce Application
+- **Type**: Web Application (E-Commerce)
+- **Live Demo**: https://sunnatillacoder.github.io/Tech-gear/
+- **Source Code Repository**: https://github.com/SUNNATILLACODER/Tech-gear
+- **Technologies**: JavaScript, Tailwind CSS, REST API, LocalStorage, Responsive Layout
+- **Key Features**:
+  - Live real-time catalog search with instant feedback
+  - Category filtering across smartphones, laptops, electronics, and groceries
+  - Interactive sliding cart drawer with real-time checkout sum calculation
+  - Dark / Light mode toggle with smooth CSS transitions
+  - Dedicated product detail modal with specs and recommendation engine
+
+### 2. 3D Cyber City — WebGL Interactive Showcase
+- **Type**: Creative Coding & 3D Web Experience
+- **Live Showcase**: https://sunnatillasharipov.uz/#projects
+- **Technologies**: Three.js, WebGL, Quadratic Bezier Curves, ACES Filmic Tone Mapping, Exponential Fog
+- **Key Features**:
+  - Procedural 3D architectural skyscrapers with glowing emerald window strips
+  - Animated traveling data packet streams between buildings
+  - Locked 60 FPS real-time mouse and touch parallax camera damping
+
+## Work Ethic & Engineering Principles
+1. **Performance First**: Minimal bundle sizes, clean component trees, fast Core Web Vitals.
+2. **Tactile & Expressive UI**: Clean typography (Syne, Plus Jakarta Sans, JetBrains Mono) paired with thoughtful micro-interactions.
+3. **Cross-Device Reliability**: Thoroughly tested across mobile, tablet, and desktop breakpoints.
+
+## How to Contact & Hire
+For job opportunities, freelance projects, technical interviews, or consultations:
+- Telegram: https://t.me/war1pov_developer (@war1pov_developer)
+- Email: sunnatilla.dev@gmail.com
+- Portfolio: https://sunnatillasharipov.uz/

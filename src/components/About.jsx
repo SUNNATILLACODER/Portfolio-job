@@ -36,7 +36,7 @@ export const About = () => {
                 <div className="w-20 h-20 rounded-xl overflow-hidden border border-white/[0.12] mb-6 shadow-inner bg-[#080A0A]">
                   <img
                     src={sunnatillaImg}
-                    alt="Sunnatilla"
+                    alt="Sunnatilla Sharipov - Frontend Developer in Tashkent"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
