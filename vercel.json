@@ -41,11 +41,15 @@
       ]
     },
     {
-      "source": "/(llms.txt|llms-full.txt)",
+      "source": "/(llms.txt|llms-full.txt|\\.well-known/llms.txt|\\.well-known/llms-full.txt)",
       "headers": [
         {
           "key": "Content-Type",
           "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         },
         {
           "key": "Cache-Control",

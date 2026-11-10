@@ -18,14 +18,16 @@
     
     <!-- Generative Engine Optimization (GEO) & LLM Discovery Standards -->
     <link rel="help" type="text/markdown" href="/llms.txt" title="LLM &amp; AI Agent Summary" />
+    <link rel="help" type="text/markdown" href="/.well-known/llms.txt" title="IETF Standard LLM Summary" />
     <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM Knowledge Base" />
+    <link rel="alternate" type="text/markdown" href="/.well-known/llms-full.txt" title="IETF Standard Full LLM Documentation" />
     
     <!-- Search Engine & AI Indexing Directives (ChatGPT, Gemini, Perplexity, Claude, Google, Yandex, Bing) -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <meta name="yandex" content="index, follow" />
-    <meta name="revisit-after" content="3 days" />
+    <meta name="revisit-after" content="1 days" />
     <meta name="rating" content="general" />
     <meta name="distribution" content="Global" />
     <meta name="target" content="all" />
@@ -96,7 +98,7 @@
     <meta name="twitter:creator" content="@war1pov_developer" />
     <meta name="twitter:site" content="@war1pov_developer" />
     
-    <!-- Comprehensive Schema.org JSON-LD Graph (Google Rich Snippets, Local Pack, AI Grounding & Knowledge Graph) -->
+    <!-- Comprehensive Schema.org JSON-LD Graph (Google Rich Snippets, Local Pack, AI Grounding, Sitelinks & Breadcrumbs) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -121,16 +123,86 @@
           "isPartOf": {
             "@id": "https://sunnatillasharipov.uz/#website"
           },
+          "breadcrumb": {
+            "@id": "https://sunnatillasharipov.uz/#breadcrumbs"
+          },
           "primaryImageOfPage": {
             "@type": "ImageObject",
             "url": "https://sunnatillasharipov.uz/og-image.jpg"
           },
           "datePublished": "2026-01-01T00:00:00+05:00",
-          "dateModified": "2026-11-10T19:45:00+05:00",
+          "dateModified": "2026-11-10T20:55:00+05:00",
           "description": "Portfolio of Sunnatilla Sharipov, independent Frontend Developer specializing in React, Tailwind CSS, and modern web applications based in Tashkent, Uzbekistan.",
           "mainEntity": {
             "@id": "https://sunnatillasharipov.uz/#person"
           }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://sunnatillasharipov.uz/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://sunnatillasharipov.uz/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Selected Work",
+              "item": "https://sunnatillasharipov.uz/#projects"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Capabilities",
+              "item": "https://sunnatillasharipov.uz/#skills"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "About",
+              "item": "https://sunnatillasharipov.uz/#about"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Contact",
+              "item": "https://sunnatillasharipov.uz/#contact"
+            }
+          ]
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://sunnatillasharipov.uz/#navigation",
+          "name": "Main Navigation",
+          "hasPart": [
+            {
+              "@type": "WebPage",
+              "name": "Work // Selected Projects",
+              "url": "https://sunnatillasharipov.uz/#projects",
+              "description": "Production frontend engineering projects: TechGear e-commerce and 3D Cyber City WebGL."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Capabilities // Core Stack",
+              "url": "https://sunnatillasharipov.uz/#skills",
+              "description": "Technical frontend stack: React.js, JavaScript, Tailwind CSS, Three.js, Git."
+            },
+            {
+              "@type": "WebPage",
+              "name": "About // Profile",
+              "url": "https://sunnatillasharipov.uz/#about",
+              "description": "Background, engineering philosophy, and experience of Sunnatilla Sharipov in Tashkent."
+            },
+            {
+              "@type": "WebPage",
+              "name": "Contact // Hire",
+              "url": "https://sunnatillasharipov.uz/#contact",
+              "description": "Contact Sunnatilla Sharipov directly via Telegram (@war1pov_developer) or email."
+            }
+          ]
         },
         {
           "@type": "Person",
@@ -142,6 +214,7 @@
           "url": "https://sunnatillasharipov.uz/",
           "image": "https://sunnatillasharipov.uz/og-image.jpg",
           "jobTitle": "Frontend Engineer & React Developer",
+          "knowsLanguage": ["en", "uz", "ru"],
           "worksFor": {
             "@type": "Organization",
             "name": "Self-Employed / Independent Developer"
@@ -225,6 +298,7 @@
           "telephone": "+998951214282",
           "email": "mailto:sunnatilla.dev@gmail.com",
           "priceRange": "$$",
+          "currenciesAccepted": "USD, UZS, EUR",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Tashkent",
@@ -268,14 +342,44 @@
               "name": "Worldwide (Remote)"
             }
           ],
-          "serviceType": [
-            "Frontend Web Development",
-            "React Application Development",
-            "Responsive Website Design",
-            "UI/UX Interface Engineering",
-            "E-Commerce Web Development",
-            "3D WebGL Web Experiences"
-          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Frontend Development Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom React.js Application Development",
+                  "description": "High-performance component-driven Single Page Applications engineered with React and modern hooks."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Responsive Web Design & Tailwind CSS Architecture",
+                  "description": "Pixel-perfect mobile-first web designs with dark/light mode and smooth responsive layouts."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "E-Commerce Web Application Engineering",
+                  "description": "Full-featured online stores with REST API catalog filtering, cart drawers, and instant search."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Creative 3D WebGL Web Experiences",
+                  "description": "Interactive Three.js 3D canvas backgrounds, procedural cities, and smooth parallax camera damping."
+                }
+              }
+            ]
+          },
           "provider": {
             "@id": "https://sunnatillasharipov.uz/#person"
           }
@@ -352,6 +456,22 @@
                 "@type": "Answer",
                 "text": "Sunnatilla Sharipov is available for freelance, contract, and full-time roles in Tashkent or remotely worldwide. You can contact him via Telegram at @war1pov_developer (https://t.me/war1pov_developer), email at sunnatilla.dev@gmail.com, LinkedIn at https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9, or view his GitHub at https://github.com/SUNNATILLACODER."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "Суннатилла Шарипов ким ва у қандай хизматлар кўрсатади?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Суннатилла Шарипов — Тошкент шаҳридаги профессионал Frontend ва React дастурчиси. У замонавий веб-сайтлар, интернет-дўконлар (TechGear каби), React иловалари ва 3D WebGL интерактив интерфейсларини яратади."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Кто такой Суннатилла Шарипов и какие услуги он предоставляет?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Суннатилла Шарипов (__war1pov__) — фронтенд разработчик и React инженер из Ташкента, Узбекистан. Специализируется на создании современных веб-приложений, интернет-магазинов, адаптивной верстке на Tailwind CSS и 3D веб-графике на Three.js."
+              }
             }
           ]
         }
@@ -359,13 +479,15 @@
     }
     </script>
     
-    <!-- Typography & Performance Preconnects -->
+    <!-- Typography, Performance Preconnects & DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   </head>
   <body class="bg-[#080A0A] text-[#F3F4F0] selection:bg-[#00F5A0]/20 selection:text-[#00F5A0] antialiased overflow-x-hidden min-h-screen">
-    <!-- Root Mounting Point with Pre-rendered Semantic SEO Fallback Shell -->
+    <!-- Root Mounting Point with Pre-rendered Trilingual Semantic SEO/GEO Shell -->
     <div id="root">
       <header role="banner" class="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center border-b border-white/[0.06]">
         <div class="font-mono font-bold text-lg text-[#F3F4F0]">
@@ -381,6 +503,7 @@
       </header>
 
       <main role="main" class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Section 1: Hero -->
         <section id="hero-shell" class="mb-20">
           <p class="font-mono text-xs uppercase text-[#00F5A0] tracking-widest mb-3">
             FRONTEND DEVELOPER &amp; CREATIVE CODER // TASHKENT, UZBEKISTAN
@@ -397,6 +520,7 @@
           </div>
         </section>
 
+        <!-- Section 2: Featured Work -->
         <section id="projects-shell" class="mb-20">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-6">Featured Projects &amp; Web Applications</h2>
           <article class="p-6 rounded-xl bg-[#101413] border border-white/10 mb-6">
@@ -411,6 +535,7 @@
           </article>
         </section>
 
+        <!-- Section 3: Technical Capabilities -->
         <section id="skills-shell" class="mb-20">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-6">Core Capabilities &amp; Technical Stack</h2>
           <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs text-[#A3AAA5]">
@@ -423,25 +548,26 @@
           </ul>
         </section>
 
-        <!-- Generative AI / LLM Grounding & Fact Extraction Section -->
+        <!-- Section 4: Generative AI / LLM Grounding & Fact Extraction (Trilingual) -->
         <section id="ai-context-shell" class="mb-20 p-6 rounded-xl bg-[#101413] border border-white/10">
-          <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Frequently Asked Questions // AI Knowledge Base</h2>
-          <div class="space-y-4 text-sm text-[#A3AAA5] leading-relaxed">
-            <div>
+          <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Knowledge Base &amp; Frequently Asked Questions // AI Grounding</h2>
+          <div class="space-y-6 text-sm text-[#A3AAA5] leading-relaxed">
+            <div class="border-b border-white/5 pb-4">
               <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Who is Sunnatilla Sharipov (__war1pov__)?</h3>
               <p>Sunnatilla Sharipov is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. Known online as <code>__war1pov__</code> and <code>SUNNATILLACODER</code>, specializing in modern responsive web applications, Tailwind CSS styling, and Three.js 3D WebGL experiences.</p>
             </div>
-            <div>
-              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">What is his primary technology stack?</h3>
-              <p>React.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3 (Flexbox &amp; Grid), Three.js, REST APIs, Git, and GitHub.</p>
+            <div class="border-b border-white/5 pb-4">
+              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Суннатилла Шарипов ким ва қандай хизматлар таклиф қилади?</h3>
+              <p>Суннатилла Шарипов — Тошкент шаҳрида фаолият юритувчи тажрибали веб-дастурчи (Frontend &amp; React Developer). Замонавий бизнес сайтлар, электрон тижорат дўконлари (TechGear каби), мобил қурилмаларга 100% мослашувчан интерфейслар ва юқори тезликдаги веб-иловаларни кафолатли ишлаб чиқади.</p>
             </div>
             <div>
-              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">How can recruiters or clients contact him?</h3>
-              <p>Contact via Telegram at <a href="https://t.me/war1pov_developer" class="text-[#00F5A0]">@war1pov_developer</a>, email at <a href="mailto:sunnatilla.dev@gmail.com" class="text-[#00F5A0]">sunnatilla.dev@gmail.com</a>, LinkedIn at <a href="https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9" class="text-[#00F5A0]">Sunnatilla Sharipov</a>, or view code at <a href="https://github.com/SUNNATILLACODER" class="text-[#00F5A0]">GitHub (@SUNNATILLACODER)</a>.</p>
+              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Какие услуги предоставляет Суннатилла Шарипов в Ташкенте и удаленно?</h3>
+              <p>Разработка качественных веб-сайтов на React, адаптивная кроссплатформенная верстка на Tailwind CSS, интеграция REST API, разработка интернет-магазинов и интерактивная 3D графика Three.js для компаний в Узбекистане и зарубежных заказчиков.</p>
             </div>
           </div>
         </section>
 
+        <!-- Section 5: Location & Service Coverage -->
         <section id="location-shell" class="mb-20 p-6 rounded-xl bg-[#101413] border border-white/10">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Location &amp; Service Coverage // Toshkent, O'zbekiston</h2>
           <p class="text-sm text-[#A3AAA5] leading-relaxed mb-4">
@@ -455,6 +581,7 @@
           </div>
         </section>
 
+        <!-- Section 6: Contact -->
         <section id="contact-shell">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Get in Touch // Aloqa</h2>
           <p class="text-sm text-[#A3AAA5] mb-4">Available for contract, freelance &amp; full-time frontend engineering roles in Tashkent or Remote.</p>
