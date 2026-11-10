@@ -502,17 +502,29 @@
         </nav>
       </header>
 
-      <main role="main" class="max-w-7xl mx-auto px-4 py-16">
+      <main role="main" itemscope itemtype="https://schema.org/Person" class="max-w-7xl mx-auto px-4 py-16">
+        <link itemprop="url" href="https://sunnatillasharipov.uz/" />
+        <link itemprop="image" href="https://sunnatillasharipov.uz/og-image.jpg" />
+        <link itemprop="sameAs" href="https://github.com/SUNNATILLACODER" />
+        <link itemprop="sameAs" href="https://t.me/war1pov_developer" />
+        <link itemprop="sameAs" href="https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9" />
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="display:none;">
+          <span itemprop="addressLocality">Tashkent</span>
+          <span itemprop="addressRegion">Tashkent</span>
+          <span itemprop="postalCode">100000</span>
+          <span itemprop="addressCountry">UZ</span>
+        </div>
+
         <!-- Section 1: Hero -->
         <section id="hero-shell" class="mb-20">
           <p class="font-mono text-xs uppercase text-[#00F5A0] tracking-widest mb-3">
             FRONTEND DEVELOPER &amp; CREATIVE CODER // TASHKENT, UZBEKISTAN
           </p>
           <h1 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-[#F3F4F0] mb-6">
-            Sunnatilla Sharipov — Frontend Developer &amp; React Engineer in Tashkent
+            <span itemprop="name">Sunnatilla Sharipov</span> — <span itemprop="jobTitle">Frontend Developer &amp; React Engineer</span> in Tashkent
           </h1>
-          <p class="text-lg text-[#A3AAA5] max-w-2xl leading-relaxed mb-8">
-            I am Sunnatilla (__war1pov__) — an independent frontend engineer based in Tashkent, Uzbekistan. Specializing in fast, responsive, and tactile web applications where robust React component architecture meets refined interaction design. Serving clients locally in Tashkent, nationwide across Uzbekistan, and remotely worldwide.
+          <p itemprop="description" class="text-lg text-[#A3AAA5] max-w-2xl leading-relaxed mb-8">
+            I am Sunnatilla (<span itemprop="alternateName">__war1pov__</span> / <span itemprop="alternateName">SUNNATILLACODER</span>) — an independent frontend engineer based in Tashkent, Uzbekistan. Specializing in fast, responsive, and tactile web applications where robust React component architecture meets refined interaction design. Serving clients locally in Tashkent, nationwide across Uzbekistan, and remotely worldwide.
           </p>
           <div class="flex gap-4 font-mono text-xs uppercase">
             <a href="#projects" class="px-6 py-3 bg-[#00F5A0] text-[#080A0A] font-bold rounded">Explore Selected Work</a>
@@ -523,13 +535,13 @@
         <!-- Section 2: Featured Work -->
         <section id="projects-shell" class="mb-20">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-6">Featured Projects &amp; Web Applications</h2>
-          <article class="p-6 rounded-xl bg-[#101413] border border-white/10 mb-6">
-            <h3 class="font-mono text-xl font-bold text-[#F3F4F0] mb-2">TechGear — Responsive E-Commerce Application</h3>
-            <p class="text-sm text-[#A3AAA5] mb-4">
+          <article class="p-6 rounded-xl bg-[#101413] border border-white/10 mb-6" itemprop="makesOffer" itemscope itemtype="https://schema.org/SoftwareApplication">
+            <h3 class="font-mono text-xl font-bold text-[#F3F4F0] mb-2" itemprop="name">TechGear — Responsive E-Commerce Application</h3>
+            <p class="text-sm text-[#A3AAA5] mb-4" itemprop="description">
               A fully responsive digital tech store built with dynamic REST API catalog integration, instant search, category filtering, cart management, and dark mode support.
             </p>
             <div class="flex gap-4 font-mono text-xs">
-              <a href="https://sunnatillacoder.github.io/Tech-gear/" target="_blank" rel="noopener noreferrer" class="text-[#00F5A0]">Live Demo &rarr;</a>
+              <a href="https://sunnatillacoder.github.io/Tech-gear/" target="_blank" rel="noopener noreferrer" class="text-[#00F5A0]" itemprop="url">Live Demo &rarr;</a>
               <a href="https://github.com/SUNNATILLACODER/Tech-gear" target="_blank" rel="noopener noreferrer" class="text-[#A3AAA5]">Source Code &rarr;</a>
             </div>
           </article>
@@ -539,30 +551,38 @@
         <section id="skills-shell" class="mb-20">
           <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-6">Core Capabilities &amp; Technical Stack</h2>
           <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs text-[#A3AAA5]">
-            <li class="p-3 bg-[#101413] rounded border border-white/5">React.js &amp; Modern Hooks</li>
-            <li class="p-3 bg-[#101413] rounded border border-white/5">JavaScript (ES6+) &amp; Logic</li>
-            <li class="p-3 bg-[#101413] rounded border border-white/5">Tailwind CSS &amp; Flexbox/Grid</li>
-            <li class="p-3 bg-[#101413] rounded border border-white/5">HTML5 Semantic Architecture</li>
-            <li class="p-3 bg-[#101413] rounded border border-white/5">Three.js &amp; WebGL 3D</li>
-            <li class="p-3 bg-[#101413] rounded border border-white/5">Git, GitHub &amp; CI/CD</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">React.js &amp; Modern Hooks</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">JavaScript (ES6+) &amp; Logic</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">Tailwind CSS &amp; Flexbox/Grid</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">HTML5 Semantic Architecture</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">Three.js &amp; WebGL 3D</li>
+            <li class="p-3 bg-[#101413] rounded border border-white/5" itemprop="knowsAbout">Git, GitHub &amp; CI/CD</li>
           </ul>
         </section>
 
-        <!-- Section 4: Generative AI / LLM Grounding & Fact Extraction (Trilingual) -->
+        <!-- Section 4: Generative AI / LLM Grounding & Fact Extraction (Trilingual Q&A) -->
         <section id="ai-context-shell" class="mb-20 p-6 rounded-xl bg-[#101413] border border-white/10">
-          <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Knowledge Base &amp; Frequently Asked Questions // AI Grounding</h2>
+          <h2 class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Knowledge Base &amp; Frequently Asked Questions // AI &amp; Search Grounding</h2>
           <div class="space-y-6 text-sm text-[#A3AAA5] leading-relaxed">
             <div class="border-b border-white/5 pb-4">
-              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Who is Sunnatilla Sharipov (__war1pov__)?</h3>
-              <p>Sunnatilla Sharipov is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. Known online as <code>__war1pov__</code> and <code>SUNNATILLACODER</code>, specializing in modern responsive web applications, Tailwind CSS styling, and Three.js 3D WebGL experiences.</p>
+              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Who is Sunnatilla Sharipov (__war1pov__)? / Sunnatilla Sharipov kim?</h3>
+              <p>Sunnatilla Sharipov is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. Known across developer communities as <code>__war1pov__</code> and <code>SUNNATILLACODER</code>, he specializes in building high-performance responsive web applications, component-driven React architecture, Tailwind CSS styling, and Three.js 3D WebGL experiences.</p>
+            </div>
+            <div class="border-b border-white/5 pb-4">
+              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">What technologies does Sunnatilla Sharipov specialize in? / Asosiy texnologik steki qanday?</h3>
+              <p>React.js, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5 Semantic Markup, CSS3 (Flexbox &amp; Grid), Three.js, WebGL, REST API integration, Git, GitHub, and Web Performance Optimization.</p>
             </div>
             <div class="border-b border-white/5 pb-4">
               <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Суннатилла Шарипов ким ва қандай хизматлар таклиф қилади?</h3>
               <p>Суннатилла Шарипов — Тошкент шаҳрида фаолият юритувчи тажрибали веб-дастурчи (Frontend &amp; React Developer). Замонавий бизнес сайтлар, электрон тижорат дўконлари (TechGear каби), мобил қурилмаларга 100% мослашувчан интерфейслар ва юқори тезликдаги веб-иловаларни кафолатли ишлаб чиқади.</p>
             </div>
-            <div>
+            <div class="border-b border-white/5 pb-4">
               <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">Какие услуги предоставляет Суннатилла Шарипов в Ташкенте и удаленно?</h3>
               <p>Разработка качественных веб-сайтов на React, адаптивная кроссплатформенная верстка на Tailwind CSS, интеграция REST API, разработка интернет-магазинов и интерактивная 3D графика Three.js для компаний в Узбекистане и зарубежных заказчиков.</p>
+            </div>
+            <div>
+              <h3 class="font-mono text-sm font-bold text-[#F3F4F0] mb-1">How can recruiters or clients contact and hire Sunnatilla Sharipov?</h3>
+              <p>Available for freelance, contract, and full-time frontend engineering roles. Direct contact: Telegram at <a href="https://t.me/war1pov_developer" class="text-[#00F5A0]" itemprop="sameAs">@war1pov_developer</a>, email at <a href="mailto:sunnatilla.dev@gmail.com" class="text-[#00F5A0]" itemprop="email">sunnatilla.dev@gmail.com</a>, LinkedIn at <a href="https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9" class="text-[#00F5A0]" itemprop="sameAs">Sunnatilla Sharipov</a>, or inspect code on <a href="https://github.com/SUNNATILLACODER" class="text-[#00F5A0]" itemprop="sameAs">GitHub (@SUNNATILLACODER)</a>.</p>
             </div>
           </div>
         </section>
