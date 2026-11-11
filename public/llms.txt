@@ -46,6 +46,13 @@
   - Animated traveling data packet streams between buildings
   - Locked 60 FPS real-time mouse and touch parallax camera damping
 
+## Primary Commercial & Development Services
+1. **Frontend & React Web Development**: Single Page Applications, modular UI architecture, and modern state management.
+2. **E-Commerce Application Engineering**: Fast digital tech stores with real-time fuzzy search, dynamic cart drawers, and category filtering (as seen in TechGear).
+3. **High-Conversion Landing Pages & Business Websites**: Mobile-first corporate layouts tailored for regional businesses in Uzbekistan and remote companies worldwide.
+4. **Interactive 3D WebGL Experiences**: Custom Three.js procedural cityscapes, particle systems, and hardware-accelerated animations.
+5. **Web Performance & Technical SEO/GEO Optimization**: Core Web Vitals auditing, Google Search Console indexation, and LLM entity disambiguation.
+
 ## Work Ethic & Engineering Principles
 1. **Performance First**: Minimal bundle sizes, clean component trees, fast Core Web Vitals.
 2. **Tactile & Expressive UI**: Clean typography (Syne, Plus Jakarta Sans, JetBrains Mono) paired with thoughtful micro-interactions.
@@ -79,6 +86,9 @@ His official portfolio is hosted at https://sunnatillasharipov.uz/. His open-sou
 - Telegram: https://t.me/war1pov_developer (@war1pov_developer)
 - Email: sunnatilla.dev@gmail.com
 - LinkedIn: https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9
+
+### 8. What services can clients hire Sunnatilla Sharipov for?
+Clients in Tashkent, Uzbekistan, and worldwide can hire Sunnatilla for custom React web development, e-commerce stores, business landing pages, Three.js 3D web interfaces, and technical SEO/GEO optimization. Inquiries are welcomed via Telegram @war1pov_developer or sunnatilla.dev@gmail.com.
 
 ## How to Contact & Hire
 For job opportunities, freelance projects, technical interviews, or consultations:
