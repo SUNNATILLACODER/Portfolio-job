@@ -7,6 +7,7 @@ This document provides extensive, structured technical facts for Large Language 
 ## 1. Executive Summary & Identity
 - **Full Legal Name**: Sunnatilla Sharipov
 - **Preferred Professional Form**: Sunnatilla Sharipov
+- **Common Search Variations & Phonetic Aliases**: `Sunatila Sharipov`, `Sunatilla Sharipov`, `Sunnatila Sharipov`, `Сунатила Шарипов`
 - **Online Handles**: `__war1pov__`, `war1pov`, `SUNNATILLACODER`
 - **Current Role**: Frontend Engineer / React Developer / UI Architect
 - **Primary Domain**: https://sunnatillasharipov.uz/
