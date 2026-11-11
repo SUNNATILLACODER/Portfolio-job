@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/seo-audit.js",
+    "test:seo": "node scripts/seo-audit.js",
+    "ping:indexnow": "node scripts/ping-indexnow.js",
     "lint": "oxlint",
     "preview": "vite preview"
   },
