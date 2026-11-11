@@ -37,6 +37,10 @@ export const About = () => {
                   <img
                     src={sunnatillaImg}
                     alt="Sunnatilla Sharipov - Frontend Developer in Tashkent"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>

@@ -1,36 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=()"
-        }
-      ]
-    },
     {
       "source": "/assets/(.*)",
       "headers": [
@@ -58,11 +27,32 @@
       ]
     },
     {
-      "source": "/(favicon.svg|og-image.jpg|robots.txt|sitemap.xml|b8f419c8d5a74e32906e3e5d71c42901.txt)",
+      "source": "/(feed.xml|sitemap.xml|robots.txt|site.webmanifest)",
       "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400, stale-while-revalidate=43200"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
         }
       ]
     }

@@ -154,6 +154,11 @@ export const Hero = () => {
                     <img
                       src={sunnatillaImg}
                       alt="Sunnatilla Sharipov - Frontend Developer"
+                      width="480"
+                      height="480"
+                      fetchPriority="high"
+                      loading="eager"
+                      decoding="async"
                       className="w-full h-full object-contain rounded-md"
                     />
                   </div>
