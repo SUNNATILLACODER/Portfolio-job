@@ -7,13 +7,36 @@
   "background_color": "#080A0A",
   "theme_color": "#080A0A",
   "orientation": "portrait-primary",
-  "lang": "en",
+  "lang": "uz",
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Selected Work",
+      "short_name": "Work",
+      "description": "View production frontend and 3D web projects",
+      "url": "/#projects",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "About Sunnatilla",
+      "short_name": "About",
+      "description": "Read background and technical philosophy",
+      "url": "/#about",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Contact & Hire",
+      "short_name": "Contact",
+      "description": "Direct message via Telegram or email",
+      "url": "/#contact",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
     }
   ],
   "categories": [

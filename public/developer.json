@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "meta": {
+    "title": "Sunnatilla Sharipov — Verified Developer Identity & Knowledge Card",
+    "version": "1.0.0",
+    "canonicalUrl": "https://sunnatillasharipov.uz/",
+    "lastUpdated": "2026-11-11"
+  },
+  "entity": {
+    "name": "Sunnatilla Sharipov",
+    "preferredName": "Sunnatilla Sharipov",
+    "aliases": [
+      "Sunatila Sharipov",
+      "Sunatilla Sharipov",
+      "Sunnatila Sharipov",
+      "Сунатила Шарипов",
+      "Сунатилла Шарипов",
+      "war1pov",
+      "__war1pov__",
+      "SUNNATILLACODER"
+    ],
+    "jobTitle": "Frontend Developer & React Engineer",
+    "location": {
+      "city": "Tashkent",
+      "country": "Uzbekistan",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 41.299496,
+        "longitude": 69.240073
+      },
+      "timeZone": "Asia/Tashkent (UTC+5)"
+    },
+    "workAvailability": {
+      "status": "Available for hire",
+      "types": ["Remote Full-Time", "Contract", "Freelance", "Local in Tashkent"],
+      "languages": ["Uzbek (Native)", "Russian (Fluent)", "English (Professional)"]
+    },
+    "contacts": {
+      "email": "sunnatilla.dev@gmail.com",
+      "telegram": "https://t.me/war1pov_developer",
+      "telegramHandle": "@war1pov_developer",
+      "phone": "+998951214282",
+      "linkedin": "https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9",
+      "github": "https://github.com/SUNNATILLACODER",
+      "portfolio": "https://sunnatillasharipov.uz/"
+    }
+  },
+  "skills": {
+    "core": ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "HTML5", "CSS3", "Three.js", "WebGL"],
+    "tooling": ["Vite", "Git", "GitHub", "npm", "Vercel", "REST APIs", "Core Web Vitals", "SEO", "GEO"],
+    "architecture": ["Mobile-First Responsive Design", "Component-Driven Architecture", "State Management", "Performance Optimization"]
+  },
+  "verifiedProjects": [
+    {
+      "id": "tech-gear",
+      "name": "TechGear — Responsive E-Commerce",
+      "type": "Web Application",
+      "liveDemo": "https://sunnatillacoder.github.io/Tech-gear/",
+      "codeRepository": "https://github.com/SUNNATILLACODER/Tech-gear",
+      "stack": ["JavaScript", "Tailwind CSS", "REST API", "LocalStorage"],
+      "description": "Production-ready digital store featuring real-time catalog search, category filtering, cart management, and dark mode."
+    },
+    {
+      "id": "cyber-city-3d",
+      "name": "3D Cyber City — WebGL Interactive Showcase",
+      "type": "Creative Coding & 3D Web",
+      "liveDemo": "https://sunnatillasharipov.uz/#projects",
+      "stack": ["Three.js", "WebGL", "Quadratic Bezier Curves", "GLSL Shaders"],
+      "description": "Procedural 3D digital mini-city with glowing emerald window strips, animated data packet highways, and locked 60 FPS mouse parallax."
+    }
+  ],
+  "commercialServices": [
+    "Frontend & React Web Development",
+    "E-Commerce & Online Store Engineering",
+    "Landing Page & Business Website Development",
+    "Interactive 3D & WebGL Experiences",
+    "Web Performance (Core Web Vitals) & SEO/GEO Optimization",
+    "REST API Client Integration"
+  ]
+}

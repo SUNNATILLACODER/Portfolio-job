@@ -192,6 +192,55 @@ if (fs.existsSync(notFoundPath)) {
   report('WARN', '404 Error Handler', 'Standalone 404.html not found.');
 }
 
+// 5. Audit Voice SEO (Speakable Specification)
+const hasSpeakable = /SpeakableSpecification/i.test(htmlContent);
+const hasHeroIntroId = /id=["']hero-intro-text["']/i.test(htmlContent);
+if (hasSpeakable && hasHeroIntroId) {
+  report('PASS', 'Voice Search SEO (Speakable)', 'SpeakableSpecification mapped to #hero-intro-text for Google Assistant & voice TTS.');
+} else {
+  report('WARN', 'Voice Search SEO (Speakable)', 'Missing SpeakableSpecification or #hero-intro-text landmark.');
+}
+
+// 6. Audit Machine-Readable Entity Card (developer.json)
+const devJsonPath = fs.existsSync(path.join(distDir, 'developer.json'))
+  ? path.join(distDir, 'developer.json')
+  : path.join(rootDir, 'public', 'developer.json');
+
+if (fs.existsSync(devJsonPath)) {
+  try {
+    const devJson = JSON.parse(fs.readFileSync(devJsonPath, 'utf-8'));
+    if (devJson.entity && devJson.entity.name === 'Sunnatilla Sharipov' && devJson.entity.contacts) {
+      report('PASS', 'AI Entity Card (developer.json)', 'Valid machine-readable developer card deployed with verified contacts.');
+    } else {
+      report('WARN', 'AI Entity Card (developer.json)', 'developer.json is missing required entity fields.');
+    }
+  } catch (err) {
+    report('FAIL', 'AI Entity Card (developer.json)', `Malformed developer.json: ${err.message}`);
+  }
+} else {
+  report('WARN', 'AI Entity Card (developer.json)', 'developer.json not found.');
+}
+
+// 7. Audit PWA Webmanifest & Mobile App Shortcuts
+const manifestPath = fs.existsSync(path.join(distDir, 'site.webmanifest'))
+  ? path.join(distDir, 'site.webmanifest')
+  : path.join(rootDir, 'public', 'site.webmanifest');
+
+if (fs.existsSync(manifestPath)) {
+  try {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    if (manifest.shortcuts && manifest.shortcuts.length >= 2) {
+      report('PASS', 'PWA & Mobile Shortcuts', `Webmanifest configured with ${manifest.shortcuts.length} app navigation shortcuts.`);
+    } else {
+      report('WARN', 'PWA & Mobile Shortcuts', 'Webmanifest missing quick action shortcuts.');
+    }
+  } catch (err) {
+    report('FAIL', 'PWA & Mobile Shortcuts', `Malformed site.webmanifest: ${err.message}`);
+  }
+} else {
+  report('WARN', 'PWA & Mobile Shortcuts', 'site.webmanifest not found.');
+}
+
 // Summary
 console.log('\n----------------------------------------');
 console.log(`Results: ${passedChecks} Passed | ${warningChecks} Warnings | ${failedChecks} Failed`);

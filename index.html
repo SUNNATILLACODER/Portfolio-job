@@ -45,6 +45,7 @@
     
     <!-- RSS Feed & AI Agent (GEO) Standards -->
     <link rel="alternate" type="application/rss+xml" title="Sunnatilla Sharipov — Engineering Updates &amp; Projects" href="https://sunnatillasharipov.uz/feed.xml" />
+    <link rel="alternate" type="application/json" href="/developer.json" title="Sunnatilla Sharipov Verified Entity Data (JSON)" />
     <link rel="help" type="text/markdown" href="/llms.txt" title="LLM &amp; AI Agent Summary" />
     <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM Knowledge Base" />
     <link rel="help" type="text/markdown" href="/.well-known/llms.txt" title="IETF LLM Discovery" />
@@ -125,6 +126,10 @@
           "datePublished": "2026-01-01T00:00:00+05:00",
           "dateModified": "2026-11-10T21:50:00+05:00",
           "description": "Portfolio of Sunnatilla Sharipov, independent Frontend Developer specializing in React, Tailwind CSS, and modern web applications based in Tashkent, Uzbekistan.",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#hero-intro-text", "#faq-shell"]
+          },
           "mainEntity": {
             "@id": "https://sunnatillasharipov.uz/#person"
           }
@@ -281,6 +286,48 @@
             },
             {
               "@id": "https://sunnatillasharipov.uz/#project-cybercity"
+            }
+          ],
+          "hasOccupation": {
+            "@id": "https://sunnatillasharipov.uz/#occupation"
+          }
+        },
+        {
+          "@type": "Occupation",
+          "@id": "https://sunnatillasharipov.uz/#occupation",
+          "name": "Frontend Developer & React Engineer",
+          "occupationalCategory": "15-1254.00",
+          "description": "Designs and develops modern user interfaces, single-page React applications, responsive e-commerce web applications, and interactive WebGL experiences.",
+          "skills": "React.js, JavaScript (ES6+), Tailwind CSS, Three.js, HTML5, CSS3, REST APIs, Git"
+        },
+        {
+          "@type": "DefinedTermSet",
+          "@id": "https://sunnatillasharipov.uz/#skills-termset",
+          "name": "Verified Engineering Competencies of Sunnatilla Sharipov",
+          "hasDefinedTerm": [
+            {
+              "@type": "DefinedTerm",
+              "name": "React.js",
+              "termCode": "REACT",
+              "description": "Component-based declarative UI architecture and state management."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Tailwind CSS",
+              "termCode": "TAILWIND",
+              "description": "Utility-first responsive styling and design systems."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "Three.js & WebGL",
+              "termCode": "THREEJS",
+              "description": "Hardware-accelerated 3D procedural scenes and interactive browser canvas."
+            },
+            {
+              "@type": "DefinedTerm",
+              "name": "JavaScript (ES6+)",
+              "termCode": "JS",
+              "description": "Modern ECMAScript asynchronous programming, DOM APIs, and functional paradigms."
             }
           ]
         },
@@ -609,7 +656,7 @@
           <h1 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-[#F3F4F0] mb-6">
             <span itemprop="name">Sunnatilla Sharipov</span> — <span itemprop="jobTitle">Frontend Developer &amp; React Engineer</span> in Tashkent
           </h1>
-          <p itemprop="description" class="text-lg text-[#A3AAA5] max-w-2xl leading-relaxed mb-8">
+          <p id="hero-intro-text" itemprop="description" class="text-lg text-[#A3AAA5] max-w-2xl leading-relaxed mb-8">
             Salom, men Sunnatilla Sharipov (<span itemprop="alternateName">Sunatila Sharipov</span> / <span itemprop="alternateName">__war1pov__</span> / <span itemprop="alternateName">SUNNATILLACODER</span>) — Toshkent shahrida faoliyat yurituvchi mustaqil Frontend dasturchi va React mutaxassisiman. Zamonaviy React komponentlari, to'liq moslashuvchan (responsive) interfeyslar va yuqori tezlikdagi veb-ilovalarni yaratishga ixtisoslashganman.
           </p>
           <div class="flex gap-4 font-mono text-xs uppercase">
