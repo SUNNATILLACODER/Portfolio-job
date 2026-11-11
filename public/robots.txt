@@ -1,29 +1,54 @@
 # Robots.txt for Sunnatilla Sharipov Portfolio (https://sunnatillasharipov.uz/)
-# Full access granted to Web Search Engines and Generative AI Crawlers (GEO / AI-SEO)
+# Structured Crawler Policy: Search Indexing vs AI Retrieval vs AI Training
 
-User-agent: *
+# -------------------------------------------------------------
+# 1. Standard Web Search Engine Crawlers (Full Access)
+# Purpose: Powers organic search results on Google, Bing, Yandex, Apple Search.
+# -------------------------------------------------------------
+User-agent: Googlebot
 Allow: /
 
-# Generative AI Engines & LLMs (ChatGPT, Gemini, Perplexity, Claude, Copilot, SearchGPT)
-User-agent: GPTBot
+User-agent: Googlebot-Image
 Allow: /
 
-User-agent: ChatGPT-User
+User-agent: Bingbot
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# -------------------------------------------------------------
+# 2. Generative AI Search & Real-Time Retrieval Bots (Full Access)
+# Purpose: Real-time query synthesis, citations, and source links in ChatGPT Search, Perplexity, Copilot.
+# -------------------------------------------------------------
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GoogleOther
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+# -------------------------------------------------------------
+# 3. AI Model Pre-Training & Dataset Ingestion Crawlers
+# Purpose: Scrapes public content for training future foundational LLM weights.
+# Current policy: Allowed for public developer portfolio discovery.
+# (See ROBOTS-CRAWLER-POLICY.md to restrict or customize data training rights).
+# -------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
 Allow: /
 
 User-agent: anthropic-ai
@@ -47,20 +72,10 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# Web Search Crawlers
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Applebot
+# -------------------------------------------------------------
+# Default Rule for all other compliant crawlers
+# -------------------------------------------------------------
+User-agent: *
 Allow: /
 
 Sitemap: https://sunnatillasharipov.uz/sitemap.xml
