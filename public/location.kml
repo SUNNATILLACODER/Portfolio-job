@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Sunnatilla Sharipov — Frontend Developer Location</name>
+    <description>Official verified location of Sunnatilla Sharipov, independent Frontend Developer &amp; React Engineer in Tashkent, Uzbekistan.</description>
+    <Style id="developerPin">
+      <IconStyle>
+        <scale>1.2</scale>
+        <Icon>
+          <href>https://sunnatillasharipov.uz/favicon.svg</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Sunnatilla Sharipov — Frontend Developer &amp; React Engineer</name>
+      <description><![CDATA[
+        <p><strong>Sunnatilla Sharipov (__war1pov__)</strong></p>
+        <p>Independent Frontend Developer &amp; React Engineer based in Tashkent, Uzbekistan.</p>
+        <p>Website: <a href="https://sunnatillasharipov.uz/">https://sunnatillasharipov.uz/</a></p>
+        <p>Telegram: <a href="https://t.me/war1pov_developer">@war1pov_developer</a></p>
+        <p>Phone: +998951214282</p>
+        <p>Address: Tashkent, Uzbekistan, 100000</p>
+      ]]></description>
+      <styleUrl>#developerPin</styleUrl>
+      <Point>
+        <coordinates>69.240073,41.299496,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

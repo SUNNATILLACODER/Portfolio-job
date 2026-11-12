@@ -3,7 +3,7 @@ import { useLanguage } from '../i18n/useLanguage';
 import { contactConfig } from '../data/contact';
 import { GithubIcon } from './icons/GithubIcon';
 import { LinkedinIcon } from './icons/LinkedinIcon';
-import { Send, Mail, Copy, Check, ArrowUpRight, AlertCircle, MessageSquare } from 'lucide-react';
+import { Send, Mail, Copy, Check, ArrowUpRight, AlertCircle, MessageSquare, Phone, MapPin, Download } from 'lucide-react';
 
 export const Contact = () => {
   const { t, lang } = useLanguage();
@@ -241,6 +241,58 @@ export const Contact = () => {
                   ? "Прямые деловые запросы, контракты и проектные предложения."
                   : "Direct business inquiries, contract briefs, and project proposals."}
               </p>
+            </div>
+
+            {/* Phone & Direct Call */}
+            <a
+              href="tel:+998951214282"
+              className="group block p-5 rounded-xl surface-card surface-card-hover border border-white/[0.08]"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[#00F5A0]">
+                    <Phone size={18} />
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-[#F3F4F0] block">
+                      {lang === 'uz' ? "Telefon" : lang === 'ru' ? "Телефон" : "Direct Line"}
+                    </span>
+                    <span className="text-xs font-mono text-[#00F5A0]">+998 95 121 42 82</span>
+                  </div>
+                </div>
+                <ArrowUpRight size={15} className="text-[#A3AAA5] group-hover:text-white transition-colors" />
+              </div>
+              <p className="text-xs text-[#A3AAA5] pl-11">
+                {lang === 'uz'
+                  ? "Toshkent vaqti bilan 09:00 dan 20:00 gacha qo'ng'iroqlar uchun ochiq."
+                  : lang === 'ru'
+                  ? "Доступен для звонков с 09:00 до 20:00 по времени Ташкента."
+                  : "Direct calls welcome 09:00–20:00 Tashkent time (UTC+5)."}
+              </p>
+            </a>
+
+            {/* Location & vCard Download Card */}
+            <div className="p-5 rounded-xl surface-card border border-white/[0.08] flex items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[#00F5A0]">
+                  <MapPin size={18} />
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-[#F3F4F0] block">
+                    {lang === 'uz' ? "Toshkent, O'zbekiston" : lang === 'ru' ? "Ташкент, Узбекистан" : "Tashkent, Uzbekistan"}
+                  </span>
+                  <span className="text-xs font-mono text-[#8E9691]">UTC+5 // 41.2995° N, 69.2401° E</span>
+                </div>
+              </div>
+              <a
+                href="/sunnatilla-sharipov.vcf"
+                download="sunnatilla-sharipov.vcf"
+                className="px-3 py-1.5 rounded-lg bg-[#00F5A0]/10 border border-[#00F5A0]/30 text-[#00F5A0] hover:bg-[#00F5A0] hover:text-[#080A0A] transition-all text-xs font-mono flex items-center gap-1.5 shrink-0 cursor-pointer"
+                title="Download vCard"
+              >
+                <Download size={13} />
+                <span>vCard</span>
+              </a>
             </div>
 
             {/* Status Indicator */}

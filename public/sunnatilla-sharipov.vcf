@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Sunnatilla Sharipov
+N:Sharipov;Sunnatilla;;;
+NICKNAME:war1pov,__war1pov__,SUNNATILLACODER
+TITLE:Frontend Developer & React Engineer
+ORG:Sunnatilla Sharipov Web Engineering
+TEL;TYPE=CELL,VOICE;VALUE=uri:tel:+998951214282
+EMAIL;TYPE=INTERNET,PREF:sunnatilla.dev@gmail.com
+URL;TYPE=WORK:https://sunnatillasharipov.uz/
+ADR;TYPE=WORK,PREF:;;Tashkent City;Tashkent;;100000;Uzbekistan
+GEO:41.299496;69.240073
+NOTE:Independent Frontend Developer & React Engineer in Tashkent, Uzbekistan. Builds production-ready web applications, responsive e-commerce stores, and 3D WebGL experiences.
+X-SOCIALPROFILE;TYPE=telegram:https://t.me/war1pov_developer
+X-SOCIALPROFILE;TYPE=github:https://github.com/SUNNATILLACODER
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9
+END:VCARD
