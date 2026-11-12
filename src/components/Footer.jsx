@@ -23,6 +23,7 @@ export const Footer = () => {
     { id: 'skills', label: t.nav.skills },
     { id: 'about', label: t.nav.about },
     { id: 'process', label: t.nav.process },
+    { id: 'faq', label: t.nav.faq },
     { id: 'contact', label: t.nav.contact },
   ];
 

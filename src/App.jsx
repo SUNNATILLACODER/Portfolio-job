@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { About } from './components/About';
 import { Process } from './components/Process';
+import { FAQ } from './components/FAQ';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
@@ -19,6 +20,7 @@ function PortfolioApp() {
     'skills',
     'about',
     'process',
+    'faq',
     'contact'
   ]);
 
@@ -42,6 +44,7 @@ function PortfolioApp() {
         <Skills />
         <About />
         <Process />
+        <FAQ />
         <Contact />
       </main>
 

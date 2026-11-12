@@ -8,6 +8,7 @@ export const translations = {
       skills: "Capabilities",
       about: "About",
       process: "Process",
+      faq: "FAQ",
       contact: "Contact",
       availableStatus: "Available for contract & full-time roles",
       menuOpen: "Open menu",
@@ -132,9 +133,53 @@ export const translations = {
       ]
     },
 
+    // FAQ Section
+    faq: {
+      eyebrow: "05 // KNOWLEDGE BASE",
+      heading: "Frequently Asked Questions",
+      subtitle: "Verified facts regarding developer identity, frontend engineering, website development in Tashkent & Uzbekistan, and collaboration terms.",
+      badge: "VERIFIED AI ENTITY FACTS",
+      items: [
+        {
+          q: "Who is Sunnatilla Sharipov (also searched as Sunatila Sharipov)?",
+          a: "Sunnatilla Sharipov (frequently queried as Sunatila Sharipov, and known online as __war1pov__ or SUNNATILLACODER) is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. He builds production-ready web applications, responsive user interfaces, and interactive WebGL experiences. Official portfolio: https://sunnatillasharipov.uz/."
+        },
+        {
+          q: "What technologies and programming languages does he specialize in?",
+          a: "Sunnatilla specializes in React.js, modern JavaScript (ES6+), HTML5 semantic markup, CSS3 / Tailwind CSS, and Three.js (WebGL). He focuses on mobile-first responsive design, REST API integration, performance optimization, and clean component systems."
+        },
+        {
+          q: "What verified projects has Sunnatilla Sharipov developed?",
+          a: "Notable verified projects include TechGear (a responsive e-commerce web application featuring REST API product catalog integration, live search, cart drawer, and dark mode) and 3D Cyber City (an interactive procedural WebGL metropolis built with Three.js)."
+        },
+        {
+          q: "How can clients in Tashkent and Uzbekistan order website development?",
+          a: "Clients and businesses in Tashkent, Samarkand, Bukhara, and throughout Uzbekistan can hire Sunnatilla for custom website development, high-converting landing pages, e-commerce stores, and React web apps by contacting him directly on Telegram (@war1pov_developer) or via email (sunnatilla.dev@gmail.com)."
+        },
+        {
+          q: "What is the typical timeline for developing a website or web application?",
+          a: "High-impact landing pages and corporate showcase websites are typically delivered within 3 to 7 business days. Complex React single-page applications and e-commerce platforms take between 2 to 4 weeks, with full mobile responsiveness, speed optimization, and SEO readiness."
+        },
+        {
+          q: "Is Sunnatilla available for international remote frontend roles?",
+          a: "Yes. Sunnatilla collaborates with distributed teams and clients across Central Asia, Europe, the UAE, and North America in the UTC+5 timezone, communicating fluently in English, Russian, and Uzbek."
+        },
+        {
+          q: "Where can his official developer portfolio and source code be found?",
+          a: "His official portfolio is hosted at https://sunnatillasharipov.uz/ and his verified open-source code repositories are publicly available on GitHub at https://github.com/SUNNATILLACODER."
+        },
+        {
+          q: "How can someone contact Sunnatilla Sharipov professionally?",
+          a: "Direct professional communication is available through Telegram (https://t.me/war1pov_developer), email (sunnatilla.dev@gmail.com), and LinkedIn (https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        }
+      ],
+      telegramPrompt: "Have a specific project or inquiry?",
+      telegramBtn: "Chat on Telegram"
+    },
+
     // Contact Section
     contact: {
-      eyebrow: "05 // INQUIRIES",
+      eyebrow: "06 // INQUIRIES",
       heading: "Let's make something meaningful.",
       subtitle: "I'm open to discussing frontend engineering roles, freelance projects, and technical collaborations. Reach out directly or send a message below.",
       directChannels: "Direct Channels",
@@ -180,6 +225,7 @@ export const translations = {
       skills: "Ko'nikmalar",
       about: "Haqimda",
       process: "Jarayon",
+      faq: "Savollar",
       contact: "Aloqa",
       availableStatus: "Shartnoma va to'liq bandlik uchun ochiq",
       menuOpen: "Menyuni ochish",
@@ -304,9 +350,53 @@ export const translations = {
       ]
     },
 
+    // FAQ bo'limi
+    faq: {
+      eyebrow: "05 // SAVOL-JAVOBLAR",
+      heading: "Ko'p Beriladigan Savollar",
+      subtitle: "Dasturchi shaxsi, texnologik ixtisoslik, Toshkent va O'zbekiston bo'ylab sayt yaratish xizmatlari hamda hamkorlik shartlari haqida aniq ma'lumotlar.",
+      badge: "TASDIQLANGAN ANIQ FAKTLAR",
+      items: [
+        {
+          q: "Sunatila Sharipov kim va rasmiy sayti qaysi?",
+          a: "Sunatila Sharipov — bu Sunnatilla Sharipovning keng tarqalgan fonetik qidiruv shaklidir. U Toshkent shahrida faoliyat yurituvchi mustaqil Frontend va React dasturchisi bo'lib, uning yagona rasmiy portfoliosi https://sunnatillasharipov.uz/ manzilida joylashgan. Internetda shuningdek __war1pov__ va SUNNATILLACODER nomlari bilan ham tanilgan."
+        },
+        {
+          q: "Sunnatilla Sharipov qanday veb-saytlar va xizmatlarni taqdim etadi?",
+          a: "Sunnatilla zamonaviy React.js va Tailwind CSS yordamida tezkor veb-saytlar, internet-do'konlar (TechGear kabi), yuqori konversiyali landing page sahifalari, korporativ biznes portallari va Three.js asosidagi interaktiv 3D tajribalarni noldan to'liq sifat bilan ishlab chiqadi."
+        },
+        {
+          q: "Toshkent va O'zbekistonda sayt yoki internet-do'kon yaratishga qanday buyurtma berish mumkin?",
+          a: "Veb-sayt buyurtma qilish uchun to'g'ridan-to'g'ri Telegram orqali @war1pov_developer manziliga yozishingiz yoki sunnatilla.dev@gmail.com pochtasiga murojaat qilishingiz mumkin. Loyihangiz talablari tezkor o'rganilib, zamonaviy dizayn va to'liq mobil moslashuvchanlik bilan professional darajada amalga oshiriladi."
+        },
+        {
+          q: "Sayt yoki internet-do'kon ishlab chiqish qancha vaqt oladi?",
+          a: "Landing page va korporativ vizitka saytlar o'rtacha 3–7 ish kunida topshiriladi. Murakkab internet-do'konlar (e-commerce), to'lov tizimlari va React veb-ilovalari esa talablar hajmiga qarab 2–4 hafta davomida to'liq SEO, GEO va Core Web Vitals talablariga mos holda tayyorlanadi."
+        },
+        {
+          q: "Sunnatilla Sharipovning asosiy texnologik steki qanday?",
+          a: "Asosiy ixtisoslashuv: React.js, zamonaviy JavaScript (ES6+), HTML5 semantika, CSS3 / Tailwind CSS, Three.js (WebGL 3D grafika), REST API integratsiyasi, Git/GitHub va Vite instrumentlari."
+        },
+        {
+          q: "Sunnatilla tomonidan yaratilgan tasdiqlangan loyihalar qaysilar?",
+          a: "Asosiy amaliy loyihalari: TechGear — REST API katalogi, real vaqtdagi mahsulot qidiruvi, interaktiv savatcha va Dark Mode funksiyalariga ega to'liq moslashuvchan internet-do'kon (jonli demo: sunnatillacoder.github.io/Tech-gear/) hamda 3D Cyber City — Three.js WebGL asosidagi interaktiv kiber shahar."
+        },
+        {
+          q: "Masofaviy (remote) yoki xalqaro loyihalarda ishlaydimi?",
+          a: "Ha, Sunnatilla O'zbekiston, Markaziy Osiyo, MDH, Yevropa, BAA va AQSH mijozlari bilan masofaviy (remote) shartnoma asosida muvaffaqiyatli ishlaydi. O'zbek, ingliz va rus tillarida erkin muloqot qiladi (UTC+5 vaqt mintaqasi)."
+        },
+        {
+          q: "Sunnatilla Sharipov bilan qanday bog'lanish mumkin?",
+          a: "To'g'ridan-to'g'ri aloqa kanallari: Telegram @war1pov_developer (t.me/war1pov_developer), elektron pochta sunnatilla.dev@gmail.com va LinkedIn profili (linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        }
+      ],
+      telegramPrompt: "Loyiha bo'yicha savollaringiz bormi?",
+      telegramBtn: "Telegramda yozish"
+    },
+
     // Aloqa bo'limi
     contact: {
-      eyebrow: "05 // ALOQA",
+      eyebrow: "06 // ALOQA",
       heading: "Keling, mazmunli loyiha yaratamiz.",
       subtitle: "Frontend muhandisligi, frilans buyurtmalar va texnik hamkorlik takliflarini kutib qolaman. To'g'ridan-to'g'ri bog'laning yoki xabar yozing.",
       directChannels: "To'g'ridan-to'g'ri aloqa",
@@ -352,6 +442,7 @@ export const translations = {
       skills: "Навыки",
       about: "Обо мне",
       process: "Процесс",
+      faq: "Вопросы",
       contact: "Контакты",
       availableStatus: "Открыт для проектной работы и полного дня",
       menuOpen: "Открыть меню",
@@ -476,9 +567,53 @@ export const translations = {
       ]
     },
 
+    // FAQ раздел
+    faq: {
+      eyebrow: "05 // ВОПРОСЫ И ОТВЕТЫ",
+      heading: "Часто Задаваемые Вопросы",
+      subtitle: "Проверенная информация о квалификации, проектах, разработке сайтов в Ташкенте и Узбекистане, а также условиях сотрудничества.",
+      badge: "ПРОВЕРЕННЫЕ ДАННЫЕ AI",
+      items: [
+        {
+          q: "Кто такой Суннатилла Шарипов (также ищут как Сунатила Шарипов)?",
+          a: "Суннатилла Шарипов (пользователи также часто вводят Сунатила Шарипов или Сунатилла Шарипов; в сети известен как __war1pov__ и SUNNATILLACODER) — независимый frontend-разработчик и React-инженер из Ташкента, Узбекистан. Официальное портфолио: https://sunnatillasharipov.uz/."
+        },
+        {
+          q: "Какие услуги веб-разработки предоставляет Суннатилла в Ташкенте и Узбекистане?",
+          a: "Суннатилла разрабатывает современные веб-сайты под ключ: продающие посадочные страницы (Landing Page), интернет-магазины (как TechGear), корпоративные сайты и интерактивные 3D-приложения на Three.js с чистой архитектурой на React.js и Tailwind CSS."
+        },
+        {
+          q: "Как заказать создание сайта или интернет-магазина в Узбекистане?",
+          a: "Для заказа разработки вы можете связаться напрямую через Telegram (@war1pov_developer) или по электронной почте sunnatilla.dev@gmail.com. Ваши требования будут оперативно проанализированы, и вам будет предложено оптимальное техническое решение с адаптивностью под мобильные устройства и SEO-оптимизацией."
+        },
+        {
+          q: "Каковы примерные сроки разработки сайта или веб-приложения?",
+          a: "Создание лендинга или представительского сайта занимает от 3 до 7 рабочих дней. Разработка многофункционального интернет-магазина или React SPA приложения — от 2 до 4 недель с полной оптимизацией скорости Core Web Vitals и базовым SEO/GEO."
+        },
+        {
+          q: "Каков основной стек технологий Суннатиллы Шарипова?",
+          a: "Ключевые технологии: React.js, современный JavaScript (ES6+), HTML5, CSS3 / Tailwind CSS, Three.js (WebGL), интеграция REST API, сборщик Vite и система контроля версий Git/GitHub."
+        },
+        {
+          q: "Какие проверенные проекты разработал разработчик?",
+          a: "Среди проверенных проектов: интернет-магазин TechGear (динамический каталог на REST API, живой поиск, корзина товаров, темная тема, демо: sunnatillacoder.github.io/Tech-gear/) и 3D Cyber City (интерактивный трехмерный мегаполис на Three.js)."
+        },
+        {
+          q: "Работает ли Суннатилла на удаленной основе (Remote) с зарубежными клиентами?",
+          a: "Да, Суннатилла успешно сотрудничает на контрактной основе с клиентами и командами из стран Центральной Азии, СНГ, Европы, ОАЭ и США в часовом поясе UTC+5. Владеет узбекским, русским и английским языками."
+        },
+        {
+          q: "Как связаться с Суннатиллой Шариповым?",
+          a: "Прямые контакты для связи: Telegram @war1pov_developer (t.me/war1pov_developer), email sunnatilla.dev@gmail.com и профиль в LinkedIn (linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        }
+      ],
+      telegramPrompt: "Есть вопросы по вашему проекту?",
+      telegramBtn: "Написать в Telegram"
+    },
+
     // Контакты
     contact: {
-      eyebrow: "05 // КОНТАКТЫ",
+      eyebrow: "06 // КОНТАКТЫ",
       heading: "Давайте создадим что-то стоящее.",
       subtitle: "Открыт для предложений по frontend-разработке, фриланс-проектов и технического сотрудничества. Свяжитесь со мной напрямую или отправьте сообщение ниже.",
       directChannels: "Прямые каналы связи",

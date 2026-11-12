@@ -67,7 +67,7 @@ export const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-[#A3AAA5] leading-relaxed max-w-xl mb-10 font-sans">
+            <p id="hero-intro-text" className="text-base sm:text-lg text-[#A3AAA5] leading-relaxed max-w-xl mb-10 font-sans">
               {t.hero.supporting}
             </p>
 
