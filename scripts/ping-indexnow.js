@@ -7,7 +7,13 @@ const payload = JSON.stringify({
   urlList: ['https://sunnatillasharipov.uz/']
 });
 
-let pending = 2;
+const endpoints = [
+  { host: 'api.indexnow.org', path: '/indexnow' },
+  { host: 'www.bing.com', path: '/indexnow' },
+  { host: 'yandex.com', path: '/indexnow' }
+];
+
+let pending = endpoints.length;
 
 function checkDone() {
   pending--;
@@ -43,5 +49,4 @@ function sendIndexNow(endpoint, hostName) {
 }
 
 console.log('Sending IndexNow push notification for sunnatillasharipov.uz...');
-sendIndexNow('/indexnow', 'api.indexnow.org');
-sendIndexNow('/indexnow', 'www.bing.com');
+endpoints.forEach((ep) => sendIndexNow(ep.path, ep.host));

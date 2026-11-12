@@ -46,9 +46,12 @@
     <!-- RSS Feed & AI Agent (GEO) Standards -->
     <link rel="alternate" type="application/rss+xml" title="Sunnatilla Sharipov — Engineering Updates &amp; Projects" href="https://sunnatillasharipov.uz/feed.xml" />
     <link rel="alternate" type="application/json" href="/developer.json" title="Sunnatilla Sharipov Verified Entity Data (JSON)" />
+    <link rel="alternate" type="application/json" href="/press-kit.json" title="Sunnatilla Sharipov Media &amp; Press Kit (JSON)" />
     <link rel="help" type="text/markdown" href="/llms.txt" title="LLM &amp; AI Agent Summary" />
     <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM Knowledge Base" />
     <link rel="help" type="text/markdown" href="/.well-known/llms.txt" title="IETF LLM Discovery" />
+    <link rel="help" href="/.well-known/security.txt" title="Security &amp; Vulnerability Disclosure" />
+    <link rel="author" href="/humans.txt" title="Authorship &amp; Engineering Standards" />
     
     <!-- Multilingual Hreflang Tags -->
     <link rel="alternate" hreflang="x-default" href="https://sunnatillasharipov.uz/" />
@@ -341,7 +344,39 @@
           "@type": "ProfessionalService",
           "@id": "https://sunnatillasharipov.uz/#service",
           "name": "Sunnatilla Sharipov — Web Development & Frontend Engineering Services",
+          "alternateName": [
+            "Sunnatilla Sharipov Veb Dasturlash Xizmati",
+            "Sayt yaratish Toshkent Sunnatilla Sharipov",
+            "Разработка сайтов Ташкент Суннатилла Шарипов"
+          ],
           "url": "https://sunnatillasharipov.uz/",
+          "telephone": "+998951214282",
+          "email": "sunnatilla.dev@gmail.com",
+          "priceRange": "$$",
+          "currenciesAccepted": "UZS, USD",
+          "paymentAccepted": "Cash, Bank Transfer, Visa, MasterCard, Humo, Uzcard",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tashkent City",
+            "addressLocality": "Tashkent",
+            "addressRegion": "Tashkent",
+            "postalCode": "100000",
+            "addressCountry": "UZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.299496,
+            "longitude": 69.240073
+          },
+          "hasMap": "https://www.google.com/maps?q=41.299496,69.240073",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "20:00"
+            }
+          ],
           "provider": {
             "@id": "https://sunnatillasharipov.uz/#person"
           },
@@ -361,6 +396,22 @@
             {
               "@type": "City",
               "name": "Bukhara"
+            },
+            {
+              "@type": "City",
+              "name": "Fergana"
+            },
+            {
+              "@type": "City",
+              "name": "Andijan"
+            },
+            {
+              "@type": "City",
+              "name": "Namangan"
+            },
+            {
+              "@type": "City",
+              "name": "Navoiy"
             },
             {
               "@type": "AdministrativeArea",

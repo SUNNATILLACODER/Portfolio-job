@@ -1,0 +1,17 @@
+/* TEAM */
+Developer & Creator: Sunnatilla Sharipov
+Known As: war1pov // __war1pov__ // SUNNATILLACODER
+Role: Frontend Developer & Creative Coder
+Location: Tashkent, Uzbekistan
+Canonical Portfolio: https://sunnatillasharipov.uz/
+Telegram: https://t.me/war1pov_developer
+GitHub: https://github.com/SUNNATILLACODER
+LinkedIn: https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9
+Email: sunnatilla.dev@gmail.com
+
+/* SITE */
+Standards: HTML5, CSS3, ES2024, Schema.org Knowledge Graph
+Frameworks: React 19, Tailwind CSS v4, Framer Motion, Three.js WebGL
+Tooling: Vite 8, Node.js, Git, Vercel
+Languages: Uzbek (uz), Russian (ru), English (en)
+Last Updated: 2026-11-12

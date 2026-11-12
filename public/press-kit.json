@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sunnatilla Sharipov Verified Press & Media Kit",
+  "version": "1.0.0",
+  "author": "Sunnatilla Sharipov",
+  "canonicalUrl": "https://sunnatillasharipov.uz/",
+  "brand": {
+    "fullName": "Sunnatilla Sharipov",
+    "aliases": ["Sunatila Sharipov", "war1pov", "__war1pov__", "SUNNATILLACODER"],
+    "primaryTitle": "Frontend Developer & React Engineer",
+    "location": "Tashkent, Uzbekistan (Central Asia)",
+    "coordinates": {
+      "latitude": 41.299496,
+      "longitude": 69.240073
+    },
+    "shortBio": "Independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan, crafting production-ready user interfaces, responsive e-commerce web applications, and interactive 3D WebGL experiences.",
+    "avatar": "https://sunnatillasharipov.uz/og-image.jpg",
+    "ogImage": "https://sunnatillasharipov.uz/og-image.jpg"
+  },
+  "verifiedLinks": {
+    "website": "https://sunnatillasharipov.uz/",
+    "github": "https://github.com/SUNNATILLACODER",
+    "telegram": "https://t.me/war1pov_developer",
+    "linkedin": "https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9",
+    "email": "sunnatilla.dev@gmail.com"
+  },
+  "verifiedProjects": [
+    {
+      "name": "TechGear",
+      "category": "E-Commerce Web Application",
+      "liveDemo": "https://sunnatillacoder.github.io/Tech-gear/",
+      "repository": "https://github.com/SUNNATILLACODER/Tech-gear"
+    },
+    {
+      "name": "3D Cyber City",
+      "category": "Interactive WebGL Showcase",
+      "liveDemo": "https://sunnatillasharipov.uz/#projects"
+    }
+  ]
+}

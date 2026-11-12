@@ -1,167 +1,117 @@
-# Sunnatilla — Futuristic Frontend Developer Portfolio
+# Sunnatilla Sharipov — Official Frontend Engineering Portfolio
 
-A production-ready personal portfolio built for **Sunnatilla**, an independent frontend developer. Designed with a creative-futuristic visual identity combining deep obsidian backgrounds, vivid emerald accents (`#00F5A0`), electric cyan highlights (`#35D9FF`), smooth micro-interactions, genuine bilingual support (English & Uzbek), and accessible, high-performance architecture.
+<div align="center">
+
+[![Official Website](https://img.shields.io/badge/Official_Portfolio-sunnatillasharipov.uz-00F5A0?style=for-the-badge&logo=google-chrome&logoColor=080A0A)](https://sunnatillasharipov.uz/)
+[![Location](https://img.shields.io/badge/Location-Tashkent%2C_Uzbekistan-080A0A?style=for-the-badge&logo=google-maps&logoColor=00F5A0&labelColor=101413)](https://sunnatillasharipov.uz/)
+[![Telegram](https://img.shields.io/badge/Telegram-@war1pov__developer-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/war1pov_developer)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sunnatilla_Sharipov-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9)
+[![License: MIT](https://img.shields.io/badge/License-MIT-00F5A0?style=for-the-badge&labelColor=101413)](LICENSE)
+
+</div>
 
 ---
 
-## 🚀 Key Highlights & Features
+## 👨‍💻 Verified Developer Profile & Knowledge Graph Entity
 
+* **Canonical Name**: **Sunnatilla Sharipov**
+* **Phonetic & Common Aliases**: *Sunatila Sharipov*, *war1pov*, `__war1pov__`, `SUNNATILLACODER`
+* **Professional Role**: Independent Frontend Developer & React Engineer
+* **Location & Geo Targeting**: Tashkent, Uzbekistan (`UZ-TO`, Central Asia, UTC+5)
+* **Authoritative Website**: [https://sunnatillasharipov.uz/](https://sunnatillasharipov.uz/)
+* **Specialization**: React 19 single-page applications, responsive e-commerce stores, high-conversion landing pages, hardware-accelerated 3D WebGL experiences (Three.js), and Core Web Vitals performance optimization.
 
-- **Distinctive Creative-Futuristic Identity**: Curated dark palette (`#050807` / `#0B1110`), subtle cyber gridlines, ambient glows, and clean typography.
-- **Genuine Bilingual System (EN / UZ)**: Real-time translation of all interface copy, navigation, project case data, and forms with `localStorage` persistence and dynamic `html lang` synchronization.
-- **Project Case Studies**:
-  - **Online Shop**: Showcased with an authentic CSS-crafted UI preview, verified features list, technical architecture breakdown, and editable links.
-  - **More Coming Soon**: Thoughtfully designed blueprint slot representing upcoming productions without broken layouts.
-- **Interactive Case Study Modal**: Accessible detail dialog with Esc key support and responsive layout.
-- **Honest Contact Experience**: Real social profiles (Telegram `@war1pov_developer`, GitHub `SUNNATILLACODER`) and an honest form that triggers `mailto:` or copies messages directly for Telegram without simulated fake backend delivery.
-- **Accessible & Responsive**: Full keyboard navigation, semantic HTML landmarks (`<header>`, `<main>`, `<section>`, `<footer>`), visible focus states, and mobile-first layouts tested from 320px screens to large desktop displays.
+---
+
+## 🌟 Production Highlights
+
+* **Creative-Futuristic Visual Architecture**: Obsidian canvas (`#080A0A`), vivid emerald status accents (`#00F5A0`), tactile card surfaces (`#101413`), and fluid responsive layouts tested across 320px mobile to 4K ultra-wide viewports.
+* **Full Trilingual Localization (UZ / EN / RU)**: Dynamic context switching between Uzbek, English, and Russian with browser locale preservation, accessible skip-links, and synchronized HTML `lang` attributes.
+* **Interactive 3D WebGL Scene**: Cyber City procedural metropolis built with Three.js, glowing emerald skyscrapers, quadratic Bezier data highways, and locked 60 FPS mouse parallax.
+* **Verified AI Entity Knowledge Base (FAQ)**: Built-in accordion answering identity, services, ordering web development in Uzbekistan, and international remote contracting.
+* **Voice Search & Core Web Vitals**: Integrated `SpeakableSpecification` landmarks (`#hero-intro-text`) for voice assistants (Google Assistant, Siri) and optimized bundle splitting with Vite.
+
+---
+
+## 🚀 Verified Projects
+
+### 1. [TechGear — Responsive E-Commerce Application](https://sunnatillacoder.github.io/Tech-gear/)
+* **Live Demo**: [https://sunnatillacoder.github.io/Tech-gear/](https://sunnatillacoder.github.io/Tech-gear/)
+* **Source Code**: [https://github.com/SUNNATILLACODER/Tech-gear](https://github.com/SUNNATILLACODER/Tech-gear)
+* **Technologies**: Vanilla JavaScript (ES6+), Tailwind CSS, REST API Integration, LocalStorage.
+* **Features**: Live product search, category filtering, cart drawer, responsive checkout flow, dark mode toggle.
+
+### 2. [3D Cyber City — WebGL Interactive Showcase](https://sunnatillasharipov.uz/#projects)
+* **Live Demo**: [https://sunnatillasharipov.uz/#projects](https://sunnatillasharipov.uz/#projects)
+* **Technologies**: React 19, Three.js, WebGL, Framer Motion.
+* **Features**: Procedural skyscraper generation, animated data packets, interactive camera parallax.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technology |
+| Layer | Tools & Technologies |
 |---|---|
-| **Framework** | [React 19](https://react.dev/) |
-| **Bundler & Tooling** | [Vite 8](https://vite.dev/) |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) with `@tailwindcss/vite` |
-| **Typography** | [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) & [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) |
-| **Motion** | [Framer Motion](https://motion.dev/) |
-| **Icons** | [Lucide React](https://lucide.dev/) + Custom SVG icons |
+| **Core Framework** | [React 19](https://react.dev/) + React DOM |
+| **Build & Tooling** | [Vite 8](https://vite.dev/) + Rollup Code Splitting |
+| **Styling & Design** | [Tailwind CSS v4](https://tailwindcss.com/) (`@tailwindcss/vite`) |
+| **3D Graphics** | [Three.js](https://threejs.org/) (WebGL) |
+| **Animation** | [Framer Motion](https://motion.dev/) |
+| **Typography** | Syne, Plus Jakarta Sans, JetBrains Mono |
+| **Hosting & CDN** | [Vercel Edge Network](https://vercel.com/) |
 
 ---
 
-## 📂 Project Structure
+## 🤖 Machine-Readable AI & Knowledge Graph Endpoints
 
-```text
-Portfolio/
-├── public/
-│   └── favicon.svg               # Futuristic glowing monogram favicon
-├── src/
-│   ├── assets/
-│   │   └── hero.png              # Isometric layered UI platform graphic
-│   ├── components/
-│   │   ├── icons/
-│   │   │   └── GithubIcon.jsx    # Reliable SVG GitHub icon
-│   │   ├── Navbar.jsx            # Sticky navbar with active scroll spy & mobile drawer
-│   │   ├── LanguageSwitcher.jsx  # English/Uzbek toggle
-│   │   ├── Hero.jsx              # Hero section with interactive isometric graphic
-│   │   ├── About.jsx             # Biography, designed monogram avatar & 4 principles
-│   │   ├── Projects.jsx          # Project showcase container
-│   │   ├── ProjectCard.jsx       # Large visual project preview cards
-│   │   ├── ProjectModal.jsx      # Detailed project case study dialog
-│   │   ├── Skills.jsx            # Core frontend, tools, & architecture cards
-│   │   ├── Process.jsx           # 4-stage systematic development workflow
-│   │   ├── Contact.jsx           # Direct links & functional message handler
-│   │   └── Footer.jsx            # Minimal footer with back-to-top & copyright
-│   ├── data/
-│   │   ├── projects.js           # Centralized project case studies & URLs
-│   │   ├── skills.js             # Technical skills & practical capabilities
-│   │   └── contact.js            # Social handles & contact configurations
-│   ├── hooks/
-│   │   └── useActiveSection.js   # Precision scroll spy hook
-│   ├── i18n/
-│   │   ├── LanguageContext.jsx   # React context for active language state
-│   │   └── translations.js       # Complete EN & UZ translation dictionaries
-│   ├── App.jsx                   # Main layout and semantic landmarks
-│   ├── index.css                 # Design tokens, grid patterns, glassmorphism
-│   └── main.jsx                  # React application entry point
-├── vercel.json                   # Vercel SPA routing configuration
-├── vite.config.js                # Vite build config with Tailwind plugin
-└── package.json                  # Dependencies and build scripts
-```
+| Protocol / Standard | Endpoint URL | Description |
+|---|---|---|
+| **JSON-LD Schema** | Embedded on [Homepage](https://sunnatillasharipov.uz/) | Full Schema.org Person, WebSite, FAQPage, ProfessionalService |
+| **LLMs Text** | [llms.txt](https://sunnatillasharipov.uz/llms.txt) | LLM crawler & AI assistant executive briefing |
+| **Full Knowledge Base** | [llms-full.txt](https://sunnatillasharipov.uz/llms-full.txt) | Complete verified developer profile for Perplexity, Claude, ChatGPT |
+| **Developer Entity Card** | [developer.json](https://sunnatillasharipov.uz/developer.json) | Direct machine-readable JSON card with CORS `*` |
+| **Press & Media Kit** | [press-kit.json](https://sunnatillasharipov.uz/press-kit.json) | Official bio, logos, brand assets, social handles |
+| **XML Sitemap** | [sitemap.xml](https://sunnatillasharipov.uz/sitemap.xml) | Google/Bing/Yandex canonical URL index |
+| **RSS 2.0 Feed** | [feed.xml](https://sunnatillasharipov.uz/feed.xml) | Syndicated engineering updates |
+| **Security Policy** | [.well-known/security.txt](https://sunnatillasharipov.uz/.well-known/security.txt) | RFC 9116 security disclosure guidelines |
+| **Humans.txt** | [humans.txt](https://sunnatillasharipov.uz/humans.txt) | Author & engineering standards disclosure |
 
 ---
 
-## 💻 Local Installation & Development
+## 💻 Local Setup & Development
 
-### Prerequisites
-- Node.js 18+ (tested on Node v24)
-- npm 9+
-
-### 1. Install Dependencies
 ```bash
+# Clone the repository
+git clone https://github.com/SUNNATILLACODER/Portfolio-job.git
+
+# Enter project directory
+cd Portfolio-job
+
+# Install dependencies
 npm install
-```
 
-### 2. Start Development Server
-```bash
+# Start local development server
 npm run dev
-```
-Open `http://localhost:5173` in your browser.
 
-### 3. Production Build
-```bash
+# Run automated 13-point SEO audit suite & build
 npm run build
-```
-Creates an optimized, minified production bundle in the `dist/` directory.
 
-### 4. Preview Production Build
-```bash
-npm run preview
+# Instant IndexNow search engine ping
+npm run ping:indexnow
 ```
 
 ---
 
-## ⚙️ Configuration Guide
+## 📬 Contact & Inquiries
 
-### 1. Updating Project URLs (Online Shop & New Projects)
-Open [`src/data/projects.js`](file:///c:/Users/User/OneDrive/Desktop/Project/Portfolio/src/data/projects.js):
-```javascript
-export const projectsData = [
-  {
-    id: "online-shop",
-    links: {
-      liveDemo: "https://your-online-shop-demo.vercel.app", // Enter live site URL here
-      viewSource: "https://github.com/SUNNATILLACODER/online-shop", // Enter repository URL
-      isLiveConfigured: true,
-      isSourceConfigured: true
-    },
-    // ...
-  }
-];
-```
-
-### 2. Updating Contact Information & Social Profiles
-Open [`src/data/contact.js`](file:///c:/Users/User/OneDrive/Desktop/Project/Portfolio/src/data/contact.js):
-```javascript
-export const contactConfig = {
-  name: "Sunnatilla",
-  githubUrl: "https://github.com/SUNNATILLACODER",
-  telegramUrl: "https://t.me/war1pov_developer",
-  email: "your-actual-email@gmail.com", // Set your preferred email address
-};
-```
-
-### 3. Adding the Second Project Slot
-In [`src/data/projects.js`](file:///c:/Users/User/OneDrive/Desktop/Project/Portfolio/src/data/projects.js), change `isUpcoming: false` on the second entry, specify your title, description, tags, and URLs.
-
-### 4. Editing Bilingual Text
-Edit [`src/i18n/translations.js`](file:///c:/Users/User/OneDrive/Desktop/Project/Portfolio/src/i18n/translations.js) to add or alter any copy in English or Uzbek.
+* **Official Website**: [https://sunnatillasharipov.uz/](https://sunnatillasharipov.uz/)
+* **Telegram**: [@war1pov_developer](https://t.me/war1pov_developer)
+* **Email**: [sunnatilla.dev@gmail.com](mailto:sunnatilla.dev@gmail.com)
+* **LinkedIn**: [Sunnatilla Sharipov](https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9)
+* **GitHub**: [@SUNNATILLACODER](https://github.com/SUNNATILLACODER)
 
 ---
 
-## 🚀 Deployment Guide
-
-### Deploying to Vercel
-
-1. Push your repository to GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial production portfolio for Sunnatilla"
-   git branch -M main
-   git remote add origin https://github.com/SUNNATILLACODER/<your-repo-name>.git
-   git push -u origin main
-   ```
-2. Log into [Vercel](https://vercel.com).
-3. Click **Add New Project** and select your GitHub repository.
-4. Framework Preset will be automatically detected as **Vite**.
-5. Build Command: `npm run build`
-6. Output Directory: `dist`
-7. Click **Deploy**. The included `vercel.json` ensures all route and asset handling functions seamlessly.
-
----
-
-## 📄 License
-MIT © Sunnatilla. All rights reserved.
+<div align="center">
+  <sub>Crafted by Sunnatilla Sharipov in Tashkent, Uzbekistan. Distributed under the MIT License.</sub>
+</div>
