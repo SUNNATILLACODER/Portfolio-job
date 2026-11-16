@@ -29,8 +29,19 @@
     <meta name="geo.position" content="41.299496;69.240073" />
     <meta name="ICBM" content="41.299496, 69.240073" />
     <meta name="geo.country" content="UZ" />
+    <meta name="DC.coverage" content="Tashkent, Uzbekistan, Central Asia, Worldwide" />
+    <meta name="DC.spatial" content="Tashkent, Uzbekistan" />
+    <meta name="coverage" content="Worldwide, Uzbekistan, Central Asia" />
     <meta property="place:location:latitude" content="41.299496" />
     <meta property="place:location:longitude" content="69.240073" />
+    <meta property="business:contact_data:locality" content="Tashkent" />
+    <meta property="business:contact_data:region" content="Tashkent Region" />
+    <meta property="business:contact_data:postal_code" content="100000" />
+    <meta property="business:contact_data:country_name" content="Uzbekistan" />
+    <meta property="og:locality" content="Tashkent" />
+    <meta property="og:region" content="Tashkent" />
+    <meta property="og:country-name" content="Uzbekistan" />
+    <meta property="og:postal-code" content="100000" />
     
     <!-- Mobile App & Browser Theme -->
     <meta name="theme-color" content="#080A0A" />
@@ -53,6 +64,7 @@
     <link rel="help" href="/.well-known/security.txt" title="Security &amp; Vulnerability Disclosure" />
     <link rel="author" href="/humans.txt" title="Authorship &amp; Engineering Standards" />
     <link rel="alternate" type="application/vnd.google-earth.kml+xml" href="https://sunnatillasharipov.uz/location.kml" title="Sunnatilla Sharipov Location (KML)" />
+    <link rel="alternate" type="application/geo+json" href="https://sunnatillasharipov.uz/location.geojson" title="Sunnatilla Sharipov Geographic Location (GeoJSON)" />
     <link rel="alternate" type="text/vcard" href="https://sunnatillasharipov.uz/sunnatilla-sharipov.vcf" title="Sunnatilla Sharipov Digital Business Card (vCard)" />
     <link rel="search" type="application/opensearchdescription+xml" href="https://sunnatillasharipov.uz/opensearch.xml" title="Search Sunnatilla Sharipov" />
     
@@ -130,11 +142,11 @@
             "url": "https://sunnatillasharipov.uz/og-image.jpg"
           },
           "datePublished": "2026-01-01T00:00:00+05:00",
-          "dateModified": "2026-11-16T09:50:00+05:00",
+          "dateModified": "2026-11-16T10:25:00+05:00",
           "description": "Portfolio of Sunnatilla Sharipov, independent Frontend Developer specializing in React, Tailwind CSS, and modern web applications based in Tashkent, Uzbekistan.",
           "speakable": {
             "@type": "SpeakableSpecification",
-            "cssSelector": ["#hero-intro-text", "#ai-entity-summary", "#faq-shell"]
+            "cssSelector": ["#hero-intro-text", "#ai-entity-summary", "#geo-coverage-shell", "#faq-shell"]
           },
           "mainEntity": {
             "@id": "https://sunnatillasharipov.uz/#person"
@@ -443,7 +455,19 @@
             "latitude": 41.299496,
             "longitude": 69.240073
           },
-          "hasMap": "https://www.google.com/maps?q=41.299496,69.240073",
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 41.299496,
+              "longitude": 69.240073
+            },
+            "geoRadius": "60000"
+          },
+          "hasMap": [
+            "https://www.google.com/maps?q=41.299496,69.240073",
+            "https://yandex.com/maps/?ll=69.240073%2C41.299496&z=13"
+          ],
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
@@ -458,35 +482,138 @@
           "areaServed": [
             {
               "@type": "Country",
-              "name": "Uzbekistan"
+              "name": "Uzbekistan",
+              "sameAs": "https://en.wikipedia.org/wiki/Uzbekistan"
             },
             {
               "@type": "City",
-              "name": "Tashkent"
+              "name": "Tashkent",
+              "sameAs": "https://en.wikipedia.org/wiki/Tashkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Tashkent Region",
+              "alternateName": "Toshkent viloyati"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Yunusobod District",
+              "alternateName": "Yunusabad, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Chilonzor District",
+              "alternateName": "Chilanzar, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Mirzo Ulug'bek District",
+              "alternateName": "Mirzo-Ulugbek, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Mirobod District",
+              "alternateName": "Mirabad, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Yakkasaroy District",
+              "alternateName": "Yakkasaray, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Shayxontohur District",
+              "alternateName": "Shaykhontokhur, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Olmazor District",
+              "alternateName": "Almazar, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Yashnobod District",
+              "alternateName": "Yashnabad, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Sergeli District",
+              "alternateName": "Sergeli, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Uchtepa District",
+              "alternateName": "Uchtepa, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Bektemir District",
+              "alternateName": "Bektemir, Toshkent"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Yangihayot District",
+              "alternateName": "Yangihayot, Toshkent"
             },
             {
               "@type": "City",
-              "name": "Samarkand"
+              "name": "Samarkand",
+              "alternateName": "Samarqand"
             },
             {
               "@type": "City",
-              "name": "Bukhara"
+              "name": "Bukhara",
+              "alternateName": "Buxoro"
             },
             {
               "@type": "City",
-              "name": "Fergana"
+              "name": "Fergana",
+              "alternateName": "Farg'ona"
             },
             {
               "@type": "City",
-              "name": "Andijan"
+              "name": "Andijan",
+              "alternateName": "Andijon"
             },
             {
               "@type": "City",
-              "name": "Namangan"
+              "name": "Namangan",
+              "alternateName": "Namangan"
             },
             {
               "@type": "City",
-              "name": "Navoiy"
+              "name": "Navoiy",
+              "alternateName": "Navoi"
+            },
+            {
+              "@type": "City",
+              "name": "Urgench",
+              "alternateName": "Urganch, Xorazm"
+            },
+            {
+              "@type": "City",
+              "name": "Qarshi",
+              "alternateName": "Qashqadaryo"
+            },
+            {
+              "@type": "City",
+              "name": "Termez",
+              "alternateName": "Termiz, Surxondaryo"
+            },
+            {
+              "@type": "City",
+              "name": "Jizzakh",
+              "alternateName": "Jizzax"
+            },
+            {
+              "@type": "City",
+              "name": "Guliston",
+              "alternateName": "Gulistan, Sirdaryo"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Republic of Karakalpakstan",
+              "alternateName": "Qoraqalpog'iston Respublikasi, Nukus"
             },
             {
               "@type": "AdministrativeArea",
@@ -956,18 +1083,49 @@
           </div>
         </section>
 
-        <!-- Section 5: Location & Contact -->
-        <section id="contact-shell" aria-labelledby="contact-heading">
-          <h2 id="contact-heading" class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Bog'lanish // Contact Information</h2>
-          <p class="text-sm text-[#A3AAA5] mb-4">
-            Joylashuv: Toshkent shahri, O'zbekiston. Masofaviy (Remote) va mahalliy loyihalar uchun ochiqman.
-          </p>
-          <p class="font-mono text-xs text-[#00F5A0]">
-            Email: <a href="mailto:sunnatilla.dev@gmail.com" class="underline">sunnatilla.dev@gmail.com</a> |
-            Telegram: <a href="https://t.me/war1pov_developer" class="underline">@war1pov_developer</a> |
-            GitHub: <a href="https://github.com/SUNNATILLACODER" class="underline">@SUNNATILLACODER</a> |
-            LinkedIn: <a href="https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9" class="underline">Sunnatilla Sharipov</a>
-          </p>
+        <!-- Section 5: Location, Geographic Coverage & Contact -->
+        <section id="contact-shell" class="mb-12" aria-labelledby="contact-heading">
+          <h2 id="contact-heading" class="font-display text-2xl font-bold text-[#F3F4F0] mb-4">Bog'lanish va Geografik Hududlar // Location &amp; Geographic Service Area</h2>
+          
+          <div id="geo-coverage-shell" class="p-6 rounded-xl bg-[#101413] border border-white/10 mb-6">
+            <div class="flex items-center gap-2 mb-3 font-mono text-xs text-[#00F5A0] uppercase tracking-wider">
+              <span>📍 GEOGRAPHIC SERVICE AREA // O'ZBEKISTON VA XALQARO MASOFAVIY</span>
+            </div>
+            <p class="text-sm text-[#A3AAA5] mb-4">
+              Bosh qarorgoh / HQ: <strong class="text-[#F3F4F0]">Toshkent shahri, O'zbekiston</strong> (Koordinatalar: <span class="font-mono text-xs text-[#00F5A0]">41.299496° N, 69.240073° E</span>).
+            </p>
+            
+            <div class="space-y-3 text-xs text-[#A3AAA5] mb-4">
+              <div>
+                <span class="text-[#F3F4F0] font-semibold block mb-1">🏢 Toshkent shahri tumanlari bo'ylab xizmat:</span>
+                <span class="leading-relaxed">Yunusobod, Chilonzor, Mirzo Ulug'bek, Mirobod, Yakkasaroy, Shayxontohur, Olmazor, Yashnobod, Sergeli, Uchtepa, Bektemir, Yangihayot tumanlari va Toshkent viloyati.</span>
+              </div>
+              <div>
+                <span class="text-[#F3F4F0] font-semibold block mb-1">🇺🇿 O'zbekiston Respublikasi viloyatlari bo'ylab buyurtmalar:</span>
+                <span class="leading-relaxed">Samarqand, Buxoro, Farg'ona, Andijon, Namangan, Navoiy, Xorazm (Urganch), Qashqadaryo (Qarshi), Surxondaryo (Termiz), Jizzax, Sirdaryo (Guliston) va Qoraqalpog'iston Respublikasi (Nukus).</span>
+              </div>
+              <div>
+                <span class="text-[#F3F4F0] font-semibold block mb-1">🌐 Xalqaro masofaviy hamkorlik (Global Remote):</span>
+                <span class="leading-relaxed">AQSh, Yevropa, BAA (Dubay), Markaziy Osiyo va MDH davlatlari bilan masofaviy shartnomalar (UTC+5 vaqt mintaqasi).</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 font-mono text-xs pt-3 border-t border-white/5">
+              <a href="https://www.google.com/maps?q=41.299496,69.240073" target="_blank" rel="noopener noreferrer" class="text-[#00F5A0] hover:underline">Google Maps &rarr;</a>
+              <a href="https://yandex.com/maps/?ll=69.240073%2C41.299496&z=13" target="_blank" rel="noopener noreferrer" class="text-[#00F5A0] hover:underline">Yandex Maps &rarr;</a>
+              <a href="/location.geojson" target="_blank" class="text-[#A3AAA5] hover:text-white">GeoJSON Data</a>
+              <a href="/location.kml" target="_blank" class="text-[#A3AAA5] hover:text-white">KML GIS File</a>
+              <a href="/sunnatilla-sharipov.vcf" class="text-[#A3AAA5] hover:text-white">vCard Contact</a>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#080A0A] border border-white/5 font-mono text-xs text-[#A3AAA5] flex flex-wrap gap-y-2 gap-x-4">
+            <div>Email: <a href="mailto:sunnatilla.dev@gmail.com" class="text-[#00F5A0] underline">sunnatilla.dev@gmail.com</a></div>
+            <div>Telefon: <a href="tel:+998951214282" class="text-[#00F5A0] underline">+998 95 121 42 82</a></div>
+            <div>Telegram: <a href="https://t.me/war1pov_developer" class="text-[#00F5A0] underline">@war1pov_developer</a></div>
+            <div>GitHub: <a href="https://github.com/SUNNATILLACODER" class="text-[#00F5A0] underline">SUNNATILLACODER</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9" class="text-[#00F5A0] underline">Sunnatilla Sharipov</a></div>
+          </div>
         </section>
       </main>
     </div>

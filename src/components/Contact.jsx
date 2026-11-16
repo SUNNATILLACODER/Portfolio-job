@@ -272,27 +272,59 @@ export const Contact = () => {
             </a>
 
             {/* Location & vCard Download Card */}
-            <div className="p-5 rounded-xl surface-card border border-white/[0.08] flex items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[#00F5A0]">
-                  <MapPin size={18} />
+            <div className="p-5 rounded-xl surface-card border border-white/[0.08]">
+              <div className="flex items-center justify-between gap-4 mb-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06] text-[#00F5A0]">
+                    <MapPin size={18} />
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-[#F3F4F0] block">
+                      {lang === 'uz' ? "Toshkent, O'zbekiston" : lang === 'ru' ? "Ташкент, Узбекистан" : "Tashkent, Uzbekistan"}
+                    </span>
+                    <span className="text-xs font-mono text-[#8E9691]">UTC+5 // 41.2995° N, 69.2401° E</span>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-sm font-semibold text-[#F3F4F0] block">
-                    {lang === 'uz' ? "Toshkent, O'zbekiston" : lang === 'ru' ? "Ташкент, Узбекистан" : "Tashkent, Uzbekistan"}
-                  </span>
-                  <span className="text-xs font-mono text-[#8E9691]">UTC+5 // 41.2995° N, 69.2401° E</span>
-                </div>
+                <a
+                  href="/sunnatilla-sharipov.vcf"
+                  download="sunnatilla-sharipov.vcf"
+                  className="px-3 py-1.5 rounded-lg bg-[#00F5A0]/10 border border-[#00F5A0]/30 text-[#00F5A0] hover:bg-[#00F5A0] hover:text-[#080A0A] transition-all text-xs font-mono flex items-center gap-1.5 shrink-0 cursor-pointer"
+                  title="Download vCard"
+                >
+                  <Download size={13} />
+                  <span>vCard</span>
+                </a>
               </div>
-              <a
-                href="/sunnatilla-sharipov.vcf"
-                download="sunnatilla-sharipov.vcf"
-                className="px-3 py-1.5 rounded-lg bg-[#00F5A0]/10 border border-[#00F5A0]/30 text-[#00F5A0] hover:bg-[#00F5A0] hover:text-[#080A0A] transition-all text-xs font-mono flex items-center gap-1.5 shrink-0 cursor-pointer"
-                title="Download vCard"
-              >
-                <Download size={13} />
-                <span>vCard</span>
-              </a>
+              <div className="flex flex-wrap items-center gap-3 pt-2.5 border-t border-white/[0.06] text-[11px] font-mono text-[#A3AAA5]">
+                <a
+                  href="https://www.google.com/maps?q=41.299496,69.240073"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#00F5A0] transition-colors flex items-center gap-1"
+                >
+                  <span>Google Maps</span>
+                  <ArrowUpRight size={11} />
+                </a>
+                <span>•</span>
+                <a
+                  href="https://yandex.com/maps/?ll=69.240073%2C41.299496&z=13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#00F5A0] transition-colors flex items-center gap-1"
+                >
+                  <span>Yandex Maps</span>
+                  <ArrowUpRight size={11} />
+                </a>
+                <span>•</span>
+                <a
+                  href="/location.geojson"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  GeoJSON
+                </a>
+              </div>
             </div>
 
             {/* Status Indicator */}

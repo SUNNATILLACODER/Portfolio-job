@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "name": "Sunnatilla Sharipov — Geographic Location & Service Area",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [69.240073, 41.299496]
+      },
+      "properties": {
+        "name": "Sunnatilla Sharipov Web Development HQ",
+        "developer": "Sunnatilla Sharipov (__war1pov__)",
+        "role": "Frontend Developer & React Engineer",
+        "address": {
+          "street": "Tashkent City",
+          "locality": "Tashkent",
+          "region": "Tashkent Region",
+          "country": "Uzbekistan",
+          "postalCode": "100000"
+        },
+        "telephone": "+998951214282",
+        "email": "sunnatilla.dev@gmail.com",
+        "telegram": "https://t.me/war1pov_developer",
+        "website": "https://sunnatillasharipov.uz/",
+        "services": [
+          "Frontend Web Development",
+          "React Single Page Applications",
+          "E-Commerce Stores",
+          "Telegram Bot Engineering",
+          "3D WebGL Experiences"
+        ],
+        "serviceCoverage": "Tashkent, Uzbekistan, Central Asia, Worldwide (Remote)",
+        "serviceAreaRadiusMeters": 60000,
+        "tashkentDistricts": [
+          "Yunusobod",
+          "Chilonzor",
+          "Mirzo Ulug'bek",
+          "Mirobod",
+          "Yakkasaroy",
+          "Shayxontohur",
+          "Olmazor",
+          "Yashnobod",
+          "Sergeli",
+          "Uchtepa",
+          "Bektemir",
+          "Yangihayot"
+        ],
+        "regionsCovered": [
+          "Tashkent City",
+          "Tashkent Region",
+          "Samarkand",
+          "Bukhara",
+          "Fergana",
+          "Andijan",
+          "Namangan",
+          "Navoiy",
+          "Khorezm (Urgench)",
+          "Kashkadarya (Qarshi)",
+          "Surkhandarya (Termez)",
+          "Jizzakh",
+          "Syrdarya (Guliston)",
+          "Republic of Karakalpakstan (Nukus)"
+        ],
+        "maps": {
+          "google": "https://www.google.com/maps?q=41.299496,69.240073",
+          "yandex": "https://yandex.com/maps/?ll=69.240073%2C41.299496&z=13"
+        }
+      }
+    }
+  ]
+}

@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/(feed.xml|sitemap.xml|robots.txt|site.webmanifest|developer.json)",
+      "source": "/(feed.xml|sitemap.xml|robots.txt|site.webmanifest|developer.json|location.geojson|location.kml|sunnatilla-sharipov.vcf)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
