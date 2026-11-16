@@ -6,8 +6,21 @@
     <description>Engineering updates, production web projects, and technical case studies by Sunnatilla Sharipov (__war1pov__) from Tashkent, Uzbekistan.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 Sunnatilla Sharipov</copyright>
-    <lastBuildDate>Mon, 16 Nov 2026 09:50:00 +0500</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 10:35:00 +0500</lastBuildDate>
     <atom:link href="https://sunnatillasharipov.uz/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>4-Phase Frontend Engineering &amp; Tashkent Regional Web Development</title>
+      <link>https://sunnatillasharipov.uz/#process</link>
+      <guid isPermaLink="false">sunnatillasharipov-engineering-methodology-2026</guid>
+      <pubDate>Mon, 16 Nov 2026 10:35:00 +0500</pubDate>
+      <dc:creator>Sunnatilla Sharipov</dc:creator>
+      <category>Frontend Engineering</category>
+      <category>React 19</category>
+      <category>Web Architecture</category>
+      <category>Local SEO</category>
+      <description><![CDATA[Overview of Sunnatilla Sharipov's structured 4-phase frontend engineering cadence: Discovery, Design Systems, Component-Driven React Development, and Core Web Vitals optimization, serving Tashkent districts, Uzbekistan regions, and global remote contracts.]]></description>
+    </item>
 
     <item>
       <title>Full-Stack AI Automation &amp; Telegram Bot Architecture by Sunnatilla Sharipov</title>

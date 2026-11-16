@@ -134,6 +134,20 @@ export const Footer = () => {
           </div>
         </div>
 
+        {/* Machine Endpoints & AI Transparency Bar */}
+        <div className="pt-4 mt-4 border-t border-white/[0.04] flex flex-wrap items-center justify-center sm:justify-start gap-3 text-[11px] font-mono text-[#8E9691]">
+          <span className="text-[#A3AAA5]">AI &amp; Open Standards:</span>
+          <a href="/llms.txt" target="_blank" rel="noopener noreferrer" className="hover:text-[#00F5A0] transition-colors">llms.txt</a>
+          <span className="text-white/20">•</span>
+          <a href="/developer.json" target="_blank" rel="noopener noreferrer" className="hover:text-[#00F5A0] transition-colors">developer.json</a>
+          <span className="text-white/20">•</span>
+          <a href="/feed.xml" target="_blank" rel="noopener noreferrer" className="hover:text-[#00F5A0] transition-colors">feed.xml (RSS)</a>
+          <span className="text-white/20">•</span>
+          <a href="/location.geojson" target="_blank" rel="noopener noreferrer" className="hover:text-[#00F5A0] transition-colors">location.geojson</a>
+          <span className="text-white/20">•</span>
+          <a href="/location.kml" target="_blank" rel="noopener noreferrer" className="hover:text-[#00F5A0] transition-colors">location.kml</a>
+        </div>
+
       </div>
     </footer>
   );
