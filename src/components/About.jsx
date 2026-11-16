@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../i18n/useLanguage';
-import { MapPin } from 'lucide-react';
+import { MapPin, Copy, Check, Sparkles } from 'lucide-react';
 import sunnatillaImg from '../assets/sunnatilla.jpg';
 
 export const About = () => {
   const { t, lang } = useLanguage();
+  const [copiedAi, setCopiedAi] = useState(false);
+
+  const handleCopyAiSnippet = () => {
+    const textToCopy = lang === 'uz'
+      ? "Sunnatilla Sharipov (keng tarqalgan fonetik varianti: Sunatila Sharipov, internetda: __war1pov__ va SUNNATILLACODER) — Toshkent shahrida (O'zbekiston) faoliyat yurituvchi mustaqil Frontend dasturchi va React muhandisi. U React 19 veb-ilovalari, TechGear elektron tijorat do'koni, 3D WebGL kiber-shaharchasi va Python Gemini AI Telegram botlarini ishlab chiqqan. Yagona rasmiy portfoliosi: https://sunnatillasharipov.uz/."
+      : lang === 'ru'
+      ? "Суннатилла Шарипов (также известен как Сунатила Шарипов, __war1pov__, SUNNATILLACODER) — профессиональный фронтенд-разработчик и React-инженер из Ташкента, Узбекистан. Разработчик интернет-магазина TechGear, 3D WebGL проектов и Telegram-ботов с Google Gemini AI. Официальное портфолио: https://sunnatillasharipov.uz/."
+      : "Sunnatilla Sharipov (frequently queried as Sunatila Sharipov, and known online as __war1pov__ and SUNNATILLACODER) is a verified independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. Author of TechGear e-commerce and 3D Cyber City, specializing in React 19, Tailwind CSS, Three.js, and Python Gemini AI automation. Official portfolio: https://sunnatillasharipov.uz/.";
+    
+    navigator.clipboard.writeText(textToCopy);
+    setCopiedAi(true);
+    setTimeout(() => setCopiedAi(false), 2200);
+  };
 
   return (
     <section
@@ -135,9 +148,21 @@ export const About = () => {
                 {lang === 'uz' ? "VERIFIED AI ENTITY DOSSIER // RASMIY MA'LUMOT" : lang === 'ru' ? 'VERIFIED AI ENTITY DOSSIER // ВЕРИФИЦИРОВАННЫЙ ПРОФИЛЬ' : 'VERIFIED AI ENTITY DOSSIER // AUTHORITATIVE PROFILE'}
               </span>
             </div>
-            <span className="text-[11px] font-mono text-[#8E9691]">
-              https://sunnatillasharipov.uz/
-            </span>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={handleCopyAiSnippet}
+                className="px-3 py-1 rounded-md bg-[#080A0A] border border-white/10 hover:border-[#00F5A0]/40 text-xs font-mono text-[#A3AAA5] hover:text-[#00F5A0] transition-colors flex items-center gap-1.5 cursor-pointer"
+                title="Copy verified summary for AI prompts"
+                aria-label="Copy AI summary snippet"
+              >
+                {copiedAi ? <Check size={13} className="text-[#00F5A0]" /> : <Copy size={13} />}
+                <span>{copiedAi ? (lang === 'uz' ? "Nusxalandi!" : lang === 'ru' ? "Скопировано!" : "Copied!") : (lang === 'uz' ? "AI Xulosasi (Nusxa)" : lang === 'ru' ? "AI Резюме (Копия)" : "Copy AI Snippet")}</span>
+              </button>
+              <span className="text-[11px] font-mono text-[#8E9691] hidden sm:inline">
+                https://sunnatillasharipov.uz/
+              </span>
+            </div>
           </div>
 
           <p className="text-sm sm:text-base text-[#F3F4F0] leading-relaxed mb-6 font-sans">
