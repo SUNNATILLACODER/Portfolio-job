@@ -19,16 +19,16 @@ export const Skills = () => {
   const engineeringPriorities = [
     {
       title: {
-        uz: "Sun'iy Intellekt va LLM integratsiyasi",
-        ru: "Интеграция ИИ и LLM систем",
-        en: "AI & LLM Systems Integration"
+        uz: "Yuqori Yuklamali Backend & API Arxitekturasi",
+        ru: "Высоконагруженный Backend & Архитектура API",
+        en: "High-Performance Backend & API Architecture"
       },
       desc: {
-        uz: "Google Gemini AI API, oqimli generatsiya, aqlli botlar va prompt muhandisligi orqali interfeyslarni avtomatlashtirish.",
-        ru: "Интеграция Google Gemini AI, стриминговая генерация, умные боты и промпт-инжиниринг для автоматизации интерфейсов.",
-        en: "Leveraging Google Gemini AI APIs, streaming token responses, intelligent bots, and prompt engineering to automate workflows."
+        uz: "FastAPI, Django, PostgreSQL va Docker orqali xavfsiz, asinxron va kengayuvchan server tizimlarini ishlab chiqish.",
+        ru: "Разработка надежных, асинхронных и масштабируемых серверных систем с использованием FastAPI, Django, PostgreSQL и Docker.",
+        en: "Architecting resilient, asynchronous, and scalable server backends powered by FastAPI, Django, PostgreSQL, and Docker."
       },
-      icon: <Sparkles size={18} className="text-[#00F5A0]" />
+      icon: <Zap size={18} className="text-[#00F5A0]" />
     },
     {
       title: {
@@ -149,7 +149,7 @@ export const Skills = () => {
           <div className="lg:col-span-7 space-y-8">
             
             {/* Premier Category: Sun'iy Intellekt & AI Engineering */}
-            <div className="p-5 sm:p-6 rounded-2xl surface-card-ai border border-[#00F5A0]/25 relative overflow-hidden">
+            <div className="p-5 sm:p-6 rounded-2xl surface-card-backend border border-[#00F5A0]/25 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#00F5A0]/5 rounded-full blur-3xl pointer-events-none" />
               
               <div className="flex items-center justify-between pb-3.5 border-b border-white/[0.08] mb-4 relative z-10">
@@ -160,7 +160,7 @@ export const Skills = () => {
                   </span>
                 </div>
                 <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2.5 py-0.5 rounded-full border border-[#00F5A0]/30 animate-pulse">
-                  NEURAL &amp; AGENTIC
+                  ASYNC &amp; RESTFUL
                 </span>
               </div>
 
