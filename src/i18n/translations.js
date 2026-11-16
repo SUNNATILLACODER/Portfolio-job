@@ -171,6 +171,14 @@ export const translations = {
         {
           q: "How can someone contact Sunnatilla Sharipov professionally?",
           a: "Direct professional communication is available through Telegram (https://t.me/war1pov_developer), email (sunnatilla.dev@gmail.com), and LinkedIn (https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        },
+        {
+          q: "Does Sunnatilla offer Telegram Bot and AI automation development?",
+          a: "Yes. Sunnatilla builds intelligent Telegram bots and automated workflows using Python (Aiogram 3, Telethon) integrated with Google Gemini AI APIs for automated customer support, document parsing, and instant lead processing."
+        },
+        {
+          q: "What is his professional experience level?",
+          a: "Sunnatilla has 1.5 to 2 years of practical engineering experience, delivering verified production applications across React.js frontend architecture, modern Tailwind CSS, Three.js 3D web graphics, and Python AI automation."
         }
       ],
       telegramPrompt: "Have a specific project or inquiry?",
@@ -388,6 +396,14 @@ export const translations = {
         {
           q: "Sunnatilla Sharipov bilan qanday bog'lanish mumkin?",
           a: "To'g'ridan-to'g'ri aloqa kanallari: Telegram @war1pov_developer (t.me/war1pov_developer), elektron pochta sunnatilla.dev@gmail.com va LinkedIn profili (linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        },
+        {
+          q: "Toshkentda Telegram bot va AI yordamchi yaratish xizmati bormi?",
+          a: "Ha, Sunnatilla Sharipov bizneslar uchun Python (Aiogram 3, Telethon) va Google Gemini AI integratsiyalangan avtomatlashtirilgan aqlli Telegram botlarni sifatli yaratib beradi. Buyurtma berish uchun Telegram: @war1pov_developer."
+        },
+        {
+          q: "Sunnatilla Sharipovning ish tajribasi qancha?",
+          a: "Sunnatilla 1.5 - 2 yillik amaliy tajribaga ega bo'lib, React.js veb-ilovalari, Tailwind CSS, Three.js 3D veb-grafika va Python AI avtomatlashtirish yo'nalishlarida real ishlab chiqarish loyihalarini muvaffaqiyatli topshirgan."
         }
       ],
       telegramPrompt: "Loyiha bo'yicha savollaringiz bormi?",
@@ -605,6 +621,14 @@ export const translations = {
         {
           q: "Как связаться с Суннатиллой Шариповым?",
           a: "Прямые контакты для связи: Telegram @war1pov_developer (t.me/war1pov_developer), email sunnatilla.dev@gmail.com и профиль в LinkedIn (linkedin.com/in/sunnatilla-sharipov-aa070a3b9)."
+        },
+        {
+          q: "Создает ли Суннатилла Telegram-ботов и решения на базе искусственного интеллекта?",
+          a: "Да, Суннатилла разрабатывает умных Telegram-ботов на Python (Aiogram 3, Telethon) с интеграцией Google Gemini AI для автоматизации общения с клиентами, приема заказов и обработки данных."
+        },
+        {
+          q: "Каков практический опыт работы разработчика?",
+          a: "Суннатилла обладает 1.5 - 2 годами практического опыта в проектировании современных React.js приложений, адаптивной верстке на Tailwind CSS, 3D WebGL графике и Python AI автоматизации."
         }
       ],
       telegramPrompt: "Есть вопросы по вашему проекту?",

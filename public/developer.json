@@ -2,9 +2,9 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "meta": {
     "title": "Sunnatilla Sharipov — Verified Developer Identity & Knowledge Card",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "canonicalUrl": "https://sunnatillasharipov.uz/",
-    "lastUpdated": "2026-11-11"
+    "lastUpdated": "2026-11-16"
   },
   "entity": {
     "name": "Sunnatilla Sharipov",
@@ -47,7 +47,8 @@
   },
   "skills": {
     "core": ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "HTML5", "CSS3", "Three.js", "WebGL"],
-    "tooling": ["Vite", "Git", "GitHub", "npm", "Vercel", "REST APIs", "Core Web Vitals", "SEO", "GEO"],
+    "backendAndAi": ["Python", "Aiogram 3", "Telethon", "Google Gemini AI API", "Telegram Bot Engineering", "REST APIs"],
+    "tooling": ["Vite", "Git", "GitHub", "npm", "Vercel", "Core Web Vitals", "SEO", "GEO"],
     "architecture": ["Mobile-First Responsive Design", "Component-Driven Architecture", "State Management", "Performance Optimization"]
   },
   "verifiedProjects": [
@@ -74,6 +75,7 @@
     "E-Commerce & Online Store Engineering",
     "Landing Page & Business Website Development",
     "Interactive 3D & WebGL Experiences",
+    "Telegram Bot Development & AI Automation",
     "Web Performance (Core Web Vitals) & SEO/GEO Optimization",
     "REST API Client Integration"
   ]

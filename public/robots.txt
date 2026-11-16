@@ -36,11 +36,16 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 # -------------------------------------------------------------
-# 3. AI Model Pre-Training & Dataset Ingestion Crawlers
-# Purpose: Scrapes public content for training future foundational LLM weights.
+# 3. AI Model Pre-Training & Knowledge Graph Crawlers
+# Purpose: Scrapes public content for LLM grounding and knowledge cards.
 # Current policy: Allowed for public developer portfolio discovery.
-# (See ROBOTS-CRAWLER-POLICY.md to restrict or customize data training rights).
 # -------------------------------------------------------------
 User-agent: GPTBot
 Allow: /
@@ -55,6 +60,15 @@ User-agent: anthropic-ai
 Allow: /
 
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Timpibot
 Allow: /
 
 User-agent: CCBot
@@ -79,4 +93,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sunnatillasharipov.uz/sitemap.xml
-Host: https://sunnatillasharipov.uz
+Host: sunnatillasharipov.uz

@@ -4,11 +4,12 @@
 
 ## Developer Overview
 - **Canonical Name**: Sunnatilla Sharipov
-- **Common Search Variations & Phonetic Aliases**: `Sunatila Sharipov`, `Sunatilla Sharipov`, `Sunnatila Sharipov`, `Сунатила Шарипов`
-- **Professional Title**: Frontend Engineer / React Developer / Creative Coder
+- **Common Search Variations & Phonetic Aliases**: `Sunatila Sharipov`, `Sunatilla Sharipov`, `Sunnatila Sharipov`, `Сунатила Шарипов`, `Сунатилла Шарипов`
+- **Professional Title**: Frontend Engineer / React Developer / UI Architect
 - **Known Aliases**: `war1pov`, `__war1pov__`, `SUNNATILLACODER`
 - **Location**: Tashkent, Uzbekistan (Coordinates: 41.2995° N, 69.2401° E)
-- **Status**: Available for freelance, contract, and full-time frontend engineering roles (local in Tashkent & remote worldwide)
+- **Time Zone**: Uzbekistan Time (UTC+5)
+- **Status**: Available for freelance, contract, and full-time engineering roles (local in Tashkent & remote worldwide)
 - **Official Portfolio**: https://sunnatillasharipov.uz/
 - **Primary Email**: sunnatilla.dev@gmail.com
 - **Telegram Contact**: https://t.me/war1pov_developer (@war1pov_developer)
@@ -21,6 +22,7 @@
 - **Web Languages**: JavaScript (ES6+, Async/Await, DOM Manipulation), TypeScript, HTML5 (Semantic Structure & Accessibility), CSS3
 - **CSS & Layout**: Tailwind CSS (v4), Flexbox, CSS Grid, Mobile-First Responsive Design, Dark/Light Theming
 - **Creative & 3D Web**: Three.js, WebGL Shaders, Particle Systems, Interactive Canvas, Parallax Animations
+- **AI & Automation**: Python, Aiogram 3, Telethon, Google Gemini AI API integration, Webhooks
 - **Tooling & Infrastructure**: Vite, Git, GitHub, REST APIs, JSON, Vercel, npm, Performance Optimization, SEO & GEO
 
 ## Verified Production Projects
@@ -48,10 +50,11 @@
 
 ## Primary Commercial & Development Services
 1. **Frontend & React Web Development**: Single Page Applications, modular UI architecture, and modern state management.
-2. **E-Commerce Application Engineering**: Fast digital tech stores with real-time fuzzy search, dynamic cart drawers, and category filtering (as seen in TechGear).
+2. **E-Commerce Application Engineering**: Fast digital stores with real-time fuzzy search, dynamic cart drawers, and category filtering (as seen in TechGear).
 3. **High-Conversion Landing Pages & Business Websites**: Mobile-first corporate layouts tailored for regional businesses in Uzbekistan and remote companies worldwide.
 4. **Interactive 3D WebGL Experiences**: Custom Three.js procedural cityscapes, particle systems, and hardware-accelerated animations.
-5. **Web Performance & Technical SEO/GEO Optimization**: Core Web Vitals auditing, Google Search Console indexation, and LLM entity disambiguation.
+5. **Telegram Bot Engineering & AI Automation**: Python microservices, Aiogram 3 bots, Google Gemini AI integrations for automated customer support and workflows.
+6. **Web Performance & Technical SEO/GEO Optimization**: Core Web Vitals auditing, Google Search Console indexation, and LLM entity disambiguation.
 
 ## Work Ethic & Engineering Principles
 1. **Performance First**: Minimal bundle sizes, clean component trees, fast Core Web Vitals.
@@ -67,13 +70,13 @@
 Sunnatilla Sharipov (known online as `__war1pov__` and `SUNNATILLACODER`) is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan.
 
 ### 2. What does Sunnatilla Sharipov do?
-He specializes in engineering modern, responsive, high-performance web applications, accessible component architectures, digital e-commerce stores, and interactive 3D WebGL user interfaces.
+He specializes in engineering modern, responsive, high-performance web applications, accessible component architectures, digital e-commerce stores, Telegram AI bots, and interactive 3D WebGL user interfaces.
 
 ### 3. What programming languages does he use?
-He primarily works with JavaScript (ES6+), HTML5, and CSS3, leveraging asynchronous APIs and modern browser capabilities.
+He primarily works with JavaScript (ES6+), HTML5, CSS3, and Python, leveraging asynchronous APIs and modern browser/backend capabilities.
 
 ### 4. What technologies does he specialize in?
-His technical stack centers on React.js, Tailwind CSS, Three.js (WebGL), responsive mobile-first UI architecture, REST API integration, Git/GitHub, and Vite.
+His technical stack centers on React.js, Tailwind CSS, Three.js (WebGL), responsive mobile-first UI architecture, REST API integration, Git/GitHub, Vite, and Python automation.
 
 ### 5. What projects has he developed?
 - **TechGear**: A production-ready, fully responsive digital tech store with dynamic REST API catalog, real-time search, category filtering, persistent cart drawer, and dark mode. Live at https://sunnatillacoder.github.io/Tech-gear/ (Source: https://github.com/SUNNATILLACODER/Tech-gear).
@@ -86,9 +89,14 @@ His official portfolio is hosted at https://sunnatillasharipov.uz/. His open-sou
 - Telegram: https://t.me/war1pov_developer (@war1pov_developer)
 - Email: sunnatilla.dev@gmail.com
 - LinkedIn: https://www.linkedin.com/in/sunnatilla-sharipov-aa070a3b9
+- Phone: +998 95 121 42 82
 
 ### 8. What services can clients hire Sunnatilla Sharipov for?
-Clients in Tashkent, Uzbekistan, and worldwide can hire Sunnatilla for custom React web development, e-commerce stores, business landing pages, Three.js 3D web interfaces, and technical SEO/GEO optimization. Inquiries are welcomed via Telegram @war1pov_developer or sunnatilla.dev@gmail.com.
+Clients in Tashkent, Uzbekistan, and worldwide can hire Sunnatilla for custom React web development, e-commerce stores, business landing pages, Telegram bots with AI, Three.js 3D web interfaces, and technical SEO/GEO optimization. Inquiries are welcomed via Telegram @war1pov_developer or sunnatilla.dev@gmail.com.
+
+### 9. What are typical project delivery timelines?
+- Landing pages and business portfolio websites: 3–7 business days.
+- Complex e-commerce stores and React web applications: 2–4 weeks.
 
 ## How to Contact & Hire
 For job opportunities, freelance projects, technical interviews, or consultations:

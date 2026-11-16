@@ -6,8 +6,21 @@
     <description>Engineering updates, production web projects, and technical case studies by Sunnatilla Sharipov (__war1pov__) from Tashkent, Uzbekistan.</description>
     <language>en-us</language>
     <copyright>Copyright 2026 Sunnatilla Sharipov</copyright>
-    <lastBuildDate>Tue, 10 Nov 2026 21:00:00 +0500</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 09:50:00 +0500</lastBuildDate>
     <atom:link href="https://sunnatillasharipov.uz/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Full-Stack AI Automation &amp; Telegram Bot Architecture by Sunnatilla Sharipov</title>
+      <link>https://sunnatillasharipov.uz/#skills</link>
+      <guid isPermaLink="false">sunnatillasharipov-ai-automation-2026</guid>
+      <pubDate>Mon, 16 Nov 2026 09:30:00 +0500</pubDate>
+      <dc:creator>Sunnatilla Sharipov</dc:creator>
+      <category>AI Automation</category>
+      <category>Python</category>
+      <category>Telegram Bot</category>
+      <category>Full-Stack</category>
+      <description><![CDATA[Engineering intelligent AI assistants and scalable bots leveraging Google Gemini AI APIs, Python (Aiogram 3, Telethon), webhook architecture, and asynchronous event streams, paired with sleek React dashboards for real-time analytics.]]></description>
+    </item>
 
     <item>
       <title>TechGear — Production Responsive E-Commerce Web Application</title>
