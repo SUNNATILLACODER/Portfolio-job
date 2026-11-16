@@ -1,48 +1,48 @@
 export const skillsData = {
-  aiEngineering: [
+    aiEngineering: [
     {
-      name: "Google Gemini AI & LLMs",
-      category: "Generative AI",
-      badge: "Neural",
+      name: "FastAPI & Async Architecture",
+      category: "Backend Engine",
+      badge: "High-Load",
       description: {
-        en: "Advanced prompt engineering, context grounding, streaming tokens, and multimodal generative AI integration.",
-        uz: "Prompt muhandisligi, kontekstni bog'lash, real vaqtda oqimli javoblar va multimodal sun'iy intellekt integratsiyasi.",
-        ru: "Промпт-инжиниринг, контекстное связывание, стриминг ответов и мультимодальная интеграция генеративного ИИ."
+        en: "Asynchronous REST APIs with SQLAlchemy 2.0, Pydantic v2 validation, and asyncpg database connections.",
+        uz: "SQLAlchemy 2.0, Pydantic v2 va asyncpg orqali yuqori tezlikda ishlovchi asinxron REST API serverlari.",
+        ru: "Высокопроизводительные асинхронные REST API на SQLAlchemy 2.0, Pydantic v2 и asyncpg."
       },
-      icon: "Sparkles"
+      icon: "Zap"
     },
     {
-      name: "Autonomous AI Agents",
-      category: "Agentic Systems",
-      badge: "Automated",
+      name: "Django & Django REST Framework",
+      category: "Fullstack Architecture",
+      badge: "Enterprise",
       description: {
-        en: "Multi-step agent workflows, tool calling, structured JSON output validation, and task orchestration.",
-        uz: "Ko'p bosqichli AI agentlar, funksiyalarni avtomatik chaqirish, JSON ma'lumotlar sxemasi va vazifalar orkestratsiyasi.",
-        ru: "Многошаговые AI-агенты, вызов функций (tool calling), валидация JSON-схем и оркестрация задач."
+        en: "Scalable backend services with multi-language i18n support, Swagger OpenAPI docs, and secure role-based auth.",
+        uz: "Ko'p tilli (i18n) ma'lumotlar bazasi, Swagger OpenAPI hujjatlari va xavfsiz avtorizatsiyaga ega Django tizimlari.",
+        ru: "Масштабируемые бекенд-сервисы с поддержкой мультиязычности i18n, Swagger OpenAPI и безопасной авторизацией."
+      },
+      icon: "ShieldCheck"
+    },
+    {
+      name: "PostgreSQL & Database Design",
+      category: "Relational DB",
+      badge: "Relational",
+      description: {
+        en: "Optimized relational database schemas, connection pooling, complex queries, and Alembic migrations.",
+        uz: "Optimallashtirilgan relyatsion jadvallar arxitekturasi, ulanishlar puli va Alembic migratsiyalari.",
+        ru: "Оптимизированные схемы реляционных БД, пулы соединений и миграции Alembic."
       },
       icon: "Cpu"
     },
     {
-      name: "Python AI Bots (Aiogram 3)",
-      category: "Intelligent Automation",
-      badge: "Backend & Bots",
+      name: "Docker & Containerization",
+      category: "DevOps & Cloud",
+      badge: "Production",
       description: {
-        en: "Asynchronous Telegram assistants, webhook pipelines, neural Q&A bots, and business automation.",
-        uz: "Asinxron Telegram botlar, veb-huklar, Gemini AI bilan bog'langan aqlli biznes yordamchilari va avtomatlashtirish.",
-        ru: "Асинхронные Telegram-боты, вебхуки, интеллектуальные Q&A ассистенты на Gemini AI и автоматизация бизнеса."
+        en: "Multi-container orchestration with Docker Compose, production WSGI/ASGI setups, and isolated environments.",
+        uz: "Docker Compose orqali ko'p konteynerli arxitektura va ishlab chiqarish muhitini avtomatlashtirish.",
+        ru: "Мультиконтейнерная оркестрация через Docker Compose и изолированные продакшн-окружения."
       },
-      icon: "Bot"
-    },
-    {
-      name: "Neural UI & Smart Clients",
-      category: "Client-Side AI",
-      badge: "Frontend AI",
-      description: {
-        en: "Connecting React components with streaming AI endpoints, real-time typing simulations, and smart search.",
-        uz: "React komponentlarini sun'iy intellekt oqimlari bilan bog'lash, real vaqtda matn generatsiyasi va aqlli qidiruv.",
-        ru: "Подключение React к стриминговым AI API, визуализация генерации текста в реальном времени и умный поиск."
-      },
-      icon: "Brain"
+      icon: "Box"
     }
   ],
 
