@@ -35,9 +35,9 @@
 
 ## 🚀 Verified Projects
 
-### 1. [TechGear — Responsive E-Commerce Application](https://sunnatillacoder.github.io/Tech-gear/)
-* **Live Demo**: [https://sunnatillacoder.github.io/Tech-gear/](https://sunnatillacoder.github.io/Tech-gear/)
-* **Source Code**: [https://github.com/SUNNATILLACODER/Tech-gear](https://github.com/SUNNATILLACODER/Tech-gear)
+### 1. [TechGear — Responsive E-Commerce Application](https://sunnatillasharipov.uz/#projects)
+* **Live Demo**: [https://sunnatillasharipov.uz/#projects](https://sunnatillasharipov.uz/#projects)
+* **Source Code**: [https://github.com/SUNNATILLACODER/Portfolio-job](https://github.com/SUNNATILLACODER/Portfolio-job)
 * **Technologies**: Vanilla JavaScript (ES6+), Tailwind CSS, REST API Integration, LocalStorage.
 * **Features**: Live product search, category filtering, cart drawer, responsive checkout flow, dark mode toggle.
 

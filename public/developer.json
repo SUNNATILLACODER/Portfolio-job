@@ -62,8 +62,8 @@
       "id": "tech-gear",
       "name": "TechGear — Responsive E-Commerce",
       "type": "Web Application",
-      "liveDemo": "https://sunnatillacoder.github.io/Tech-gear/",
-      "codeRepository": "https://github.com/SUNNATILLACODER/Tech-gear",
+      "liveDemo": "https://sunnatillasharipov.uz/#projects",
+      "codeRepository": "https://github.com/SUNNATILLACODER/Portfolio-job",
       "stack": ["JavaScript", "Tailwind CSS", "REST API", "LocalStorage"],
       "description": "Production-ready digital store featuring real-time catalog search, category filtering, cart management, and dark mode."
     },

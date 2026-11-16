@@ -395,7 +395,7 @@ export const translations = {
         },
         {
           q: "Sunnatilla tomonidan yaratilgan tasdiqlangan loyihalar qaysilar?",
-          a: "Asosiy amaliy loyihalari: TechGear — REST API katalogi, real vaqtdagi mahsulot qidiruvi, interaktiv savatcha va Dark Mode funksiyalariga ega to'liq moslashuvchan internet-do'kon (jonli demo: sunnatillacoder.github.io/Tech-gear/) hamda 3D Cyber City — Three.js WebGL asosidagi interaktiv kiber shahar."
+          a: "Asosiy amaliy loyihalari: TechGear — REST API katalogi, real vaqtdagi mahsulot qidiruvi, interaktiv savatcha va Dark Mode funksiyalariga ega to'liq moslashuvchan internet-do'kon hamda 3D Cyber City — Three.js WebGL asosidagi interaktiv kiber shahar (barcha loyihalar sunnatillasharipov.uz/#projects bo'limida jonli ishlaydi)."
         },
         {
           q: "Masofaviy (remote) yoki xalqaro loyihalarda ishlaydimi?",
@@ -624,7 +624,7 @@ export const translations = {
         },
         {
           q: "Какие проверенные проекты разработал разработчик?",
-          a: "Среди проверенных проектов: интернет-магазин TechGear (динамический каталог на REST API, живой поиск, корзина товаров, темная тема, демо: sunnatillacoder.github.io/Tech-gear/) и 3D Cyber City (интерактивный трехмерный мегаполис на Three.js)."
+          a: "Среди проверенных проектов: интернет-магазин TechGear (динамический каталог на REST API, живой поиск, корзина товаров, темная тема) и 3D Cyber City (интерактивный трехмерный мегаполис на Three.js). Все проекты доступны вживую на sunnatillasharipov.uz/#projects."
         },
         {
           q: "Работает ли Суннатилла на удаленной основе (Remote) с зарубежными клиентами?",

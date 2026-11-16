@@ -65,9 +65,8 @@ export const projectsData = [
     ],
     tags: ["JavaScript", "Tailwind CSS", "REST API", "E-Commerce", "Responsive UI", "Dark Mode"],
     links: {
-      // Live project URLs directly from Sunnatilla's GitHub Pages & repository
-      liveDemo: "https://sunnatillacoder.github.io/Tech-gear/",
-      viewSource: "https://github.com/SUNNATILLACODER/Tech-gear",
+      liveDemo: "https://sunnatillasharipov.uz/#projects",
+      viewSource: "https://github.com/SUNNATILLACODER/Portfolio-job",
       isLiveConfigured: true,
       isSourceConfigured: true
     },
@@ -75,11 +74,11 @@ export const projectsData = [
     previewType: "ecommerce-mockup"
   },
   {
-    id: "coming-soon-slot",
+    id: "cyber-city-3d",
     title: {
-      en: "More Coming Soon — 3D Cyber City",
-      uz: "Tez Kunda Yangi Loyiha — 3D Kiber Shahar",
-      ru: "Скоро Новый Проект — 3D Кибер-Город"
+      en: "3D Cyber City — WebGL Interactive Showcase",
+      uz: "3D Kiber Shahar — Interaktiv WebGL Loyihasi",
+      ru: "3D Кибер-Город — Интерактивный WebGL Проект"
     },
     category: {
       en: "Creative Development & 3D WebGL",
@@ -92,8 +91,8 @@ export const projectsData = [
       ru: "Футуристический 3D кибер-город в темном пространстве: неоновые световые линии, потоки данных, кинематографичный туман и параллакс-камера."
     },
     description: {
-      en: "This reserved project showcase slot features a live interactive 3D digital mini-city floating in cyberspace. Built with Three.js WebGL, procedural skyscrapers, glowing emerald window strips, animated Quadratic Bezier data highways, soft shadows, and smooth lerped camera damping that responds to mouse motion.",
-      uz: "Ushbu zaxiralangan slot Three.js va WebGL asosidagi jonli interaktiv 3D kiber-shaharni namoyish etadi. Suzib turuvchi kiber-platforma, zumrad nur chiziqlari, egri chiziqlar bo'ylab harakatlanuvchi ma'lumot paketlari va sichqonchaga silliq moslashuvchi 3D kamera bilan jihozlangan.",
+      en: "This live interactive 3D digital mini-city floating in cyberspace is built with Three.js WebGL, procedural skyscrapers, glowing emerald window strips, animated Quadratic Bezier data highways, soft shadows, and smooth lerped camera damping that responds to mouse motion in real time.",
+      uz: "Ushbu Three.js va WebGL asosidagi jonli interaktiv 3D kiber-shahar to'liq ishlab chiqilgan. Suzib turuvchi kiber-platforma, zumrad nur chiziqlari, egri chiziqlar bo'ylab harakatlanuvchi ma'lumot paketlari va sichqonchaga silliq moslashuvchi 3D kamera bilan jihozlangan.",
       ru: "Интерактивный 3D цифровой мини-город на Three.js и WebGL. Парящая шестиугольная кибер-платформа, процедурные небоскребы с изумрудными окнами, анимированные потоки данных по кривым Безье, мягкие тени и параллакс камеры по движению мыши."
     },
     challenge: {
@@ -138,14 +137,14 @@ export const projectsData = [
         ru: "Более 140 парящих кибер-частиц с вертикальным дрейфом"
       }
     ],
-    tags: ["Three.js", "WebGL", "React 19", "Creative Development", "3D Animation", "In Progress"],
+    tags: ["Three.js", "WebGL", "React 19", "Creative Development", "3D Animation", "ACES Filmic"],
     links: {
-      liveDemo: null,
-      viewSource: "https://github.com/SUNNATILLACODER",
-      isLiveConfigured: false,
+      liveDemo: "https://sunnatillasharipov.uz/#projects",
+      viewSource: "https://github.com/SUNNATILLACODER/Portfolio-job",
+      isLiveConfigured: true,
       isSourceConfigured: true
     },
-    isUpcoming: true,
+    isUpcoming: false,
     previewType: "threejs-city"
   }
 ];

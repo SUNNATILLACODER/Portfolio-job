@@ -194,17 +194,17 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             <span className="text-xs font-mono tracking-wider text-[#00F5A0] uppercase font-semibold">
               {project.id === 'tech-gear-store'
                 ? t.projects.featuredTag
-                : (lang === 'uz' ? '02 // TEZ KUNDA' : lang === 'ru' ? '02 // СКОРО' : '02 // UPCOMING')}
+                : (lang === 'uz' ? '02 // FLAGSHIP 3D LOYIHA' : lang === 'ru' ? '02 // ФЛАГМАНСКИЙ 3D ПРОЕКТ' : '02 // FLAGSHIP 3D PROJECT')}
             </span>
             <span className="text-xs font-mono text-[#A3AAA5] ml-2">
               // {category}
             </span>
           </div>
 
-          <span className="text-xs font-mono text-[#A3AAA5]">
+          <span className="text-xs font-mono text-[#00F5A0]">
             {project.id === 'tech-gear-store'
-              ? '01 // VERIFIED'
-              : (lang === 'uz' ? '02 // JARAYONDA' : lang === 'ru' ? '02 // В РАЗРАБОТКЕ' : '02 // IN PROGRESS')}
+              ? '01 // VERIFIED PRODUCTION'
+              : '02 // VERIFIED PRODUCTION'}
           </span>
         </div>
 
@@ -278,7 +278,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
               <span className="text-[#F3F4F0] font-semibold">
-                {lang === 'uz' ? "Tez Kunda: 3D Kiber-Shahar Loyihasi" : lang === 'ru' ? "Скоро: 3D Кибер-Город" : "Coming Soon: 3D Cyber City Experience"}
+                {lang === 'uz' ? "Jonli 3D Kiber-Shahar Loyihasi" : lang === 'ru' ? "Интерактивный 3D Кибер-Город" : "Live 3D Cyber City Showcase"}
               </span>
             </div>
             <span className="text-[#A3AAA5] text-[11px]">
@@ -583,15 +583,20 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
               </span>
             </div>
 
-            <a
-              href="https://sunnatillacoder.github.io/Tech-gear/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#00F5A0] hover:underline flex items-center gap-1 cursor-pointer"
+            <button
+              type="button"
+              onClick={() => onOpenDetails(project)}
+              className="text-[#00F5A0] hover:underline flex items-center gap-1.5 cursor-pointer font-mono"
             >
-              <span>sunnatillacoder.github.io/Tech-gear</span>
-              <ExternalLink size={11} />
-            </a>
+              <span>
+                {lang === 'uz'
+                  ? "Tafsilotlar va Arxitektura"
+                  : lang === 'ru'
+                  ? "Детали и Архитектура"
+                  : "Specifications & Architecture"}
+              </span>
+              <Eye size={12} />
+            </button>
           </div>
 
         </div>
