@@ -199,6 +199,87 @@ export const About = () => {
               <span className="text-[#00F5A0] font-medium">@war1pov_developer</span>
             </div>
           </div>
+
+          {/* Official Developer Factsheet Table (Google Knowledge Graph & AI Overviews) */}
+          <div className="mt-6 pt-6 border-t border-white/[0.08]">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-[11px] font-mono uppercase text-[#00F5A0] tracking-wider font-semibold">
+                {lang === 'uz' ? "📋 RASMIY MA'LUMOTNOMA // DEVELOPER FACTSHEET" : lang === 'ru' ? "📋 ОФИЦИАЛЬНАЯ СПРАВКА // DEVELOPER FACTSHEET" : "📋 OFFICIAL DEVELOPER FACTSHEET"}
+              </span>
+              <span className="text-[10px] font-mono text-[#8E9691]">GOOGLE KNOWLEDGE GRAPH</span>
+            </div>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full text-left font-mono text-xs border-collapse">
+                <tbody>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal w-1/3 sm:w-1/4">
+                      {lang === 'uz' ? "To'liq ismi:" : lang === 'ru' ? "Полное имя:" : "Full Name:"}
+                    </th>
+                    <td className="py-2 text-[#F3F4F0] font-medium">
+                      Sunnatilla Sharipov <span className="text-[#8E9691]">(Sunatila Sharipov)</span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Taxalluslar:" : lang === 'ru' ? "Псевдонимы:" : "Known Aliases:"}
+                    </th>
+                    <td className="py-2 text-[#00F5A0]">
+                      __war1pov__, war1pov, SUNNATILLACODER
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Kasbi & Roli:" : lang === 'ru' ? "Профессия & Роль:" : "Profession & Role:"}
+                    </th>
+                    <td className="py-2 text-[#F3F4F0]">
+                      Frontend Developer &amp; React Engineer
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Joylashuv:" : lang === 'ru' ? "Локация:" : "Headquarters:"}
+                    </th>
+                    <td className="py-2 text-[#F3F4F0]">
+                      Toshkent, O'zbekiston (UTC+5 // 41.2995° N, 69.2401° E)
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Amaliy loyihalar:" : lang === 'ru' ? "Проекты:" : "Key Projects:"}
+                    </th>
+                    <td className="py-2 text-[#A3AAA5]">
+                      TechGear (E-Commerce), 3D Cyber City (Three.js WebGL), Astra AI (Telegram)
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Asosiy steki:" : lang === 'ru' ? "Стек технологий:" : "Core Tech Stack:"}
+                    </th>
+                    <td className="py-2 text-[#F3F4F0]">
+                      React 19, Tailwind CSS, JavaScript (ES6+), Three.js, Python, REST API
+                    </td>
+                  </tr>
+                  <tr className="border-b border-white/[0.04]">
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Rasmiy sayti:" : lang === 'ru' ? "Официальный сайт:" : "Official Website:"}
+                    </th>
+                    <td className="py-2 text-[#00F5A0] underline">
+                      <a href="https://sunnatillasharipov.uz/">https://sunnatillasharipov.uz/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="py-2 pr-4 text-[#8E9691] font-normal">
+                      {lang === 'uz' ? "Aloqa kanallari:" : lang === 'ru' ? "Контакты:" : "Contacts:"}
+                    </th>
+                    <td className="py-2 text-[#F3F4F0]">
+                      Telegram: <a href="https://t.me/war1pov_developer" target="_blank" rel="noopener noreferrer" className="text-[#00F5A0] underline">@war1pov_developer</a> | Email: <a href="mailto:sunnatilla.dev@gmail.com" className="text-[#00F5A0] underline">sunnatilla.dev@gmail.com</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
 
         {/* 4 Genuine Development Principles */}
