@@ -61,8 +61,9 @@ export const About = () => {
                 <div className="font-mono text-xl font-bold text-[#F3F4F0] mb-1">
                   Sunnatilla <span className="text-[#00F5A0]">__war1pov__</span>
                 </div>
-                <div className="text-xs font-mono text-[#8E9691] mb-6">
-                  {t.about.developerBadge}
+                <div className="text-xs font-mono text-[#00F5A0] mb-6 font-semibold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
+                  <span>Frontend &amp; AI Systems Engineer</span>
                 </div>
 
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#080A0A] border border-white/[0.06] text-xs font-mono text-[#A3AAA5] mb-8">
@@ -76,15 +77,15 @@ export const About = () => {
                     <span className="text-[#A3AAA5]">
                       {lang === 'uz' ? 'Yo‘nalish' : lang === 'ru' ? 'Специализация' : 'Focus'}
                     </span>
-                    <span className="text-[#F3F4F0]">
-                      {lang === 'uz' ? 'Interfeys Tizimlari' : lang === 'ru' ? 'Интерфейсные системы' : 'Interface Systems'}
+                    <span className="text-[#F3F4F0] font-medium">
+                      {lang === 'uz' ? 'Frontend & AI Tizimlar' : lang === 'ru' ? 'Frontend и AI Системы' : 'Frontend & AI Systems'}
                     </span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-white/[0.04]">
                     <span className="text-[#A3AAA5]">
                       {lang === 'uz' ? 'Texnologiyalar' : lang === 'ru' ? 'Стек' : 'Framework'}
                     </span>
-                    <span className="text-[#00F5A0]">React 19 & Tailwind</span>
+                    <span className="text-[#00F5A0] font-medium">React 19 • Gemini AI • Three.js</span>
                   </div>
                   <div className="flex justify-between py-1">
                     <span className="text-[#A3AAA5]">

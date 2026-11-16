@@ -1,4 +1,76 @@
 export const skillsData = {
+  aiEngineering: [
+    {
+      name: "Google Gemini AI & LLMs",
+      category: "Generative AI",
+      badge: "Neural",
+      description: {
+        en: "Advanced prompt engineering, context grounding, streaming tokens, and multimodal generative AI integration.",
+        uz: "Prompt muhandisligi, kontekstni bog'lash, real vaqtda oqimli javoblar va multimodal sun'iy intellekt integratsiyasi.",
+        ru: "Промпт-инжиниринг, контекстное связывание, стриминг ответов и мультимодальная интеграция генеративного ИИ."
+      },
+      icon: "Sparkles"
+    },
+    {
+      name: "Autonomous AI Agents",
+      category: "Agentic Systems",
+      badge: "Automated",
+      description: {
+        en: "Multi-step agent workflows, tool calling, structured JSON output validation, and task orchestration.",
+        uz: "Ko'p bosqichli AI agentlar, funksiyalarni avtomatik chaqirish, JSON ma'lumotlar sxemasi va vazifalar orkestratsiyasi.",
+        ru: "Многошаговые AI-агенты, вызов функций (tool calling), валидация JSON-схем и оркестрация задач."
+      },
+      icon: "Cpu"
+    },
+    {
+      name: "Python AI Bots (Aiogram 3)",
+      category: "Intelligent Automation",
+      badge: "Backend & Bots",
+      description: {
+        en: "Asynchronous Telegram assistants, webhook pipelines, neural Q&A bots, and business automation.",
+        uz: "Asinxron Telegram botlar, veb-huklar, Gemini AI bilan bog'langan aqlli biznes yordamchilari va avtomatlashtirish.",
+        ru: "Асинхронные Telegram-боты, вебхуки, интеллектуальные Q&A ассистенты на Gemini AI и автоматизация бизнеса."
+      },
+      icon: "Bot"
+    },
+    {
+      name: "Neural UI & Smart Clients",
+      category: "Client-Side AI",
+      badge: "Frontend AI",
+      description: {
+        en: "Connecting React components with streaming AI endpoints, real-time typing simulations, and smart search.",
+        uz: "React komponentlarini sun'iy intellekt oqimlari bilan bog'lash, real vaqtda matn generatsiyasi va aqlli qidiruv.",
+        ru: "Подключение React к стриминговым AI API, визуализация генерации текста в реальном времени и умный поиск."
+      },
+      icon: "Brain"
+    }
+  ],
+
+  creative3D: [
+    {
+      name: "Three.js & WebGL",
+      category: "3D Graphics",
+      badge: "60 FPS",
+      description: {
+        en: "Procedural 3D scene generation, custom shaders, atmospheric fog, and mouse/touch parallax cameras.",
+        uz: "Protsedurali 3D sahnani render qilish, maxsus shaderlar, atmosferik tuman va sichqonchaga mos dinamik kamera.",
+        ru: "Процедурные 3D сцены, кастомные шейдеры, атмосферный туман и параллакс камеры по движению мыши."
+      },
+      icon: "Box"
+    },
+    {
+      name: "ACES Filmic & Tone Mapping",
+      category: "Cinematic Rendering",
+      badge: "WebGL",
+      description: {
+        en: "Cinematic color reproduction, dynamic light bounce, bloom emulation, and low-latency buffer optimization.",
+        uz: "Kinematik rang uzatish, dinamik yorug'lik effektlari va kam resurs sarflovchi bufer optimallashtirish.",
+        ru: "Кинематографичная цветопередача, динамическое освещение и оптимизация графических буферов."
+      },
+      icon: "Sun"
+    }
+  ],
+
   coreFrontend: [
     {
       name: "React",

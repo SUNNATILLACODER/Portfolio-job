@@ -61,7 +61,9 @@ export const translations = {
       subtitle: "Hands-on proficiency in modern frontend architecture and developer tooling. Built around practical implementation rather than superficial metrics.",
       philosophyTitle: "Engineering Philosophy",
       categories: {
-        frontend: "Core Frontend",
+        ai: "AI & Intelligent Systems",
+        frontend: "Core Frontend & React 19",
+        creative: "3D & Creative WebGL",
         tools: "Tooling & Workflow",
         architecture: "Architecture & Standards"
       }
@@ -290,7 +292,9 @@ export const translations = {
       subtitle: "Zamonaviy frontend arxitekturasi va vositalar bilan amaliy tajriba. Yuzaki foizlarsiz, real amaliyotga asoslangan.",
       philosophyTitle: "Muhandislik tamoyili",
       categories: {
-        frontend: "Asosiy Frontend",
+        ai: "Sun'iy Intellekt va Neyron Tizimlar",
+        frontend: "Asosiy Frontend & React 19",
+        creative: "3D va Ijodiy WebGL",
         tools: "Vositalar va Jarayon",
         architecture: "Arxitektura va Standartlar"
       }
@@ -519,7 +523,9 @@ export const translations = {
       subtitle: "Практический опыт работы с современной frontend-архитектурой и инструментами разработки. Основано на реальной практике, без формальных процентов.",
       philosophyTitle: "Принцип разработки",
       categories: {
-        frontend: "Основной Frontend",
+        ai: "Искусственный Интеллект и LLM",
+        frontend: "Основной Frontend & React 19",
+        creative: "3D и Креативный WebGL",
         tools: "Инструменты и Процесс",
         architecture: "Архитектура и Стандарты"
       }

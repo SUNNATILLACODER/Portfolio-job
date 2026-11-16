@@ -5,14 +5,31 @@ import {
   Atom, 
   Layout, 
   Zap, 
-  ShieldCheck 
+  ShieldCheck,
+  Sparkles,
+  Bot,
+  Brain,
+  Cpu,
+  Box
 } from 'lucide-react';
-
 
 export const Skills = () => {
   const { lang, t } = useLanguage();
 
   const engineeringPriorities = [
+    {
+      title: {
+        uz: "Sun'iy Intellekt va LLM integratsiyasi",
+        ru: "Интеграция ИИ и LLM систем",
+        en: "AI & LLM Systems Integration"
+      },
+      desc: {
+        uz: "Google Gemini AI API, oqimli generatsiya, aqlli botlar va prompt muhandisligi orqali interfeyslarni avtomatlashtirish.",
+        ru: "Интеграция Google Gemini AI, стриминговая генерация, умные боты и промпт-инжиниринг для автоматизации интерфейсов.",
+        en: "Leveraging Google Gemini AI APIs, streaming token responses, intelligent bots, and prompt engineering to automate workflows."
+      },
+      icon: <Sparkles size={18} className="text-[#00F5A0]" />
+    },
     {
       title: {
         uz: "Moslashuvchan interfeys arxitekturasi",
@@ -78,9 +95,12 @@ export const Skills = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-6 border-b border-white/[0.06]">
           <div className="max-w-2xl">
-            <span className="text-xs font-mono font-medium tracking-widest uppercase text-[#00F5A0] mb-3 block">
-              {t.skills.eyebrow}
-            </span>
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
+              <span className="text-xs font-mono font-medium tracking-widest uppercase text-[#00F5A0]">
+                {t.skills.eyebrow}
+              </span>
+            </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F3F4F0] tracking-tight">
               {t.skills.heading}
             </h2>
@@ -95,7 +115,7 @@ export const Skills = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Left Column: Engineering Philosophy & Focus Areas */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-2 pb-3 border-b border-white/[0.06]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
               <h3 className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
@@ -107,7 +127,7 @@ export const Skills = () => {
               {engineeringPriorities.map((item, index) => (
                 <div
                   key={index}
-                  className="p-5 rounded-xl surface-card surface-card-hover border border-white/[0.06]"
+                  className="p-5 rounded-xl surface-card surface-card-hover border border-white/[0.06] transition-all hover:border-[#00F5A0]/30 hover:shadow-[0_0_25px_rgba(0,245,160,0.06)]"
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <div className="p-2 rounded-lg bg-[#080A0A] border border-white/[0.06]">
@@ -126,9 +146,48 @@ export const Skills = () => {
           </div>
 
           {/* Right Column: Practical Technology Stack Index */}
-          <div className="lg:col-span-6 space-y-8">
+          <div className="lg:col-span-7 space-y-8">
             
-            {/* Core Frontend */}
+            {/* Premier Category: Sun'iy Intellekt & AI Engineering */}
+            <div className="p-5 sm:p-6 rounded-2xl surface-card-ai border border-[#00F5A0]/25 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#00F5A0]/5 rounded-full blur-3xl pointer-events-none" />
+              
+              <div className="flex items-center justify-between pb-3.5 border-b border-white/[0.08] mb-4 relative z-10">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#00F5A0] font-bold">
+                    // {t.skills.categories.ai}
+                  </span>
+                </div>
+                <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2.5 py-0.5 rounded-full border border-[#00F5A0]/30 animate-pulse">
+                  NEURAL &amp; AGENTIC
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 relative z-10">
+                {skillsData.aiEngineering.map((item) => (
+                  <div
+                    key={item.name}
+                    className="p-4 rounded-xl bg-[#080A0A]/80 border border-white/[0.06] hover:border-[#00F5A0]/40 transition-colors flex flex-col justify-between"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-semibold text-[#F3F4F0] flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
+                        {item.name}
+                      </span>
+                      <span className="text-[9px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
+                        {item.badge}
+                      </span>
+                    </div>
+                    <p className="text-[11px] text-[#A3AAA5] leading-relaxed">
+                      {item.description[lang] || item.description.en}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Core Frontend & React 19 */}
             <div>
               <div className="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-4">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
@@ -141,11 +200,43 @@ export const Skills = () => {
                 {skillsData.coreFrontend.map((item) => (
                   <div
                     key={item.name}
-                    className="p-4 rounded-xl bg-[#101413] border border-white/[0.06] flex flex-col justify-between"
+                    className="p-4 rounded-xl bg-[#101413] border border-white/[0.06] hover:border-white/20 transition-colors flex flex-col justify-between"
                   >
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-xs font-semibold text-[#F3F4F0]">{item.name}</span>
                       <span className="text-[10px] font-mono text-[#00F5A0] bg-[#00F5A0]/10 px-2 py-0.5 rounded">
+                        {item.badge}
+                      </span>
+                    </div>
+                    <p className="text-[11px] text-[#A3AAA5] leading-relaxed">
+                      {item.description[lang] || item.description.en}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 3D WebGL & Creative Coding */}
+            <div>
+              <div className="flex items-center justify-between pb-3 border-b border-white/[0.06] mb-4">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
+                  // {t.skills.categories.creative}
+                </span>
+                <span className="text-[11px] font-mono text-[#82FCD0]">Creative Dev</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {skillsData.creative3D.map((item) => (
+                  <div
+                    key={item.name}
+                    className="p-4 rounded-xl bg-[#101413] border border-white/[0.06] hover:border-[#82FCD0]/30 transition-colors flex flex-col justify-between"
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-semibold text-[#F3F4F0] flex items-center gap-1.5">
+                        <Box size={13} className="text-[#82FCD0]" />
+                        {item.name}
+                      </span>
+                      <span className="text-[10px] font-mono text-[#82FCD0] bg-[#82FCD0]/10 px-2 py-0.5 rounded">
                         {item.badge}
                       </span>
                     </div>
@@ -163,14 +254,14 @@ export const Skills = () => {
                 <span className="text-xs font-mono uppercase tracking-wider text-[#F3F4F0] font-semibold">
                   // {t.skills.categories.tools}
                 </span>
-                <span className="text-[11px] font-mono text-[#A3AAA5]">Workflow</span>
+                <span className="text-[11px] font-mono text-[#A3AAA5]">Workflow &amp; CI/CD</span>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {skillsData.devTools.map((tool) => (
                   <div
                     key={tool.name}
-                    className="p-3.5 rounded-xl bg-[#101413] border border-white/[0.06] text-center"
+                    className="p-3.5 rounded-xl bg-[#101413] border border-white/[0.06] hover:border-white/20 transition-colors text-center"
                   >
                     <span className="text-xs font-mono font-semibold text-[#F3F4F0] block mb-1">
                       {tool.name}
