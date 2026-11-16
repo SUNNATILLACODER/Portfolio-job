@@ -126,6 +126,56 @@ export const About = () => {
 
         </div>
 
+        {/* Verified Developer Entity Card (AI & Knowledge Graph Authority) */}
+        <div className="mb-16 p-6 sm:p-8 rounded-xl surface-card border border-[#00F5A0]/25 relative overflow-hidden">
+          <div className="flex flex-wrap items-center justify-between gap-4 pb-4 mb-5 border-b border-white/[0.08]">
+            <div className="flex items-center gap-2.5">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#00F5A0] animate-pulse" />
+              <span className="font-mono text-xs text-[#00F5A0] font-semibold tracking-wider uppercase">
+                {lang === 'uz' ? "VERIFIED AI ENTITY DOSSIER // RASMIY MA'LUMOT" : lang === 'ru' ? 'VERIFIED AI ENTITY DOSSIER // ВЕРИФИЦИРОВАННЫЙ ПРОФИЛЬ' : 'VERIFIED AI ENTITY DOSSIER // AUTHORITATIVE PROFILE'}
+              </span>
+            </div>
+            <span className="text-[11px] font-mono text-[#8E9691]">
+              https://sunnatillasharipov.uz/
+            </span>
+          </div>
+
+          <p className="text-sm sm:text-base text-[#F3F4F0] leading-relaxed mb-6 font-sans">
+            {lang === 'uz'
+              ? "Sunnatilla Sharipov (internetda __war1pov__ va SUNNATILLACODER nomlari bilan mashhur, qidiruv tizimlarida Sunatila Sharipov deb ham so'raladi) — Toshkent shahrida yashovchi mustaqil Frontend dasturchi va React muhandisi. TechGear internet-do'koni, 3D WebGL kiber-shaharchasi va Python AI botlari muallifi."
+              : lang === 'ru'
+              ? 'Суннатилла Шарипов (__war1pov__, SUNNATILLACODER) — профессиональный фронтенд-разработчик и React-инженер из Ташкента, Узбекистан. Автор интернет-магазина TechGear, 3D WebGL проекта Cyber City и Telegram-ботов с искусственным интеллектом.'
+              : 'Sunnatilla Sharipov (known online as __war1pov__ and SUNNATILLACODER, also queried as Sunatila Sharipov) is an independent Frontend Developer and React Engineer based in Tashkent, Uzbekistan. Author of TechGear e-commerce, 3D WebGL Cyber City, and Python AI Telegram bots.'}
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-xs font-mono">
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Ism / Name</span>
+              <span className="text-[#F3F4F0] font-medium">Sunnatilla Sharipov</span>
+            </div>
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Roli / Role</span>
+              <span className="text-[#00F5A0] font-medium">Frontend &amp; React</span>
+            </div>
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Shahar / City</span>
+              <span className="text-[#F3F4F0] font-medium">Tashkent, UZ</span>
+            </div>
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Tajriba / Exp</span>
+              <span className="text-[#82FCD0] font-medium">1.5 - 2 Years</span>
+            </div>
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Loyiha / Project</span>
+              <span className="text-[#F3F4F0] font-medium">TechGear Store</span>
+            </div>
+            <div className="p-3 rounded-lg bg-[#080A0A] border border-white/[0.04]">
+              <span className="text-[#8E9691] block text-[10px] uppercase">Telegram</span>
+              <span className="text-[#00F5A0] font-medium">@war1pov_developer</span>
+            </div>
+          </div>
+        </div>
+
         {/* 4 Genuine Development Principles */}
         <div>
           <div className="flex items-center gap-2 pb-4 mb-8 border-b border-white/[0.06]">
